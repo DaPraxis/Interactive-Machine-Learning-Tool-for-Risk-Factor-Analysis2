@@ -207,15 +207,15 @@ def dataDownload(server):
         
     def parse_contents(filename):
         global df
-
+        new_df = df.iloc[:5, :5]
         return html.Div([
             # html.H5("Upload File: {}".format(filename)),
             html.A(html.Button('Next', id='btn'), href='/dashapp/EDA/'),
             dcc.Loading(children=[
                 dash_table.DataTable(
                 id='database-table',
-                columns=[{'name': i, 'id': i} for i in df.columns],
-                data=df.to_dict('records'),
+                columns=[{'name': i, 'id': i} for i in new_df.columns],
+                data=new_df.to_dict('records'),
                 sort_action="native",
                 sort_mode='native',
                 page_size=300,
