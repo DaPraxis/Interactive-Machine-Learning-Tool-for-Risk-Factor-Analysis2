@@ -23,7 +23,7 @@ from .layouts.page2_layout import server_layout
 from .layouts.page3_layout import layout3
 from .modelHelperFunctions import *
 
-
+from pandas_profiling import ProfileReport
 # from .layouts.EDA_layout import EDA_layout
 # from .EDA_callbacks import EDA_callback
 
@@ -207,6 +207,12 @@ def dataDownload(server):
         
     def parse_contents(filename):
         global df
+        '''
+        profile = ProfileReport(df, title = "Pandas Profiling Report")
+        profile.to_file("report.html") #change it so that it automatically saves it in the folder where this file is
+        These lines create the report using pandas profiling, however it takes quite long as the report is 11 MB. For now,
+        only one dataset is used so these lines don't neeed to run each time
+        '''
         new_df = df.iloc[:5, :5]
         return html.Div([
             # html.H5("Upload File: {}".format(filename)),
