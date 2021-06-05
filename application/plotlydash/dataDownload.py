@@ -514,6 +514,7 @@ def dataDownload(server):
                 ),
                 performance_layout,
                 html.Div([
+                    html.Label("Heatmap for the Confusion Matrix:"),
                     html.Img(src='data:image/png;base64,{}'.format(encoded_image.decode()))
                 ]),
 
