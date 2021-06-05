@@ -9,12 +9,15 @@ import io
 import dash_table
 import os
 import ast
+
+from seaborn.matrix import heatmap
 from .layouts.layout import html_layout
 from dash.exceptions import PreventUpdate
 import requests
 import plotly.graph_objects as go
 import plotly.express as px
 import matplotlib.pyplot as plt
+import base64
 
 from flask_sqlalchemy import SQLAlchemy
 import psycopg2
@@ -434,6 +437,9 @@ def dataDownload(server):
                 model_res = classification_models(
                     X, y, model_type, True, C=penalty)
                 model = model_res[0]
+                #cfn_matrix = model_res[5]
+                heatmap_filename = model_res[-1]
+                encoded_image = base64.b64encode(open(heatmap_filename, 'rb').read())
                 res = clf_risk_factor_analysis(model, col_names, num_of_factor)
                 performance_layout = html.Div(
                     html.Div(
@@ -451,7 +457,7 @@ def dataDownload(server):
                                 # 'whiteSpace': 'normal'
                             }
                         )
-                    ),
+                    )
                 )
                 info = "Perform Risk Factor Analysis with normalized data based on {} model".format(
                     model_type)
@@ -507,6 +513,10 @@ def dataDownload(server):
                     html.Label("{} model performance: ".format(model_type))
                 ),
                 performance_layout,
+                html.Div([
+                    html.Img(src='data:image/png;base64,{}'.format(encoded_image.decode()))
+                ]),
+
             ])
 
             if task_type == "Regression":

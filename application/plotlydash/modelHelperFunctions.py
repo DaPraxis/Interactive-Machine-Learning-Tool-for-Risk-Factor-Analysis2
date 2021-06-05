@@ -5,9 +5,14 @@ from sklearn.linear_model import LinearRegression, Lasso, Ridge, LassoLars, Elas
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.metrics import roc_auc_score, accuracy_score, precision_score, recall_score, f1_score, log_loss
+from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-
+import plotly.express as px
+import json
+import plotly
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 def load_info_dict(file):
     f = open(file, 'r')
@@ -122,8 +127,24 @@ def classification_models(X, y, model_type, norm=False, C=1.0):
     accuracy, precision, recall, f1 = classification_performance(
         y_test, y_pred)
 
+    cfn_matrix = confusion_matrix(y_test, y_pred)
+    heatmap_filename = confusion_matrix_heatmap(y_test, y_pred)
     # return clf, accuracy, roc_auc, precision, recall, f1
-    return clf, accuracy, precision, recall, f1
+    return clf, accuracy, precision, recall, f1, cfn_matrix, heatmap_filename
+
+'''
+def confusion_matrix_heatmap(y_true, y_pred):
+    cfn_matrx = confusion_matrix(y_true, y_pred)
+    heatmap = px.imshow(cfn_matrx)
+    heatmapJSON = json.dumps(heatmap, cls=plotly.utils.PlotlyJSONEncoder)
+    return heatmapJSON
+'''
+def confusion_matrix_heatmap(y_true, y_pred):
+    cfn_matrix = confusion_matrix(y_true, y_pred)
+    heatmap = sns.heatmap(cfn_matrix)
+    plt.savefig('heatmap.png')
+    return 'heatmap.png'
+    
 
 
 def reg_risk_factor_analysis(model, cols, nof):
