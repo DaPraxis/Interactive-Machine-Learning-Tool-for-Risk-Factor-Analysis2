@@ -236,8 +236,7 @@ def dataDownload(server):
                     'overflowY': 'scroll',
                     'overflowX': 'scroll',
                     'width': '100%',
-                    # 'minWidth': '100%',
-                    # 'margin': '5% 15%'
+                    'border' : '1px solid blue'
                 },
             ),
 
