@@ -439,7 +439,7 @@ def dataDownload(server):
                 #cfn_matrix = model_res[5]
                 heatmap_filename = model_res[-1]
                 encoded_image = base64.b64encode(open(heatmap_filename, 'rb').read())
-                res = clf_risk_factor_analysis(model, col_names, num_of_factor)
+                res = clf_risk_factor_analysis(model, col_names, num_of_factor, label)
                 performance_layout = html.Div(
                     html.Div(
                         dash_table.DataTable(

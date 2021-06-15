@@ -164,13 +164,51 @@ def reg_risk_factor_analysis(model, cols, nof):
     return [{"Rank": i+1, "Factor": "{}:{}".format(cols[sort_index[i]], var_info.get(cols[sort_index[i]]).get('Label')),
              "Absolute Weight": round(sort_coef[i], 5), "Sign": sign[sort_index[i]]} for i in range(nof)]
 
+def encoding(number, variable):
+    f = open("final_codebook.txt", "r", encoding="utf-8")
+    lines = f.readlines()
+    string = "SAS Variable Name: " + variable
+    for i in range(len(lines)):
+        if string in lines[i]:
+            for j in range(i, i+5):
+                if "Yes" in lines[j]: #this means this is a case where there is only 1,2,7,9    such as HIVTST6 or CHCKDNY1
+                    if number == 1:
+                        output = lines[j]
+                    elif number == 2:
+                        output = lines[j+1]
+                    elif number == 7:
+                        output = lines[j+2]
+                    elif number == 9:
+                        output = lines[j+3]
+                    if "—" not in output:
+                        return output
+                    elif "—" in output:
+                        idx = output.find("—")
+                        return output[:idx]
+            #now in this case, this is a case where it's not only 1,2,7,9      such as PERSDOC2
+            for a in range(i, i+20):
+                if "Yes" in lines[a]:
+                    numbers = []
+                    for k in range(i, i+20):
+                        if lines[k][0].isdigit() == True:
+                            numbers.append(int(lines[k][0]))
+                    for x in range(len(numbers)):
+                        if number == numbers[x]:
+                            output = lines[a + x]
+                            if "—" not in output:
+                                return output
+                            elif "—" in output:
+                                idx = output.find("—")
+                                return output[:idx]
 
-def clf_risk_factor_analysis(model, cols, nof):
+
+def clf_risk_factor_analysis(model, cols, nof, variable):
     """Return Risk Factor Analysis table for classification model 
         Args:
             model (model object): risk factor analysis classification model
             cols (list): feature name list
             nof (int): number of factors to be displayed
+            variable (str): the variable type
         Returns:
             list of dict: Risk Factor Analysis table
         """
@@ -182,7 +220,13 @@ def clf_risk_factor_analysis(model, cols, nof):
         sort_coef = sorted(np.abs(lst), reverse=True)
         sort_index = sorted(
             range(len(lst)), key=lambda k: np.abs(lst)[k], reverse=True)
+        '''
         rfa_tab += [{"Rank": classes[class_idx],
+                     "Factor": "", "Absolute Weight": "", "Sign": ""}]
+        '''
+        number = classes[class_idx]
+        unencoded = encoding(number, variable)
+        rfa_tab += [{"Rank": unencoded,
                      "Factor": "", "Absolute Weight": "", "Sign": ""}]
         try:
             rfa_tab += [{"Rank": i+1, "Factor": "{}:{}".format(cols[sort_index[i]], var_info.get(cols[sort_index[i]]).get(
