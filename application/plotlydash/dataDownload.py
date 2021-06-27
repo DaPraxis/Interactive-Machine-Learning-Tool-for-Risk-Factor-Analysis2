@@ -233,8 +233,8 @@ def dataDownload(server):
                 fixed_rows = 100,
                 style_table={
                     'maxHeight': '80ex',
-                    'overflowY': 'scroll',
-                    'overflowX': 'scroll',
+                    #'overflowY': 'scroll',
+                    #'overflowX': 'scroll',
                     'width': '100%',
                     'border' : '1px solid blue'
                 },
