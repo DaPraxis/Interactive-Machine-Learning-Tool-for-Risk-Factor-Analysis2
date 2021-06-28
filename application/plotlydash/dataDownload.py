@@ -238,6 +238,9 @@ def dataDownload(server):
                     'width': '100%',
                     'border' : '1px solid blue'
                 },
+                style_cell={
+                    'color': 'blue'
+                },
             ),
 
             html.Hr(),  # horizontal line
