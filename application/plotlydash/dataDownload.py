@@ -262,8 +262,15 @@ def dataDownload(server):
                             options=[
                                 {'label': i, 'value': i} for i in dictionary_name[key]
                             ],
-                            placeholder="Select Feature",
+                            placeholder="Select First Feature",
                             # value='features'
+                        ),
+                        dcc.Dropdown(
+                            id = 'dropdown2',
+                            options = [
+                                {'label': i, 'value' : i} for i in dictionary_name[key]
+                            ],
+                            placeholder="Select Second Feature",
                         ),
                         html.Div(id='single_commands'),
                     ])
