@@ -265,6 +265,7 @@ def dataDownload(server):
                             placeholder="Select First Feature",
                             # value='features'
                         ),
+                        '''
                         dcc.Dropdown(
                             id = 'dropdown2',
                             options = [
@@ -272,6 +273,7 @@ def dataDownload(server):
                             ],
                             placeholder="Select Second Feature",
                         ),
+                        '''
                         html.Div(id='single_commands'),
                     ])
                     return return_div
