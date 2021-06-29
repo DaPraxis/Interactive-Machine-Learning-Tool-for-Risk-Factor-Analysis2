@@ -476,58 +476,109 @@ def dataDownload(server):
             res_tab_col = ["Rank", "Factor", "Absolute Weight", "Sign"]
             #res = reg_risk_factor_analysis(model, col_names, num_of_factor)
 
-            layout = html.Div(children=[
-                html.P(
-                    html.Label(info)
-                ),
-                html.Div(
-                    dash_table.DataTable(
-                        id="RFA_table",
-                        columns=[
-                            {'name': i, 'id': i} for i in res_tab_col
-                        ],
-                        data=res,
-                        style_cell={
-                            'height': 'auto',
-                            'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
-                            'whiteSpace': 'normal',
-                            'textAlign': 'right'
-                        },
-                        style_header={
-                            'backgroundColor': 'white',
-                            'fontWeight': 'bold'
-                        },
-                        style_data_conditional=[
-                            {
-                                'if': {
-                                    'column_id': 'Sign',
-                                    'filter_query': '{Sign} = "-"'
-                                },
-                                'backgroundColor': 'dodgerblue',
-                                'color': 'white'
-                            },
-                            {
-                                'if': {
-                                    'column_id': 'Sign',
-                                    'filter_query': '{Sign} = "+"'
-                                },
-                                'backgroundColor': '#85144b',
-                                'color': 'white'
-                            },
-                        ],
-                    )
-                ),
+            if task_type == "Classification":
 
-                html.P(
-                    html.Label("{} model performance: ".format(model_type))
-                ),
-                performance_layout,
-                html.Div([
-                    html.Label("Heatmap for the Confusion Matrix:"),
-                    html.Img(src='data:image/png;base64,{}'.format(encoded_image.decode()))
-                ]),
+                layout = html.Div(children=[
+                    html.P(
+                        html.Label(info)
+                    ),
+                    html.Div(
+                        dash_table.DataTable(
+                            id="RFA_table",
+                            columns=[
+                                {'name': i, 'id': i} for i in res_tab_col
+                            ],
+                            data=res,
+                            style_cell={
+                                'height': 'auto',
+                                'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                                'whiteSpace': 'normal',
+                                'textAlign': 'right'
+                            },
+                            style_header={
+                                'backgroundColor': 'white',
+                                'fontWeight': 'bold'
+                            },
+                            style_data_conditional=[
+                                {
+                                    'if': {
+                                        'column_id': 'Sign',
+                                        'filter_query': '{Sign} = "-"'
+                                    },
+                                    'backgroundColor': 'dodgerblue',
+                                    'color': 'white'
+                                },
+                                {
+                                    'if': {
+                                        'column_id': 'Sign',
+                                        'filter_query': '{Sign} = "+"'
+                                    },
+                                    'backgroundColor': '#85144b',
+                                    'color': 'white'
+                                },
+                            ],
+                        )
+                    ),
 
-            ])
+                    html.P(
+                        html.Label("{} model performance: ".format(model_type))
+                    ),
+                    performance_layout,
+                    html.Div([
+                        html.Label("Heatmap for the Confusion Matrix:"),
+                        html.Img(src='data:image/png;base64,{}'.format(encoded_image.decode()))   #encoded_image does not exist for continous variables
+                    ]),
+
+                ])
+            elif task_type == "Regression":
+                layout = html.Div(children=[
+                    html.P(
+                        html.Label(info)
+                    ),
+                    html.Div(
+                        dash_table.DataTable(
+                            id="RFA_table",
+                            columns=[
+                                {'name': i, 'id': i} for i in res_tab_col
+                            ],
+                            data=res,
+                            style_cell={
+                                'height': 'auto',
+                                'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                                'whiteSpace': 'normal',
+                                'textAlign': 'right'
+                            },
+                            style_header={
+                                'backgroundColor': 'white',
+                                'fontWeight': 'bold'
+                            },
+                            style_data_conditional=[
+                                {
+                                    'if': {
+                                        'column_id': 'Sign',
+                                        'filter_query': '{Sign} = "-"'
+                                    },
+                                    'backgroundColor': 'dodgerblue',
+                                    'color': 'white'
+                                },
+                                {
+                                    'if': {
+                                        'column_id': 'Sign',
+                                        'filter_query': '{Sign} = "+"'
+                                    },
+                                    'backgroundColor': '#85144b',
+                                    'color': 'white'
+                                },
+                            ],
+                        )
+                    ),
+
+                    html.P(
+                        html.Label("{} model performance: ".format(model_type))
+                    ),
+                    performance_layout,
+                ])
+
 
             if task_type == "Regression":
                 return layout, reg_data + [{"Index": len(reg_data)+1, "Label": label, 'Model': model_type, 'Penalty': penalty, 'MAE': round(model_res[1], 5), 'MSE':round(model_res[2], 5),
