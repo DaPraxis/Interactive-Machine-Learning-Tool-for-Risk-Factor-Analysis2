@@ -227,6 +227,13 @@ def clf_risk_factor_analysis(model, cols, nof, variable):
         '''
         number = classes[class_idx]
         unencoded = encoding(number, variable)
+        unencoded = "Category: " + unencoded
+        empty_cell = [{"Rank": "",
+                    "Factor": "", "Absolute Weight": "", "Sign": ""}]
+        if class_idx != 0:
+            rfa_tab += empty_cell
+            rfa_tab += empty_cell
+            rfa_tab += empty_cell           
         rfa_tab += [{"Rank": unencoded,
                      "Factor": "", "Absolute Weight": "", "Sign": ""}]
         try:
