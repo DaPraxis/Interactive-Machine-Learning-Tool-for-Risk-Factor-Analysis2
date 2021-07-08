@@ -171,8 +171,8 @@ def encoding(number, variable):
     string = "SAS Variable Name: " + variable
     for i in range(len(lines)):
         if string in lines[i]:
-            for j in range(i, i+10):
-                if "Yes" in lines[j] and '“Yes”' not in lines[j]: #this means this is a case where there is only 1,2,7,9    such as HIVTST6 or CHCKDNY1
+            for j in range(i, i+8):
+                if "Yes" in lines[j] and '“Yes”' not in lines[j] and "´Yes´" not in lines[j]: #this means this is a case where there is only 1,2,7,9    such as HIVTST6 or CHCKDNY1 or CVDINFR4
                     if number == 1:
                         output = lines[j]
                     elif number == 2:
@@ -186,9 +186,9 @@ def encoding(number, variable):
                     elif "—" in output:
                         idx = output.find("—")
                         return output[:idx]
-            #now in this case, this is a case where it's not only 1,2,7,9      such as PERSDOC2
+            #now in this case, this is a case where it's not only 1,2,7,9      such as PERSDOC2 or DIABETE3 
             for a in range(i, i+20):
-                if "Yes" in lines[a]:
+                if "Yes" in lines[a] and '“Yes”' not in lines[a] and "´Yes´" not in lines[a]:
                     numbers = []
                     for k in range(i, i+20):
                         if lines[k][0].isdigit() == True:
