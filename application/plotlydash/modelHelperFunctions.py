@@ -141,7 +141,7 @@ def confusion_matrix_heatmap(y_true, y_pred):
 '''
 def confusion_matrix_heatmap(y_true, y_pred):
     cfn_matrix = confusion_matrix(y_true, y_pred)
-    heatmap = sns.heatmap(cfn_matrix)
+    heatmap = sns.heatmap(cfn_matrix, annot=True)
     plt.savefig('heatmap.png')
     plt.clf()
     return 'heatmap.png'
