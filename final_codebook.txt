@@ -6103,13 +6103,9 @@ Question Prologue:
 Question:  Adults who reported having had at least one drink of alcohol in the past 30 days. 
 Weighted 
 Yes 
-Notes: 1 <= ALCDAY5 <= 231 
 No 
-Notes: ALCDAY5=888 
 Don’t know/Not Sure 
-Notes: ALCDAY5=777 
 Refused/Missing 
-Notes: ALCDAY5=999, Missing 
 Label: Computed drink-occasions-per-day 
 Section Name: Calculated Variables 
 Module Section Number: 10 
@@ -6597,15 +6593,9 @@ SAS Variable Name: _AIDTST3
 Question Prologue: 
 Question:  Adults who have ever been tested for HIV 
 Yes 
-Notes: HIVTST6 = 1 
 No 
-Notes: HIVTST6 = 2 
-1 
-2 
-9 
 Don’t know/Not Sure/Refused 
-Notes: HIVTST6 = 7 or 9 
-Not asked or missing 
+Don't know/Not Sure/Refused
 Notes: HIVTST6 = Missing 
 Weighted 
 . 

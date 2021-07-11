@@ -166,6 +166,77 @@ def reg_risk_factor_analysis(model, cols, nof):
              "Absolute Weight": round(sort_coef[i], 5), "Sign": sign[sort_index[i]]} for i in range(nof)]
 
 def encoding(number, variable):
+    if variable == "_RFHLTH":
+        dict = {1:"Good or Better Health", 2: "Fair or Poor Health", 9: "Don't know/Not Sure or Refused/Missing"}
+        return dict[number]
+    if variable == "_PHYS14D":
+        dict = {1:"Zero days when physical health not good", 2: "1-13 days when physical health not good", 3: "14+ days when physical health not good", 9: "Don't know/Refused/Missing"}
+        return dict[number]
+    if variable == "_MENT14D":
+        dict = {1:"Zero days when mental health not good", 2: "1-13 days when mental health not good", 3: "14+ days when mental health not good", 9: "Don't know/Refused/Missing"}
+        return dict[number]
+    if variable == "_HCVU651":
+        dict = {1: "Have health care coverage", 2: "Do not have health care coverage", 9: "Don't know/Not Sure, Refused or Missing"}
+        return dict[number]
+    if variable == "_TOTINDA":
+        dict = {1: "Had physical activity or exercise", 2: "No physical activity or exercise in last 30 days", 9: "Don't know/Reefused/Missing"}
+        return dict[number]
+    if variable == "_MICHD":
+        dict = {1: "Reported having MI or CHD", 2: "Did not report having MI or CHD"}
+        return dict[number]
+    if variable == "_LTASTH1" or variable == "_CASTHM1":
+        dict = {1: "No", 2: "Yes", 9: "Don't know/Not Sure or Refused/Missing"}
+        return dict[number]
+    if variable == "_ASTHMS1":
+        dict = {1: "Current", 2: "Former", 3: "Never", 9: "Don't know/Not Sure or Refused/Missing"}
+        return dict[number]
+    if variable == "_DRDXAR1":
+        dict = {1: "Diagnosed with arthiritis", 2: "Not diagnosed with arthritis"}
+        return dict[number]
+    if variable == "_EXTETH3":
+        dict = {1: "Not at risk", 2: "At risk", 9: "Don't know/Not Sure or Refused/Missing"}
+        return dict[number]
+    if variable == "_DENVST3":
+        dict = {1: "Yes", 2: "No", 9: "Don't know/Not Sure or Refused/Missing"}
+        return dict[number]
+    if variable == "_AGE65YR":
+        dict = {1: "Age 18 to 64", 2: "Age 65 or older", 3: "Don't Know/Refused/Missing"}
+        return dict[number]
+    if variable == "_BMI5CAT":
+        dict = {1: "Underweight", 2: "Normal Weight", 3: "Overweight", 4: "Obese"}
+        return dict[number]
+    if variable == "_RFBMI5":
+        dict = {1: "No", 2: "Yes", 9: "Don't Know/Refused/Missing"}
+        return dict[number]
+    if variable == "_EDUCAG":
+        dict = {1: "Did not graduate High School", 2: "Graduated High School", 3: "Attended College or Technical School", 4: "Graduated from College or Technical School", 9: "Don't know/Not Sure/Missing"}
+        return dict[number]
+    if variable == "_INCOMG":
+        dict = {1: "Less than $15,000", 2: "$15,000 to less than $25,000", 3: "$25,000 to less than $35,000", 4: "$35,000 to less than $50,000", 5: "$50,000 or more", 9: "Don’t know/Not sure/Missing"}
+        return dict[number]
+    if variable == "_SMOKER3":
+        dict = {1: "Current smoker - now smokes every day", 2: "Current smoker - now smokes some days", 3: "Former smoker", 4: "Never smoked", 9: "Don’t know/Refused/Missing"}
+        return dict[number]
+    if variable == "_RFSMOK3":
+        dict = {1: "No", 2: "Yes", 9: "Don’t know/Refused/Missing"}
+        return dict[number]
+    if variable == "_RFBING5":
+        dict = {1: "No", 2: "Yes", 9: "Don’t know/Refused/Missing"}
+        return dict[number]
+    if variable == "_RFDRHV6":
+        dict = {1: "No", 2: "Yes", 9: "Don’t know/Refused/Missing"}
+        return dict[number]
+    if variable == "_RFSEAT2":
+        dict = {1: "Always or Almost Always Wear Seat Belt", 2: "Sometimes, Seldom, or Never Wear Seat Belt", 9: "Don't Know/Not Sure or Refused/Missing"}
+        return dict[number]
+    if variable == "_RFSEAT3":
+        dict = {1: "Always Wear Seat Belt", 2: "Don't Always Wear Seat Belt", 9: "Don't know/Not Sure or Refused/Missing"}
+        return dict[number]
+    if variable == "_DRNKDRV":
+        dict = {1: "Have driven after having too much to drink", 2: "Have not driven after having too much to drink", 9: "Don't know/Not Sure/Refused/Missing"}
+        return dict[number]
+    
+    
     f = open("final_codebook.txt", "r", encoding="utf-8")
     lines = f.readlines()
     string = "SAS Variable Name: " + variable
