@@ -199,14 +199,23 @@ def encoding(number, variable):
     if variable == "_DENVST3":
         dict = {1: "Yes", 2: "No", 9: "Don't know/Not Sure or Refused/Missing"}
         return dict[number]
+    if variable == "_AGEG5YR":
+        dict = {1: "Age 18 to 24", 2: "Age 25 to 29", 3: "Age 30 to 34", 4: "Age 35 to 39", 5: "Age 40 to 44", 6: "Age 45 to 49", 7: "Age 50 to 54", 8: "Age 55 to 59", 9: "Age 60 to 64", 10: "Age 65 to 69", 11: "Age 70 to 74", 12: "Age 75 to 79", 13: "Age 80 or older", 14: "Don't know/Refused/Missing"}
+        return dict[number]
     if variable == "_AGE65YR":
         dict = {1: "Age 18 to 64", 2: "Age 65 or older", 3: "Don't Know/Refused/Missing"}
+        return dict[number]
+    if variable == "_AGE_G":
+        dict = {1: "Age 18 to 24", 2: "Age 25 to 34", 3: "Age 35 to 44", 4: "Age 45 to 54", 5: "Age 55 to 64", 6: "Age 65 or older"}
         return dict[number]
     if variable == "_BMI5CAT":
         dict = {1: "Underweight", 2: "Normal Weight", 3: "Overweight", 4: "Obese"}
         return dict[number]
     if variable == "_RFBMI5":
         dict = {1: "No", 2: "Yes", 9: "Don't Know/Refused/Missing"}
+        return dict[number]
+    if variable == "_CHLDCNT":
+        dict = {1: "No children in household", 2: "One child in household", 3: "Two children in household", 4: "Three children in household", 5: "Four children in household", 6: "Five or more children in household"}
         return dict[number]
     if variable == "_EDUCAG":
         dict = {1: "Did not graduate High School", 2: "Graduated High School", 3: "Attended College or Technical School", 4: "Graduated from College or Technical School", 9: "Don't know/Not Sure/Missing"}
