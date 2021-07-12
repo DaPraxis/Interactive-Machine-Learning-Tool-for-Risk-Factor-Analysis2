@@ -235,6 +235,71 @@ def encoding(number, variable):
     if variable == "_DRNKDRV":
         dict = {1: "Have driven after having too much to drink", 2: "Have not driven after having too much to drink", 9: "Don't know/Not Sure/Refused/Missing"}
         return dict[number]
+    if variable == "CHECKUP1":
+        dict = {1: "Within past year", 2: "Within past 2 years", 3: "Within past 5 years", 4: "5 or more years ago", 7: "Don't know/Not sure", 8: "Never", 9: "Refused"}
+        return dict[number]
+    if variable == "LASTDEN4":
+        dict = {1: "Within the past year", 2: "Within the past 2 years", 3: "Within the past 5 years", 4: "5 or more years ago", 7: "Don't Know/Not sure", 8: "Never", 9: "Refused"}
+        return dict[number]
+    if variable == "RMVTETH4":
+        dict = {1: "1 to 5", 2: "6 or more, but not all", 3: "All", 7: "Don't know/Not sure", 8: "None", 9: "Refused"}
+        return dict[number]
+    if variable == "GENHLTH":
+        dict = {1: "Excellent", 2: "Very good", 3: "Good", 4: "Fair", 5: "Poor", 7: "Don't know/Not sure", 9: "Refused"}
+        return dict[number]
+    if variable == "USENOW3":
+        dict = {1: "Every day", 2: "Some days", 3: "Not at all", 7: "Don't know/Not sure", 9: "Refused"}
+        return dict[number]
+    if variable == "_METSTAT":
+        dict = {1: "Metropolitan counties", 2: "Nonmetropolitan counties"}
+        return dict[number]
+    if variable == "_URBSTAT":
+        dict = {1: "Urban counties", 2: "Rural counties"}
+    if variable == "_IMPRACE":
+        dict = {1: "White, Non-Hispanic", 2: "Black, Non-Hispanic", 3: "Asian, Non-Hispanic", 4: "American Indian/Alaskan Native, Non-Hispanic", 5: "Hispanic", 6: "Other race, Non-Hispanic"}
+        return dict[number]
+    if variable == "_DUALUSE":
+        dict = {1: "Landline frame with a cell phone", 2: "Cell phone frame with a landline", 9: "No dual phone use"}
+        return dict[number]
+    if variable == "SEATBELT":
+        dict = {1: "Always", 2: "Nearly always", 3: "Sometimes", 4: "Seldom", 5: "Never", 7: "Don't know/Not sure", 8: "Never drive or ride in a car", 9: "Refused"}
+        return dict[number]
+    if variable == "_PRACE1":
+        dict = {1: "White", 2: "Black or African American", 3: "American Indian or Alaskan Native", 4: "Asian", 5: "Native Hawaiian or other Pacific Islander", 6: "Other race", 7: "No preferred race", 77: "Don't know/Not sure", 99: "Refused"}
+        return dict[number]
+    if variable == "_MRACE1":
+        dict = {1: "White only", 2: "Black or African American only", 3: "American Indian or Alaskan Native only", 4: "Asian only", 5: "Native Hawaiian or other Pacific Islander only", 6: "Other race only", 7: "Multiracial", 77: "Don't know/not sure", 99: "Refused"}
+        return dict[number]
+    if variable == "_HISPANC":
+        dict = {1: "Hispanic, Latino/a, or Spanish origin", 2: "Not of Hispanic, Latino/a, or Spanish origin", 9: "Don't know, Refused or Missing"}
+        return dict[number]
+    if variable == "_RACE":
+        dict = {1: "White only, non-Hispanic", 2: "Black only, non-Hispanic", 3: "American Indian or Alaskan Native only, non-Hispanic", 4: "Asian only, non-Hispanic", 5: "Native Hawaiian or other Pacific Islander only, Non-Hispanic", 6: "Other race only, non-Hispanic", 7: "Multiracial, non-Hispanic", 8: "Hispanic", 9: "Don't know/Not sure/Refused"}
+        return dict[number]
+    if variable == "_RACEG21": 
+        dict = {1: "Non-Hispanic White", 2: "Non-White or Hispanic", 9: "Don't know/Not sure/Refused"}
+        return dict[number]
+    if variable == "_RACEGR3":
+        dict = {1: "White only, Non-Hispanic", 2: "Black only, Non-Hispanic", 3: "Other race only, Non-Hispanic", 4: "Multiracial, non-Hispanic", 5: "Hispanic", 9: "Don't know/Not sure/Refused"}
+        return dict[number]
+    if variable == "_RACE_G1":
+        dict = {1: "White - Non-Hispanic", 2: "Black - Non-Hispanic", 3: "Hispanic", 4: "Other race only, non-Hispanic", 5: "Multiracial, non-Hispanic"}
+        return dict[number]
+    if variable == "MARITAL":
+        dict = {1: "Married", 2: "Divorced", 3: "Widowed", 4: "Separated", 5: "Never married", 6: "A member of an unmarried couple", 9: "Refused"}
+        return dict[number]
+    if variable == "EDUCA":
+        dict = {1: "Never attended school or only kindergarten", 2: "Grades 1 through 8 (elementary)", 3: "Grades 9 through 11 (some high school)", 4: "Grade 12 or GED (high school graduate)", 5: "College 1 year to 3 years (some college or technical school)", 6: "College 4 years or more (college graduate)", 9: "Refused"}
+        return dict[number]
+    if variable == "RENTHOM1":
+        dict = {1: "Own", 2: "Rent", 3: "Other arrangment", 7: "Don't know/not sure", 9: "Refused"}
+        return dict[number]
+    if variable == "EMPLOY1":
+        dict = {1: "Emplyed for wages", 2: "Self-employed", 3: "Out of work for 1 year or more", 4: "Out of work for less than 1 year", 5: "A homemaker", 6: "A Student", 7: "Retired", 8: "Unable to work", 9: "Refused"}
+        return dict[number]
+    if variable == "INCOME2":
+        dict = {1: "Less than $10,000", 2: "Less than $15,000 ($10,000 to less than $15,000)", 3: "Less than $20,000 ($15,000 to less than $20,000)", 4: "Less than $25,000 ($20,000 to less than $25,000)", 5: "Less than $35,000 ($25,000 to less than $35,000)", 6: "Less than $50,000 ($35,000 to less than $50,000)", 7: "Less than $75,000 ($50,000 to less than $75,000)", 8: " $75,000 or more", 77: "Don't know/ not sure", 99: "Refused"}
+        return dict[number]
     
     
     f = open("final_codebook.txt", "r", encoding="utf-8")

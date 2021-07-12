@@ -958,6 +958,8 @@ Type of Variable: Num
 SAS Variable Name: CHCOCNCR 
 Question Prologue: 
 Question:  (Ever told) you had any other types of cancer? 
+Yes
+No
 Don’t know / Not sure 
 Refused 
 . 
@@ -972,6 +974,8 @@ Type of Variable: Num
 SAS Variable Name: CHCCOPD1 
 Question Prologue: 
 Question:  (Ever told) you have chronic obstructive pulmonary disease, C.O.P.D., emphysema or chronic bronchitis? 
+Yes
+No
 Don’t know / Not sure 
 Refused 
 . 
@@ -1058,10 +1062,8 @@ pregnant?´. If Respondent says pre-diabetes or borderline diabetes, use respons
 9 
 Yes 
 Yes, but female told only during pregnancy—Go to 
-Section 07.01 LASTDEN4 
 No—Go to Section 07.01 LASTDEN4 
 No, pre-diabetes or borderline diabetes—Go to 
-Section 07.01 LASTDEN4 
 Don’t know/Not Sure—Go to Section 07.01 LASTDEN4 
 Refused—Go to Section 07.01 LASTDEN4 
 . 
