@@ -65,7 +65,7 @@ REG_CRITERION = ['Index', 'Label', 'Model', 'Penalty', 'MAE', 'MSE']
 CLASSIFICATION_LIST = ["Logistic", "LDA"]
 #CLF_CRITERION = ["Index", "Label", "Model", "Penalty", "Accuracy", "ROC_AUC score", "Precision", "Recall", "F1-Score"]
 CLF_CRITERION = ["Index", "Label", "Model", "Penalty",
-                 "Accuracy", "Precision", "Recall", "F1-Score"]
+                 "Accuracy"]
 
 var_info = load_info_dict(VAR_PATH)
 section_info = load_info_dict(SECTION_PATH)
@@ -449,21 +449,42 @@ def dataDownload(server):
                 #cfn_matrix = model_res[5]
                 heatmap_filename = model_res[-1]
                 encoded_image = base64.b64encode(open(heatmap_filename, 'rb').read())
-                res = clf_risk_factor_analysis(model, col_names, num_of_factor, label)
+                res = clf_risk_factor_analysis(model, col_names, num_of_factor, label)[0]
+                table_columns = []
+                categories = clf_risk_factor_analysis(model, col_names, num_of_factor, label)[1]
+                table_columns.append(categories) #categories (yes, no, etc.)
+                table_columns.append(model_res[2]) #precision
+                table_columns.append(model_res[3]) #recall
+                table_columns.append(model_res[4]) #f1
+                CLF_CRITERION2 = ["Category", "Precision", "Recall", "F1"]
+                print (table_columns)
                 performance_layout = html.Div(
+                    #html.Div(
+                    #    dash_table.DataTable(
+                    #        id="clf_table",
+                    #        columns=[{'name': val, 'id': val}
+                    #                 for val in CLF_CRITERION[1:]],
+                    #        #data=[{"Label": label, 'Model': model_type, "Penalty": penalty, "Accuracy": round(model_res[1], 5),
+                    #        #       "Precision":round(model_res[2], 5), "Recall":round(model_res[3], 5), "F1-Score":round(model_res[4], 5)}],
+                    #        data=[{"Label": label, 'Model': model_type, "Penalty": penalty, "Accuracy": model_res[1]}],
+                    #        style_cell={
+                    #            'height': 'auto',
+                    #            'textAlign': 'right'
+                    #            # all three widths are needed
+                    #            # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                    #            # 'whiteSpace': 'normal'
+                    #        }
+                    #    )
+                    #),
                     html.Div(
                         dash_table.DataTable(
                             id="clf_table",
-                            columns=[{'name': val, 'id': val}
-                                     for val in CLF_CRITERION[1:]],
-                            data=[{"Label": label, 'Model': model_type, "Penalty": penalty, "Accuracy": round(model_res[1], 5),
-                                   "Precision":round(model_res[2], 5), "Recall":round(model_res[3], 5), "F1-Score":round(model_res[4], 5)}],
-                            style_cell={
-                                'height': 'auto',
-                                'textAlign': 'right'
-                                # all three widths are needed
-                                # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
-                                # 'whiteSpace': 'normal'
+                            columns = [{'name' : val, 'id' : val}
+                                    for val in CLF_CRITERION2],
+                            data = [{"Category" : table_columns[0], "Precision" : table_columns[1], "Recall" : table_columns[2], "F1" : table_columns[3]}],
+                            style_cell = {
+                                'height' : 'auto',
+                                'textAllign' : 'right'
                             }
                         )
                     )
@@ -584,8 +605,7 @@ def dataDownload(server):
                 return layout, reg_data + [{"Index": len(reg_data)+1, "Label": label, 'Model': model_type, 'Penalty': penalty, 'MAE': round(model_res[1], 5), 'MSE':round(model_res[2], 5),
                                             }], clf_data
             elif task_type == "Classification":
-                return layout, reg_data, clf_data + [{"Index": len(clf_data)+1, "Label": label, 'Model': model_type, "Penalty": penalty, "Accuracy": round(model_res[1], 5),
-                                                      "Precision":round(model_res[2], 5), "Recall":round(model_res[3], 5), "F1-Score":round(model_res[4], 5)}]
+                return layout, reg_data, clf_data + [{"Index": len(clf_data)+1, "Label": label, 'Model': model_type, "Penalty": penalty, "Accuracy": model_res[1]}]
             else:
                 return [], reg_data, clf_data
         else:

@@ -1,10 +1,11 @@
 import ast
 import numpy as np
+from numpy.lib.function_base import percentile
 import pandas as pd
 from sklearn.linear_model import LinearRegression, Lasso, Ridge, LassoLars, ElasticNet, BayesianRidge, LogisticRegression
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-from sklearn.metrics import roc_auc_score, accuracy_score, precision_score, recall_score, f1_score, log_loss
+from sklearn.metrics import roc_auc_score, accuracy_score, precision_score, recall_score, f1_score, log_loss, precision_recall_fscore_support
 from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -65,10 +66,12 @@ def classification_performance(y_true, y_pred):
         Accuracy, ROC_AUC score, Precision, Recall, F1-Score
     """
     accuracy = accuracy_score(y_true, y_pred)
-    precision = precision_score(y_true, y_pred, average="micro")
-    recall = recall_score(y_true, y_pred, average="micro")
-    f1 = f1_score(y_true, y_pred, average="micro")
-
+    precision = list(precision_score(y_true, y_pred, average = None))    #first column (actually the first one is the categories one)
+    recall = list(recall_score(y_true, y_pred, average = None))   #second column
+    f1 = list(f1_score(y_true, y_pred, average = None))    #third column
+    #metrics = precision_recall_fscore_support(y_true, y_pred)
+    #print (metrics)
+    #column_0 will be the categories like yes, no, etc.
     return accuracy, precision, recall, f1
 
 
@@ -361,6 +364,7 @@ def clf_risk_factor_analysis(model, cols, nof, variable):
     classes = model.classes_
     rfa_tab = []
     class_idx = 0
+    categories = []
     for lst in model.coef_:
         sign = np.where(np.array(lst) > 0, '+', '-').tolist()
         sort_coef = sorted(np.abs(lst), reverse=True)
@@ -372,6 +376,8 @@ def clf_risk_factor_analysis(model, cols, nof, variable):
         '''
         number = classes[class_idx]
         unencoded = encoding(number, variable)
+        unencoded = unencoded.rstrip('\n')
+        categories.append(unencoded)
         unencoded = "Category: " + unencoded
         empty_cell = [{"Rank": "",
                     "Factor": "", "Absolute Weight": "", "Sign": ""}]
@@ -387,4 +393,4 @@ def clf_risk_factor_analysis(model, cols, nof, variable):
         except AttributeError:
             print("Variable info error")
         class_idx += 1
-    return rfa_tab
+    return rfa_tab, categories
