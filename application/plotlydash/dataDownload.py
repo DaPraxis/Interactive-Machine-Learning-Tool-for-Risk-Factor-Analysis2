@@ -456,8 +456,18 @@ def dataDownload(server):
                 table_columns.append(model_res[2]) #precision
                 table_columns.append(model_res[3]) #recall
                 table_columns.append(model_res[4]) #f1
-                CLF_CRITERION2 = ["Category", "Precision", "Recall", "F1"]
-                print (table_columns)
+                accuracy_column = [model_res[1]] * len(table_columns[1])
+                table_columns.append(accuracy_column)
+                #print (accuracy_column)
+                CLF_CRITERION2 = ["Category", "Precision", "Recall", "F1", "Accuracy"]
+                #print (table_columns)
+                if len(table_columns[0]) == len(table_columns[1]) + 1:
+                    table_columns[0] = table_columns[0][:-1]
+                elif len(table_columns[0]) == len(table_columns[1]) + 2:
+                    table_columns[0] = table_columns[0][:-2]
+                table_dict = {"Category" : table_columns[0], "Precision" : table_columns[1], "Recall" : table_columns[2], "F1": table_columns[3], "Accuracy" : table_columns[4]}
+                table_df = pd.DataFrame(table_dict)
+                #print (table_df)
                 performance_layout = html.Div(
                     #html.Div(
                     #    dash_table.DataTable(
@@ -481,10 +491,10 @@ def dataDownload(server):
                             id="clf_table",
                             columns = [{'name' : val, 'id' : val}
                                     for val in CLF_CRITERION2],
-                            data = [{"Category" : table_columns[0], "Precision" : table_columns[1], "Recall" : table_columns[2], "F1" : table_columns[3]}],
+                            data = table_df.to_dict('records'),
                             style_cell = {
                                 'height' : 'auto',
-                                'textAllign' : 'right'
+                                'textAllign' : 'right',
                             }
                         )
                     )
