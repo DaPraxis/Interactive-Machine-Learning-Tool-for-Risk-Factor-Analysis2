@@ -65,13 +65,16 @@ def classification_performance(y_true, y_pred):
     Returns:
         Accuracy, ROC_AUC score, Precision, Recall, F1-Score
     """
-    accuracy = accuracy_score(y_true, y_pred)
+    accuracy = round(accuracy_score(y_true, y_pred), 4)
     precision = list(precision_score(y_true, y_pred, average = None))    #first column (actually the first one is the categories one)
+    for a in range(len(precision)):
+        precision[a] = round(precision[a], 4)
     recall = list(recall_score(y_true, y_pred, average = None))   #second column
+    for b in range(len(recall)):
+        recall[b] = round(recall[b], 4)
     f1 = list(f1_score(y_true, y_pred, average = None))    #third column
-    #metrics = precision_recall_fscore_support(y_true, y_pred)
-    #print (metrics)
-    #column_0 will be the categories like yes, no, etc.
+    for c in range(len(f1)):
+        f1[c] = round(f1[c], 4)
     return accuracy, precision, recall, f1
 
 

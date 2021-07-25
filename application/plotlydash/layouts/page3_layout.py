@@ -19,9 +19,9 @@ REGRESSON_LIST = ["Linear", "Lasso", "Ridge",
 REG_CRITERION = ['Index', 'Label', 'Model', 'Penalty', 'MAE', 'MSE']
 CLASSIFICATION_LIST = ["Logistic", "LDA"]
 #CLF_CRITERION = ["Index", "Label", "Model", "Penalty", "Accuracy", "ROC_AUC score", "Precision", "Recall", "F1-Score"]
-CLF_CRITERION = ["Index", "Label", "Model", "Penalty",
-                 "Accuracy", "Precision", "Recall", "F1-Score"]
-
+#CLF_CRITERION = ["Index", "Label", "Model", "Penalty",
+#                 "Accuracy", "Precision", "Recall", "F1-Score"]
+CLF_CRITERION = ["Index", "Label", "Model", "Penalty"]
 
 def load_info_dict(file):
     f = open(file, 'r')

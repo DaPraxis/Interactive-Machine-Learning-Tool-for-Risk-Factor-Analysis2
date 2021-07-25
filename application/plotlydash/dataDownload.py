@@ -265,13 +265,13 @@ def dataDownload(server):
                             placeholder="Select First Feature",
                             # value='features'
                         ),
-                        #dcc.Dropdown(
-                        #    id = 'dropdown2',
-                        #    options = [
-                        #        {'label': i, 'value' : i} for i in dictionary_name[key]
-                        #    ],
-                        #    placeholder="Select Second Feature",
-                        #),
+                        dcc.Dropdown(
+                            id = 'dropdown2',
+                            options = [
+                                {'label': i, 'value' : i} for i in dictionary_name[key]
+                            ],
+                            placeholder="Select Second Feature",
+                        ),
                         html.Div(id='single_commands'),
                     ])
                     return return_div
@@ -288,7 +288,7 @@ def dataDownload(server):
                 result.append('{}:{}'.format(key, values))
             div = html.Div([
                 html.Div([
-                    html.H3('Feature Informatation')
+                    html.H3('First Feature Informatation')
                 ]),
                 html.Div([
                     html.Ul([html.Li(x) for x in result])
@@ -315,7 +315,7 @@ def dataDownload(server):
 
             div = html.Div([
                 html.Div([
-                    html.H3('Feature Statistics')
+                    html.H3('First Feature Statistics')
                 ]),
                 html.Div([
                     html.Ul([html.Li(x) for x in result])
