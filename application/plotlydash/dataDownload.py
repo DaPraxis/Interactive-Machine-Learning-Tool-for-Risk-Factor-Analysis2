@@ -252,6 +252,11 @@ def dataDownload(server):
     @app.callback(dash.dependencies.Output('dropdown_content', 'children'),
                        [dash.dependencies.Input('dropdown_section_name', 'value')])
     def render_tab_preparation_multiple_dropdown(value):
+        #print (dictionary_name)
+        all_vals = []
+        for i in dictionary_name.values():
+            for j in i:
+                all_vals.append(j)
         if value:
             for key in dictionary_name:
                 if key == value:
@@ -268,7 +273,7 @@ def dataDownload(server):
                         dcc.Dropdown(
                             id = 'dropdown2',
                             options = [
-                                {'label': i, 'value' : i} for i in dictionary_name[key]
+                                {'label': i, 'value' : i} for i in all_vals
                             ],
                             placeholder="Select Second Feature",
                         ),

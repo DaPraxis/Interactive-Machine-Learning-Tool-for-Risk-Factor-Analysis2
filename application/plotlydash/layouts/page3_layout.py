@@ -249,6 +249,8 @@ layout3 = html.Div(
                                                     }
                                                 )
                                             ),
+                                            html.Summary(
+                                                "Performance Table"),
                                         ]
                                     )
                                 ]),

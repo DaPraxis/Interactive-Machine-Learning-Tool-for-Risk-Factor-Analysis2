@@ -88,7 +88,7 @@ server_layout = html.Div(children =[
                            {'label': i, 'value': i} for i in dictionary_name
 
                        ],
-                       placeholder="Select Section",
+                       placeholder="Select Section For First Feature",
                     #    value='features'
                    ),
                    html.Div(id='dropdown_content'),
