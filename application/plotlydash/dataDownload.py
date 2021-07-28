@@ -270,18 +270,42 @@ def dataDownload(server):
                             placeholder="Select First Feature",
                             # value='features'
                         ),
-                        dcc.Dropdown(
-                            id = 'dropdown2',
-                            options = [
-                                {'label': i, 'value' : i} for i in all_vals
-                            ],
-                            placeholder="Select Second Feature",
-                        ),
+                        #dcc.Dropdown(
+                        #    id = 'dropdown2',
+                        #    options = [
+                        #        {'label': i, 'value' : i} for i in all_vals
+                        #    ],
+                        #    placeholder="Select Second Feature",
+                        #),
                         html.Div(id='single_commands'),
                     ])
                     return return_div
         else:
             raise PreventUpdate
+
+
+    '''
+    @app.callback(dash.dependencies.Output('dropdown_content', 'children'),
+                       [dash.dependencies.Input('dropdown_section_name', 'value2')])
+    def render_tab_preparation_multiple_dropdown2(value2):
+        all_vals = []
+        for i in dictionary_name.values():
+            for j in i:
+                all_vals.append(j)
+        return_div = html.Div([
+            html.Br(),
+            dcc.Dropdown(
+                id = 'dropdown2',
+                options = [
+                    {'label': i, 'value' : i} for i in all_vals
+                ],
+                placeholder="Select Second Feature",
+            ),
+            html.Div(id='single_commands2'),
+        ])
+        return return_div
+    '''
+
 
     @app.callback(
         dash.dependencies.Output('dd-notice', 'children'),

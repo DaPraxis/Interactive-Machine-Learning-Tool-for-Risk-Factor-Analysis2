@@ -249,8 +249,9 @@ layout3 = html.Div(
                                                     }
                                                 )
                                             ),
-                                            html.Summary(
-                                                "Performance Table"),
+                                            html.Details([
+                                                    html.Summary("Performance Table")])
+                                            ########## ADD THE performance_layout TABLE HERE SOMEHOW########
                                         ]
                                     )
                                 ]),
