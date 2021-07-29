@@ -21,7 +21,7 @@ CLASSIFICATION_LIST = ["Logistic", "LDA"]
 #CLF_CRITERION = ["Index", "Label", "Model", "Penalty", "Accuracy", "ROC_AUC score", "Precision", "Recall", "F1-Score"]
 #CLF_CRITERION = ["Index", "Label", "Model", "Penalty",
 #                 "Accuracy", "Precision", "Recall", "F1-Score"]
-CLF_CRITERION = ["Index", "Label", "Model", "Penalty"]
+CLF_CRITERION = ["Index", "Label", "Model", "Penalty", "Accuracy"]
 
 def load_info_dict(file):
     f = open(file, 'r')
@@ -249,9 +249,9 @@ layout3 = html.Div(
                                                     }
                                                 )
                                             ),
-                                            html.Details([
-                                                    html.Summary("Performance Table")])
-                                            ########## ADD THE performance_layout TABLE HERE SOMEHOW########
+                                            #html.Details([
+                                            #        html.Summary("Performance Table")])
+                                            ########### ADD THE performance_layout TABLE HERE SOMEHOW########
                                         ]
                                     )
                                 ]),

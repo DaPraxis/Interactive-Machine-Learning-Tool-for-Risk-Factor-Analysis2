@@ -588,6 +588,35 @@ def dataDownload(server):
                         html.Label("Heatmap for the Confusion Matrix:"),
                         html.Img(src='data:image/png;base64,{}'.format(encoded_image.decode()))   #encoded_image does not exist for continous variables
                     ]),
+                    html.Div([
+                        html.Details([
+                            html.Summary("Performance of History Models"),
+                            html.Details([ 
+                                html.Summary("Performance Records for Classification Model"),
+                                html.Div(
+                                    dash_table.DataTable(
+                                        id="clf_rec",
+                                        columns=[{'name': val, 'id': val}
+                                                 for val in CLF_CRITERION],
+                                        data=[],
+                                        style_cell={
+                                            'height': 'auto',
+                                            'textAlign': 'right'
+                                            # all three widths are needed
+                                            # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                                            # 'minWidth': '100px', 'width': '120px', 'maxWidth': '240px',
+                                            # 'whiteSpace': 'normal'
+                                        }
+                                    )
+                                ),
+                                html.Details([
+                                    html.Summary("Performance Table"),
+                                    performance_layout])
+                            ])
+                        ])
+                    ])
+
+
 
                 ])
             elif task_type == "Regression":
