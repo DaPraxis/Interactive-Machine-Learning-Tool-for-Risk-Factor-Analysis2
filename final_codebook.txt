@@ -1,0 +1,6613 @@
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+November 21, 2019 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: State FIPS Code 
+Section Name: Record Identification 
+Section Number: 0 
+Question Number: 1 
+Column: 1-2 
+Type of Variable: Num 
+SAS Variable Name: _STATE 
+Question Prologue: 
+Question:  State FIPS Code 
+Weighted 
+District of Columbia 
+1 
+2 
+4 
+5 
+6 
+8 
+9 
+Alabama 
+Alaska 
+Arizona 
+Arkansas 
+California 
+Colorado 
+Connecticut 
+Delaware 
+Florida 
+Georgia 
+Hawaii 
+Idaho 
+Illinois 
+Indiana 
+Iowa 
+Kansas 
+Kentucky 
+Louisiana 
+Maine 
+Maryland 
+Massachusetts 
+Michigan 
+Minnesota 
+Mississippi 
+Missouri 
+Montana 
+Nebraska 
+Nevada 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Weighted 
+Label: State FIPS Code 
+Section Name: Record Identification 
+Section Number: 0 
+Question Number: 1 
+Column: 1-2 
+Type of Variable: Num 
+SAS Variable Name: _STATE 
+Question Prologue: 
+Question:  State FIPS Code 
+New Hampshire 
+New Jersey 
+New Mexico 
+New York 
+North Carolina 
+North Dakota 
+Ohio 
+Oklahoma 
+Oregon 
+Pennsylvania 
+Rhode Island 
+South Carolina 
+South Dakota 
+Tennessee 
+Texas 
+Utah 
+Vermont 
+Virginia 
+Washington 
+West Virginia 
+Wisconsin 
+Wyoming 
+Guam 
+Puerto Rico 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Weighted 
+Label: File Month 
+Section Name: Record Identification 
+Section Number: 0 
+Question Number: 8 
+Column: 17-18 
+Type of Variable: Num 
+SAS Variable Name: FMONTH 
+Question Prologue: 
+Question:  File Month 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+January 
+February 
+March 
+April 
+May 
+June 
+July 
+August 
+September 
+October 
+November 
+December 
+Label: Interview Date 
+Section Name: Record Identification 
+Section Number: 0 
+Question Number: 9 
+Column: 19-26 
+Type of Variable: Char 
+SAS Variable Name: IDATE 
+Question Prologue: 
+Question:  Interview Date 
+HIDDEN  Data not displayed 
+Weighted 
+Notes: Due to the nature of the data or the size 
+of the table for display, this data is not 
+printed for this report 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Interview Month 
+Section Name: Record Identification 
+Section Number: 0 
+Question Number: 10 
+Column: 19-20 
+Type of Variable: Char 
+SAS Variable Name: IMONTH 
+Question Prologue: 
+Question:  Interview Month 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+January 
+February 
+March 
+April 
+May 
+June 
+July 
+August 
+September 
+October 
+November 
+December 
+Weighted 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Interview Day 
+Section Name: Record Identification 
+Section Number: 0 
+Question Number: 11 
+Column: 21-22 
+Type of Variable: Char 
+SAS Variable Name: IDAY 
+Question Prologue: 
+Question:  Interview Day 
+Interview Day 
+Weighted 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Weighted 
+Weighted 
+Label: Interview Day 
+Section Name: Record Identification 
+Section Number: 0 
+Question Number: 11 
+Column: 21-22 
+Type of Variable: Char 
+SAS Variable Name: IDAY 
+Question Prologue: 
+Question:  Interview Day 
+Label: Interview Year 
+Section Name: Record Identification 
+Section Number: 0 
+Question Number: 12 
+Column: 23-26 
+Type of Variable: Char 
+SAS Variable Name: IYEAR 
+Question Prologue: 
+Question:  Interview Year 
+Label: Final Disposition 
+Section Name: Record Identification 
+Section Number: 0 
+Question Number: 14 
+Column: 32-35 
+Type of Variable: Num 
+SAS Variable Name: DISPCODE 
+Question Prologue: 
+Question:  Final Disposition 
+Completed Interview 
+Partial Complete Interview 
+Weighted 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Annual Sequence Number 
+Section Name: Record Identification 
+Section Number: 0 
+Question Number: 15 
+Column: 36-45 
+Type of Variable: Char 
+SAS Variable Name: SEQNO 
+Question Prologue: 
+Question:  Annual Sequence Number 
+HIDDEN  Data not displayed 
+Weighted 
+Label: Primary Sampling Unit 
+Section Name: Record Identification 
+Section Number: 0 
+Question Number: 16 
+Column: 36-45 
+Type of Variable: Num 
+SAS Variable Name: _PSU 
+Question Prologue: 
+Question:  Primary Sampling Unit (Equal to Annual Sequence Number) 
+HIDDEN  Data not displayed 
+Weighted 
+year. Due to the nature of the data or the size 
+of the table for display, this data is not 
+printed for this report 
+Label: Correct telephone number? 
+Section Name: Land Line Introduction 
+Section Number: 0 
+Question Number: 1 
+Column: 63 
+Type of Variable: Num 
+SAS Variable Name: CTELENM1 
+Question Prologue: Variable only on the land line survey 
+Question:  Is this     (phone number)     ? 
+1 
+Yes—Go to PVTRESD1 
+Weighted 
+Missing 
+Notes: QSTVER > = 20 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Private Residence? 
+Section Name: Land Line Introduction 
+Section Number: 0 
+Question Number: 2 
+Column: 64 
+Type of Variable: Num 
+SAS Variable Name: PVTRESD1 
+Question Prologue: Variable only on the land line survey 
+Question:    Is this a private residence?      [READ ONLY IF NECESSARY: “By private residence, we mean someplace like a 
+house or apartment.”] 
+Weighted 
+. 
+. 
+1 
+2 
+Yes—Go to STATERE1 
+No—Go to COLGHOUS 
+Missing 
+Notes: QSTVER >= 20 
+Label: Do you live in college housing? 
+Section Name: Land Line Introduction 
+Section Number: 0 
+Question Number: 3 
+Column: 65 
+Type of Variable: Num 
+SAS Variable Name: COLGHOUS 
+Question Prologue: Variable only on the land line survey 
+Question:  Do you live in college housing? 
+1 
+Yes—Go to STATERE1 
+Missing 
+Notes: QSTVER >= 20; or PVTRESD1=1 
+. 
+. 
+Weighted 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Resident of State 
+Section Name: Land Line Introduction 
+Section Number: 0 
+Question Number: 4 
+Column: 66 
+Type of Variable: Num 
+SAS Variable Name: STATERE1 
+Question Prologue: Variable only on the land line survey 
+Question:  Do you currently live in  ____(state)____? 
+1 
+Yes—Go to CELLFON4 
+Weighted 
+Notes: QSTVER >= 20 
+. 
+. 
+Label: Cellular Telephone 
+Section Name: Land Line Introduction 
+Section Number: 0 
+Question Number: 5 
+Column: 67 
+Type of Variable: Num 
+SAS Variable Name: CELLFON4 
+Question Prologue: Variable only on the land line survey 
+Question:    Is this a cell telephone?    (Telephone service over the internet counts as landline service (includes Vonage, 
+Magic Jack and other home-based phone services).)[Read only if necessary: “By cellular (or cell) telephone we mean a 
+telephone that is mobile and usable outside of your neighborhood.”] 
+1 
+Not a cell phone—Go to LADULT 
+Weighted 
+Notes: QSTVER >= 20 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Are you 18 years of age or older? 
+Section Name: Land Line Introduction 
+Section Number: 0 
+Question Number: 6 
+Column: 68 
+Type of Variable: Num 
+SAS Variable Name: LADULT 
+Question Prologue: Variable only on the land line survey 
+Question:  Are you 18 years of age or older? 
+Weighted 
+1 
+2 
+Yes, Male Respondent—Go to Survey Introduction 
+Yes, Female Respondent—Go to Survey 
+Introduction 
+Missing 
+Notes: QSTVER >= 20; or COLGHOUS is missing; 
+. 
+. 
+Label: Number of Adults in Household 
+Section Name: Land Line Introduction 
+Section Number: 0 
+Question Number: 7 
+Column: 69-70 
+Type of Variable: Num 
+SAS Variable Name: NUMADULT 
+Question Prologue: Variable only on the land line survey 
+Question:    I need to randomly select one adult who lives in your household to be interviewed. Excluding adults living away 
+from home, such as students away at college, how many members of your household, including yourself, are 18 years of 
+age or older? 
+1 
+2 
+3 
+4 
+5 
+Number of adults in the household 
+Number of adults in the household 
+Number of adults in the household 
+Number of adults in the household 
+Number of adults in the household 
+Missing 
+Notes: QSTVER >= 20 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Number of Adult men in Household 
+Section Name: Land Line Introduction 
+Section Number: 0 
+Question Number: 8 
+Column: 71-72 
+Type of Variable: Num 
+SAS Variable Name: NUMMEN 
+Question Prologue: Variable only on the land line survey 
+Question:  How many of these adults are men? 
+0 
+1 
+2 
+3 
+4 
+5 
+Number of adult men in the household 
+Number of adult men in the household 
+Number of adult men in the household 
+Number of adult men in the household 
+Number of adult men in the household 
+Number of adult men in the household 
+Missing 
+Notes: QSTVER >= 20 
+. 
+Weighted 
+. 
+Label: Number of Adult women in Household 
+Section Name: Land Line Introduction 
+Section Number: 0 
+Question Number: 9 
+Column: 73-74 
+Type of Variable: Num 
+SAS Variable Name: NUMWOMEN 
+Question Prologue: Variable only on the land line survey 
+Question:  So the number of women in the household is [X]. Is that correct? 
+0 
+1 
+2 
+3 
+4 
+5 
+Number of adult women in the household 
+Number of adult women in the household 
+Number of adult women in the household 
+Number of adult women in the household 
+Number of adult women in the household 
+Number of adult women in the household 
+Missing 
+Notes: QSTVER >= 20 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Safe time to talk 
+Section Name: Cell Phone Introduction 
+Section Number: 0 
+Question Number: 1 
+Column: 75 
+Type of Variable: Num 
+SAS Variable Name: SAFETIME 
+Question Prologue: Variable only on the cell phone survey 
+Question:  Is this a safe time to talk with you? 
+1 
+Yes—Go to CTELNUM1 
+Weighted 
+Notes: QSTVER < 20 
+. 
+. 
+1 
+Yes—Go to CELLFON4 
+Weighted 
+Notes: QSTVER < = 20 
+. 
+. 
+Label: Correct Phone Number? 
+Section Name: Cell Phone Introduction 
+Section Number: 0 
+Question Number: 2 
+Column: 76 
+Type of Variable: Num 
+SAS Variable Name: CTELNUM1 
+Question Prologue: Variable only on the cell phone survey 
+Question:  Is this     (phone number)     ? 
+Label: Is this a cell phone? 
+Section Name: Cell Phone Introduction 
+Section Number: 0 
+Question Number: 3 
+Column: 77 
+Type of Variable: Num 
+SAS Variable Name: CELLFON5 
+Question Prologue: Variable only on the cell phone survey 
+Question:  Is this a cell phone? 
+1 
+Yes—Go to CADULT 
+Weighted 
+Notes: QSTVER < 20 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Are you 18 years of age or older? 
+Section Name: Cell Phone Introduction 
+Section Number: 0 
+Question Number: 4 
+Column: 78 
+Type of Variable: Num 
+SAS Variable Name: CADULT 
+Question Prologue: Variable only on the cell phone survey 
+Question:  Are you 18 years of age or older? 
+1 
+2 
+Yes, Male Respondent—Go to PVTRESD2 
+Yes, Female Respondent—Go to PVTRESD2 
+Notes: QSTVER < 20 
+Weighted 
+. 
+. 
+Label: Do you live in a private residence? 
+Section Name: Cell Phone Introduction 
+Section Number: 0 
+Question Number: 5 
+Column: 79 
+Type of Variable: Num 
+SAS Variable Name: PVTRESD3 
+Question Prologue: Variable only on the cell phone survey 
+Question:  Do you live in a private residence?  (By private residence, we mean someplace like a house or apartment.) 
+Weighted 
+1 
+2 
+Yes—Go to CSTATE1 
+No—Go to CCLGHOUS 
+Notes: QSTVER < 20 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Do you live in college housing? 
+Section Name: Cell Phone Introduction 
+Section Number: 0 
+Question Number: 6 
+Column: 80 
+Type of Variable: Num 
+SAS Variable Name: CCLGHOUS 
+Question Prologue: Variable only on the cell phone survey 
+Question:  Do you live in college housing? 
+1 
+Yes—Go to CSTATE 
+Missing 
+Notes: QSTVER < 20; or PVTRESD2=1 
+. 
+. 
+Weighted 
+Label: Do you currently live in  ____(state)____? 
+Section Name: Cell Phone Introduction 
+Section Number: 0 
+Question Number: 7 
+Column: 81 
+Type of Variable: Num 
+SAS Variable Name: CSTATE1 
+Question Prologue: Variable only on the cell phone survey 
+Question:  Do you currently live in  ____(state)____? 
+1 
+2 
+Yes—Go to LANDLINE 
+No—Go to RSPSTAT1 
+Notes: QSTVER < 20 
+Weighted 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Do you also have a landline telephone? 
+Section Name: Cell Phone Introduction 
+Section Number: 0 
+Question Number: 9 
+Column: 84 
+Type of Variable: Num 
+SAS Variable Name: LANDLINE 
+Question Prologue: Variable only on the cell phone survey 
+Question:  Do you also have a landline telephone in your home that is used to make and receive calls? 
+Yes 
+No 
+Don’t know/Not sure 
+Refused 
+Notes: QSTVER < 20 
+. 
+Weighted 
+. 
+Label: Number of Adults in Household 
+Section Name: Cell Phone Introduction 
+Section Number: 0 
+Question Number: 10 
+Column: 85-86 
+Type of Variable: Num 
+SAS Variable Name: HHADULT 
+Question Prologue: Variable only on the cell phone survey 
+Question:  How many members of your household, including yourself, are 18 years of age or older? 
+Weighted 
+Don’t know/Not sure 
+Refused 
+Notes: QSTVER < 20 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: General Health 
+Section Name: Health Status 
+Core Section Number: 1 
+Question Number: 1 
+Column: 90 
+Type of Variable: Num 
+SAS Variable Name: GENHLTH 
+Question Prologue: 
+Question:  Would you say that in general your health is: 
+Excellent 
+Very good 
+Good 
+Fair 
+Poor 
+1 
+2 
+3 
+4 
+5 
+7 
+9 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+Label: Number of Days Physical Health Not Good 
+Section Name: Healthy Days — Health Related Quality of Life 
+Core Section Number: 2 
+Question Number: 1 
+Column: 91-92 
+Type of Variable: Num 
+SAS Variable Name: PHYSHLTH 
+Question Prologue: 
+Question:    Now thinking about your physical health, which includes physical illness and injury, for how many days during 
+the past 30 days was your physical health not good? 
+None 
+Refused 
+Don’t know/Not sure 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Number of Days Mental Health Not Good 
+Section Name: Healthy Days — Health Related Quality of Life 
+Core Section Number: 2 
+Question Number: 2 
+Column: 93-94 
+Type of Variable: Num 
+SAS Variable Name: MENTHLTH 
+Question Prologue: 
+Question:    Now thinking about your mental health, which includes stress, depression, and problems with emotions, for 
+how many days during the past 30 days was your mental health not good? 
+Weighted 
+Notes: _ _ Number of days 
+None 
+Refused 
+Don’t know/Not sure 
+. 
+. 
+Label: Poor Physical or Mental Health 
+Section Name: Healthy Days — Health Related Quality of Life 
+Core Section Number: 2 
+Question Number: 3 
+Column: 95-96 
+Type of Variable: Num 
+SAS Variable Name: POORHLTH 
+Question Prologue: 
+Question:    During the past 30 days, for about how many days did poor physical or mental health keep you from doing your 
+usual activities, such as self-care, work, or recreation? 
+Weighted 
+Notes: _ _ Number of days 
+Don’t know/Not sure 
+None 
+Refused 
+Notes: Section 02.01, PHYSHLTH, is 88 and 
+Section 2.02, MENTHLTH, is 88 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Have any health care coverage 
+Section Name: Health Care Access 
+Core Section Number: 3 
+Question Number: 1 
+Column: 97 
+Type of Variable: Num 
+SAS Variable Name: HLTHPLN1 
+Question Prologue: 
+Question:    Do you have any kind of health care coverage, including health insurance, prepaid plans such as HMOs, or 
+government plans such as Medicare, or Indian Health Service? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+Label: Multiple Health Care Professionals 
+Section Name: Health Care Access 
+Core Section Number: 3 
+Question Number: 2 
+Column: 98 
+Type of Variable: Num 
+SAS Variable Name: PERSDOC2 
+Question Prologue: 
+Question:    Do you have one person you think of as your personal doctor or health care provider?    (If ´No´ ask ´Is there 
+more than one or is there no person who you think of as your personal doctor or health care provider?´.) 
+1 
+2 
+3 
+7 
+9 
+Yes, only one 
+More than one 
+No 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Could Not See Doctor Because of Cost 
+Section Name: Health Care Access 
+Core Section Number: 3 
+Question Number: 3 
+Column: 99 
+Type of Variable: Num 
+SAS Variable Name: MEDCOST 
+Question Prologue: 
+Question:  Was there a time in the past 12 months when you needed to see a doctor but could not because of cost? 
+Yes 
+No 
+Don’t know/Not sure 
+Refused 
+. 
+Weighted 
+. 
+Label: Length of time since last routine checkup 
+Section Name: Health Care Access 
+Core Section Number: 3 
+Question Number: 4 
+Column: 100 
+Type of Variable: Num 
+SAS Variable Name: CHECKUP1 
+Question Prologue: 
+Question:    About how long has it been since you last visited a doctor for a routine checkup?      [A routine checkup is a 
+general physical exam, not an exam for a specific injury, illness, or condition.] 
+Weighted 
+Within past year (anytime less than 12 months 
+ago) 
+Within past 2 years (1 year but less than 2 years 
+ago) 
+Within past 5 years (2 years but less than 5 years 
+ago) 
+1 
+2 
+3 
+4 
+7 
+8 
+9 
+Don’t know/Not sure 
+Never 
+Refused 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Exercise in Past 30 Days 
+Section Name: Exercise 
+Core Section Number: 4 
+Question Number: 1 
+Column: 101 
+Type of Variable: Num 
+SAS Variable Name: EXERANY2 
+Question Prologue: 
+Question:    During the past month, other than your regular job, did you participate in any physical activities or exercises 
+such as running, calisthenics, golf, gardening, or walking for exercise? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+Label: How Much Time Do You Sleep 
+Section Name: Inadequate Sleep 
+Core Section Number: 5 
+Question Number: 1 
+Column: 102-103 
+Type of Variable: Num 
+SAS Variable Name: SLEPTIM1 
+Question Prologue: 
+Question:  On average, how many hours of sleep do you get in a 24-hour period? 
+Weighted 
+Don’t know/Not Sure 
+Refused 
+Missing 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Ever Diagnosed with Heart Attack 
+Section Name: Chronic Health Conditions 
+Core Section Number: 6 
+Question Number: 1 
+Column: 104 
+Type of Variable: Num 
+SAS Variable Name: CVDINFR4 
+Question Prologue: Has a doctor, nurse, or other health professional ever told you that you had any of the following? For 
+each, tell me “Yes”, “No”, or you’re “Not sure”: 
+Question:  (Ever told) you had a heart attack, also called a myocardial infarction? 
+. 
+Weighted 
+. 
+Yes 
+No 
+Don’t know/Not sure 
+Refused 
+Label: Ever Diagnosed with Angina or Coronary Heart Disease 
+Section Name: Chronic Health Conditions 
+Core Section Number: 6 
+Question Number: 2 
+Column: 105 
+Type of Variable: Num 
+SAS Variable Name: CVDCRHD4 
+Question Prologue: 
+Question:  (Ever told) you had angina or coronary heart disease? 
+Yes 
+No 
+Don’t know/Not sure 
+Refused 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Ever Diagnosed with a Stroke 
+Section Name: Chronic Health Conditions 
+Core Section Number: 6 
+Question Number: 3 
+Column: 106 
+Type of Variable: Num 
+SAS Variable Name: CVDSTRK3 
+Question Prologue: 
+Question:  (Ever told) you had a stroke. 
+Yes 
+No 
+Don’t know/Not sure 
+Refused 
+Label: Ever Told Had Asthma 
+Section Name: Chronic Health Conditions 
+Core Section Number: 6 
+Question Number: 4 
+Column: 107 
+Type of Variable: Num 
+SAS Variable Name: ASTHMA3 
+Question Prologue: 
+Question:  (Ever told) you had asthma? 
+. 
+Weighted 
+. 
+Yes 
+No—Go to Section 06.06 CHCSCNCR 
+Don’t know/Not Sure—Go to Section 06.06 CHCSCNCR 
+Refused—Go to Section 06.06 CHCSCNCR 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Still Have Asthma 
+Section Name: Chronic Health Conditions 
+Core Section Number: 6 
+Question Number: 5 
+Column: 108 
+Type of Variable: Num 
+SAS Variable Name: ASTHNOW 
+Question Prologue: 
+Question:  Do you still have asthma? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+Label: (Ever told) you had skin cancer? 
+Section Name: Chronic Health Conditions 
+Core Section Number: 6 
+Question Number: 6 
+Column: 109 
+Type of Variable: Num 
+SAS Variable Name: CHCSCNCR 
+Question Prologue: 
+Question:  (Ever told) you had skin cancer? 
+Yes 
+No 
+Don’t know / Not sure 
+Refused 
+. 
+Weighted 
+. 
+Notes: Section 06.04, ASTHMA3, is coded 2, 7, 9, 
+or Missing 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: (Ever told) you had any other types of cancer? 
+Section Name: Chronic Health Conditions 
+Core Section Number: 6 
+Question Number: 7 
+Column: 110 
+Type of Variable: Num 
+SAS Variable Name: CHCOCNCR 
+Question Prologue: 
+Question:  (Ever told) you had any other types of cancer? 
+Don’t know / Not sure 
+Refused 
+. 
+Weighted 
+. 
+Label: (Ever told) you have chronic obstructive pulmonary disease, emphysema or chronic bronchitis? 
+Section Name: Chronic Health Conditions 
+Core Section Number: 6 
+Question Number: 8 
+Column: 111 
+Type of Variable: Num 
+SAS Variable Name: CHCCOPD1 
+Question Prologue: 
+Question:  (Ever told) you have chronic obstructive pulmonary disease, C.O.P.D., emphysema or chronic bronchitis? 
+Don’t know / Not sure 
+Refused 
+. 
+Weighted 
+. 
+Yes 
+No 
+Yes 
+No 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Told Have Arthritis 
+Section Name: Chronic Health Conditions 
+Core Section Number: 6 
+Question Number: 9 
+Column: 112 
+Type of Variable: Num 
+SAS Variable Name: HAVARTH3 
+Question Prologue: 
+Question:    (Ever told) you have some form of arthritis, rheumatoid arthritis, gout, lupus, or fibromyalgia?    (Arthritis 
+diagnoses include: rheumatism, polymyalgia rheumatica; osteoarthritis (not osteporosis); tendonitis, bursitis, bunion, 
+tennis elbow; carpal tunnel syndrome, tarsal tunnel syndrome; joint infection, etc.) 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+Label: Ever told you had a depressive disorder 
+Section Name: Chronic Health Conditions 
+Core Section Number: 6 
+Question Number: 10 
+Column: 113 
+Type of Variable: Num 
+SAS Variable Name: ADDEPEV2 
+Question Prologue: 
+Question:    (Ever told) you have a depressive disorder (including depression, major depression, dysthymia, or minor 
+depression)? 
+Yes 
+No 
+Don’t know/Not sure 
+Refused 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: (Ever told) you have kidney disease? 
+Section Name: Chronic Health Conditions 
+Core Section Number: 6 
+Question Number: 11 
+Column: 114 
+Type of Variable: Num 
+SAS Variable Name: CHCKDNY1 
+Question Prologue: 
+Question:  (Ever told) you have kidney disease?  (Do NOT include kidney stones, bladder infection or incontinence.) 
+Yes 
+No 
+Don’t know / Not sure 
+Refused 
+. 
+Weighted 
+. 
+Label: (Ever told) you have diabetes 
+Section Name: Chronic Health Conditions 
+Core Section Number: 6 
+Question Number: 12 
+Column: 115 
+Type of Variable: Num 
+SAS Variable Name: DIABETE3 
+Question Prologue: 
+Question:    (Ever told) you have diabetes    (If ´Yes´ and respondent is female, ask ´Was this only when you were 
+pregnant?´. If Respondent says pre-diabetes or borderline diabetes, use response code 4.) 
+1 
+2 
+3 
+4 
+7 
+9 
+Yes 
+Yes, but female told only during pregnancy—Go to 
+Section 07.01 LASTDEN4 
+No—Go to Section 07.01 LASTDEN4 
+No, pre-diabetes or borderline diabetes—Go to 
+Section 07.01 LASTDEN4 
+Don’t know/Not Sure—Go to Section 07.01 LASTDEN4 
+Refused—Go to Section 07.01 LASTDEN4 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Age When Told Had Diabetes 
+Section Name: Chronic Health Conditions 
+Core Section Number: 6 
+Question Number: 13 
+Column: 116-117 
+Type of Variable: Num 
+SAS Variable Name: DIABAGE2 
+Question Prologue: 
+Question:  How old were you when you were told you have diabetes? 
+Notes: _ _ Code age in years, 97 = 97 or older 
+Weighted 
+Don’t know/Not sure 
+Refused 
+Notes: Section 06.12, DIABETE3, is coded 2, 3, 
+. 
+. 
+Label: Last Visited Dentist or Dental Clinic 
+Section Name: Oral Health 
+Core Section Number: 7 
+Question Number: 1 
+Column: 118 
+Type of Variable: Num 
+SAS Variable Name: LASTDEN4 
+Question Prologue: 
+Question:    Including all types of dentists, such as orthodontists, oral surgeons, and all other dental specialists, as well as 
+dental hygienists, how long has it been since you last visited a dentist or a dental clinic for any reason? 
+Weighted 
+Within the past year (anytime less than 12 months 
+ago) 
+Within the past 2 years (1 year but less than 2 
+years ago) 
+Within the past 5 years (2 years but less than 
+1 
+2 
+3 
+4 
+7 
+8 
+9 
+Don’t know/Not sure 
+Never 
+Refused 
+Missing 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Number of Permanent Teeth Removed 
+Section Name: Oral Health 
+Core Section Number: 7 
+Question Number: 2 
+Column: 119 
+Type of Variable: Num 
+SAS Variable Name: RMVTETH4 
+Question Prologue: 
+Question:    Not including teeth lost for injury or orthodontics, how many of your permanent teeth have been removed 
+because of tooth decay or gum disease? 
+. 
+Weighted 
+. 
+Don’t know/Not sure 
+1 
+2 
+3 
+7 
+8 
+9 
+All 
+None 
+Refused 
+Label: Respondents Sex 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 1 
+Column: 120 
+Type of Variable: Num 
+SAS Variable Name: SEX1 
+Question Prologue: 
+Question:  What is your sex? or What was your sex at birth? Was it… 
+Male 
+Female 
+Refused 
+Don’t know/Not Sure 
+Weighted 
+  November 21, 2019 
+1 
+2 
+3 
+4 
+5 
+6 
+9 
+1 
+2 
+3 
+4 
+5 
+6 
+9 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Marital Status 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 6 
+Column: 157 
+Type of Variable: Num 
+SAS Variable Name: MARITAL 
+Question Prologue: 
+Question:  Are you: (marital status) 
+Married 
+Divorced 
+Widowed 
+Separated 
+A member of an unmarried couple 
+Refused 
+Label: Education Level 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 7 
+Column: 158 
+Type of Variable: Num 
+SAS Variable Name: EDUCA 
+Question Prologue: 
+Question:  What is the highest grade or year of school you completed? 
+Never married 
+. 
+Weighted 
+. 
+Never attended school or only kindergarten 
+Grades 1 through 8 (Elementary) 
+Grades 9 through 11 (Some high school) 
+Grade 12 or GED (High school graduate) 
+College 1 year to 3 years (Some college or 
+technical school) 
+College 4 years or more (College graduate) 
+Refused 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Own or Rent Home 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 8 
+Column: 159 
+Type of Variable: Num 
+SAS Variable Name: RENTHOM1 
+Question Prologue: 
+Question:  Do you own or rent your home? 
+1 
+2 
+3 
+7 
+9 
+Own 
+Rent 
+Other arrangement 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+Notes: Due to the nature of the data or the size 
+of the table for display, this data is not 
+printed for this report 
+Label: Household Telephones 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 11 
+Column: 168 
+Type of Variable: Num 
+SAS Variable Name: NUMHHOL3 
+Question Prologue: 
+Question:    Not including cell phones or numbers used for computers, fax machines or security systems, do you have more 
+than one telephone number in your household? 
+Yes 
+No—Go to Section 08.13 CPDEMO1B 
+Don’t know/Not sure—Go to Section 08.13 CPDEMO1B 
+Refused—Go to Section 08.13 CPDEMO1B 
+Notes: QSTVER >= 20 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Residential Phones 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 12 
+Column: 169 
+Type of Variable: Num 
+SAS Variable Name: NUMPHON3 
+Question Prologue: 
+Question:  How many of these telephone numbers are residential numbers? 
+Residential telephone number(s) 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+None 
+Refused 
+Residential telephone numbers 
+Notes: 6 = 6 or more 
+Don’t know/Not Sure 
+Notes: Section 08.11, NUMHHOL3, is coded 2, 7, 
+Weighted 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Do you have a cell phone for personal use? 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 13 
+Column: 170 
+Type of Variable: Num 
+SAS Variable Name: CPDEMO1B 
+Question Prologue: 
+Question:  How many cell phones do you have for personal use? 
+Weighted 
+Enter number (1-5) 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+Six or more 
+Don’t know/Not sure 
+None 
+Refused 
+Notes: QSTVER > = 20 
+. 
+. 
+Label: Are You A Veteran 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 14 
+Column: 171 
+Type of Variable: Num 
+SAS Variable Name: VETERAN3 
+Question Prologue: 
+Question:    Have you ever served on active duty in the United States Armed Forces, either in the regular military or in a 
+National Guard or military reserve unit? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Employment Status 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 15 
+Column: 172 
+Type of Variable: Num 
+SAS Variable Name: EMPLOY1 
+Question Prologue: 
+Question:  Are you currently…? 
+Employed for wages 
+Self-employed 
+Out of work for 1 year or more 
+Out of work for less than 1 year 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+A homemaker 
+A student 
+Retired 
+Unable to work 
+Refused 
+Weighted 
+. 
+. 
+Label: Number of Children in Household 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 16 
+Column: 173-174 
+Type of Variable: Num 
+SAS Variable Name: CHILDREN 
+Question Prologue: 
+Question:  How many children less than 18 years of age live in your household? 
+Weighted 
+Notes: _ _ = Number of children 
+None 
+Refused 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Income Level 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 17 
+Column: 175-176 
+Type of Variable: Num 
+SAS Variable Name: INCOME2 
+Question Prologue: 
+Question:  Is your annual household income from all sources:  (If respondent refuses at any income level, code ´Refused.´) 
+Weighted 
+Less than $10,000 
+Notes: If "no," code 02 
+Less than $15,000 ($10,000 to less than $15,000) 
+Notes: If "no," code 03; if "yes," ask 01 
+Less than $20,000 ($15,000 to less than $20,000) 
+Notes: If "no," code 04; if "yes," ask 02 
+Less than $25,000 ($20,000 to less than $25,000) 
+Notes: If "no," ask 05; if "yes," ask 03 
+Less than $35,000 ($25,000 to less than $35,000) 
+Notes: If "no," ask 06 
+Less than $50,000 ($35,000 to less than $50,000) 
+Notes: If "no," ask 07 
+Less than $75,000 ($50,000 to less than $75,000) 
+Notes: If "no," code 08 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+$75,000 or more 
+Don’t know/Not sure 
+Refused 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Reported Weight in Pounds 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 18 
+Column: 177-180 
+Type of Variable: Num 
+SAS Variable Name: WEIGHT2 
+Question Prologue: 
+Question:    About how much do you weigh without shoes?    (If respondent answers in metrics, put a 9 in the first 
+column)[Round fractions up.] 
+Weighted 
+Notes: 0 _ _ _ = weight in pounds 
+Don’t know/Not sure 
+Weight (kilograms) 
+Notes: The initial ´9´ indicates this was a 
+metric value. 
+Refused 
+. 
+. 
+Label: Reported Height in Feet and Inches 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 19 
+Column: 181-184 
+Type of Variable: Num 
+SAS Variable Name: HEIGHT3 
+Question Prologue: 
+Question:    About how tall are you without shoes?    (If respondent answers in metrics, put a 9 in the first column)[Round 
+fractions down.] 
+Weighted 
+Notes: 0 _ / _ _ = feet / inches 
+Don’t know/Not sure 
+Height (meters/centimeters) 
+Notes: The initial '9' indicates this was a 
+metric value. 
+Refused 
+. 
+. 
+  November 21, 2019 
+. 
+Weighted 
+. 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Pregnancy Status 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 20 
+Column: 185 
+Type of Variable: Num 
+SAS Variable Name: PREGNANT 
+Question Prologue: 
+Question:  To your knowledge, are you now pregnant? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 08.01, SEX1, is coded 1; or 
+Section 08.02, AGE,  is greater than 49 
+Label: Are you deaf or do you have serious difficulty hearing? 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 21 
+Column: 186 
+Type of Variable: Num 
+SAS Variable Name: DEAF 
+Question Prologue: 
+Question:  Are you deaf or do you have serious difficulty hearing? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Blind or Difficulty seeing 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 22 
+Column: 187 
+Type of Variable: Num 
+SAS Variable Name: BLIND 
+Question Prologue: 
+Question:  Are you blind or do you have serious difficulty seeing, even when wearing glasses? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+Label: Difficulty Concentrating or Remembering 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 23 
+Column: 188 
+Type of Variable: Num 
+SAS Variable Name: DECIDE 
+Question Prologue: 
+Question:    Because of a physical, mental, or emotional condition, do you have serious difficulty concentrating, 
+remembering, or making decisions? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Difficulty Walking or Climbing Stairs 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 24 
+Column: 189 
+Type of Variable: Num 
+SAS Variable Name: DIFFWALK 
+Question Prologue: 
+Question:  Do you have serious difficulty walking or climbing stairs? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+Label: Difficulty Dressing or Bathing 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 25 
+Column: 190 
+Type of Variable: Num 
+SAS Variable Name: DIFFDRES 
+Question Prologue: 
+Question:  Do you have difficulty dressing or bathing? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Difficulty Doing Errands Alone 
+Section Name: Demographics 
+Core Section Number: 8 
+Question Number: 26 
+Column: 191 
+Type of Variable: Num 
+SAS Variable Name: DIFFALON 
+Question Prologue: 
+Question:    Because of a physical, mental, or emotional condition, do you have difficulty doing errands alone such as 
+visiting a doctor´s office or shopping? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+Label: Smoked at Least 100 Cigarettes 
+Section Name: Tobacco Use 
+Core Section Number: 9 
+Question Number: 1 
+Column: 192 
+Type of Variable: Num 
+SAS Variable Name: SMOKE100 
+Question Prologue: 
+Question:  Have you smoked at least 100 cigarettes in your entire life?   [Note:  5 packs = 100 cigarettes] 
+Yes 
+No—Go to Section 09.05 USENOW3 
+Don’t know/Not Sure—Go to Section 09.05 USENOW3 
+Refused—Go to Section 09.05 USENOW3 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Section Name: Tobacco Use 
+Core Section Number: 9 
+Question Number: 2 
+Column: 193 
+Type of Variable: Num 
+SAS Variable Name: SMOKDAY2 
+Question Prologue: 
+Question:  Do you now smoke cigarettes every day, some days, or not at all? 
+1 
+2 
+3 
+7 
+9 
+Every day 
+Some days 
+Not at all—Go to Section 09.04 LASTSMK2 
+. 
+Weighted 
+. 
+Don´t Know/Not Sure—Go to Section 09.05 USENOW3 
+Refused—Go to Section 09.05 USENOW3 
+Notes: Section 09.01, SMOKE100, is coded 2, 7, 
+Label: Stopped Smoking in past 12 months 
+Section Name: Tobacco Use 
+Core Section Number: 9 
+Question Number: 3 
+Column: 194 
+Type of Variable: Num 
+SAS Variable Name: STOPSMK2 
+Question Prologue: 
+Question:    During the past 12 months, have you stopped smoking for one day or longer because you were trying to quit 
+smoking? 
+Yes—Go to Section 09.05 USENOW3 
+No—Go to Section 09.05 USENOW3 
+Don’t know/Not Sure—Go to Section 09.05 USENOW3 
+Refused—Go to Section 09.05 USENOW3 
+Notes: Section 09.01, SMOKE100, is coded 2, 7, 
+coded 3, 7, 9, or Missing 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Interval Since Last Smoked 
+Section Name: Tobacco Use 
+Core Section Number: 9 
+Question Number: 4 
+Column: 195-196 
+Type of Variable: Num 
+SAS Variable Name: LASTSMK2 
+Question Prologue: 
+Question:  How long has it been since you last smoked a cigarette, even one or two puffs? 
+Within the past month (less than 1 month ago) 
+Within the past 3 months (1 month but less than 
+Within the past 6 months (3 months but less than 
+Within the past year (6 months but less than 1 
+year ago) 
+Within the past 5 years (1 year but less than 5 
+years ago) 
+Within the past 10 years (5 years but less than 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+Never smoked regularly 
+Don’t know/Not sure 
+Refused 
+Notes: Section 09.01, SMOKE100, is coded 2, 7, 
+coded 7, 9, or Missing; or Section 09.03, 
+STOPSMK2, is coded 1, 2, 7, 9; 
+Weighted 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Use of Smokeless Tobacco Products 
+Section Name: Tobacco Use 
+Core Section Number: 9 
+Question Number: 5 
+Column: 197 
+Type of Variable: Num 
+SAS Variable Name: USENOW3 
+Question Prologue: 
+Question:    Do you currently use chewing tobacco, snuff, or snus every day, some days, or not at all?    (Snus (Swedish for 
+snuff) is a moist smokeless tobacco, usually sold in small pouches that are placed under the lip against the gum.)[Snus 
+(rhymes with ´goose´)] 
+Every day 
+Some days 
+Not at all 
+1 
+2 
+3 
+7 
+9 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+Label: Days in past 30 had alcoholic beverage 
+Section Name: Alcohol Consumption 
+Core Section Number: 10 
+Question Number: 1 
+Column: 198-200 
+Type of Variable: Num 
+SAS Variable Name: ALCDAY5 
+Question Prologue: 
+Question:    During the past 30 days, how many days per week or per month did you have at least one drink of any alcoholic 
+beverage such as beer, wine, a malt beverage or liquor? 
+Weighted 
+Notes: 1_ _ = Days per week 
+Notes: 2_ _ = Days in past 30 
+Don’t know/Not sure—Go to Section 11.01 FLUSHOT6 
+No drinks in past 30 days—Go to Section 11.01 
+FLUSHOT6 
+Refused—Go to Section 11.01 FLUSHOT6 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Avg alcoholic drinks per day in past 30 
+Section Name: Alcohol Consumption 
+Core Section Number: 10 
+Question Number: 2 
+Column: 201-202 
+Type of Variable: Num 
+SAS Variable Name: AVEDRNK2 
+Question Prologue: 
+Question:    One drink is equivalent to a 12-ounce beer, a 5-ounce glass of wine, or a drink with one shot of liquor. During 
+the past 30 days, on the days when you drank, about how many drinks did you drink on the average?    (A 40 ounce beer 
+would count as 3 drinks, or a cocktail drink with 2 shots would count as 2 drinks.) 
+Weighted 
+Notes: _ _ Number of drinks 
+Don’t know/Not sure 
+Refused 
+Notes: Section 10.01, ALCDAY5, is coded 888, 
+. 
+. 
+Label: Binge Drinking 
+Section Name: Alcohol Consumption 
+Core Section Number: 10 
+Question Number: 3 
+Column: 203-204 
+Type of Variable: Num 
+SAS Variable Name: DRNK3GE5 
+Question Prologue: 
+Question:    Considering all types of alcoholic beverages, how many times during the past 30 days did you have 5 or more 
+drinks for men or 4 or more drinks for women on an occasion? 
+Don’t know/Not Sure 
+None 
+Refused 
+Notes: Section 10.01, ALCDAY5, is coded 888, 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Most drinks on single occasion past 30 days 
+Section Name: Alcohol Consumption 
+Core Section Number: 10 
+Question Number: 4 
+Column: 205-206 
+Type of Variable: Num 
+SAS Variable Name: MAXDRNKS 
+Question Prologue: 
+Question:  During the past 30 days, what is the largest number of drinks you had on any occasion? 
+Weighted 
+Don’t know/Not sure 
+Refused 
+Notes: Section 10.01, ALCDAY5, is coded 888, 
+. 
+. 
+Label: Adult flu shot/spray past 12 mos 
+Section Name: Immunization 
+Core Section Number: 11 
+Question Number: 1 
+Column: 207 
+Type of Variable: Num 
+SAS Variable Name: FLUSHOT6 
+Question Prologue: 
+Question:    During the past 12 months, have you had either a flu shot or a flu vaccine that was sprayed in your nose?    (A 
+new flu shot came out in 2011 that injects vaccine into the skin with a very small needle. It is called Fluzone Intradermal 
+vaccine. This is also considered a flu shot.) 
+Yes 
+No—Go to Section 11.04 PNEUVAC4 
+Don’t know/Not Sure—Go to Section 11.04 PNEUVAC4 
+Refused—Go to Section 11.04 PNEUVAC4 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: When did you (adult) receive your most recent seasonal flu shot/spray? 
+Section Name: Immunization 
+Core Section Number: 11 
+Question Number: 2 
+Column: 208-213 
+Type of Variable: Num 
+SAS Variable Name: FLSHTMY2 
+Question Prologue: 
+Question:    During what month and year did you receive your most recent flu shot injected into your arm or flu vaccine 
+that was sprayed in your nose? 
+Weighted 
+Month / Year 
+Notes: Section 11.01, FLUSHOT6, is coded 2, 7, 
+or 9 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Where did you get your last flu shot/vaccine? 
+Section Name: Immunization 
+Core Section Number: 11 
+Question Number: 3 
+Column: 214-215 
+Type of Variable: Num 
+SAS Variable Name: IMFVPLAC 
+Question Prologue: 
+Question:  At what kind of place did you get your last flu shot or vaccine? 
+Weighted 
+A doctor´s office or health maintenance 
+organization (HMO) 
+A health department 
+Another type of clinic or health center (a 
+community health center) 
+A senior, recreation, or community center 
+A store (supermarket, drug store) 
+A hospital (inpatient) 
+An emergency room 
+Workplace 
+Some other kind of place 
+Don’t know / Not sure 
+A school 
+Refused 
+Received vaccination in Canada/Mexico 
+Notes: Section 11.01, FLUSHOT6, is coded 2, 7, 
+or 9 
+. 
+. 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Pneumonia shot ever 
+Section Name: Immunization 
+Core Section Number: 11 
+Question Number: 4 
+Column: 216 
+Type of Variable: Num 
+SAS Variable Name: PNEUVAC4 
+Question Prologue: 
+Question:  Have you ever had a pneumonia shot also known as a pneumococcal vaccine? 
+. 
+Weighted 
+. 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+Label: Had Fall Past Twelve Months 
+Section Name: Falls 
+Core Section Number: 12 
+Question Number: 1 
+Column: 217-218 
+Type of Variable: Num 
+SAS Variable Name: FALL12MN 
+Question Prologue: 
+Question:  In the past 12 months, how many times have you fallen? 
+Notes: _ _ Number of times, 76=76 or more 
+None—Go to Section 13.01 SEATBELT 
+Weighted 
+Don’t know/Not Sure—Go to Section 13.01 SEATBELT 
+. 
+. 
+Refused—Go to Section 13.01 SEATBELT 
+Missing 
+Notes: Section 08.02, AGE, coded 18-44 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Injured in Fall 
+Section Name: Falls 
+Core Section Number: 12 
+Question Number: 2 
+Column: 219-220 
+Type of Variable: Num 
+SAS Variable Name: FALLINJ3 
+Question Prologue: 
+Question:    Did this fall cause an injury? How many of these falls caused an injury that limited your regular activities for at 
+least a day? 
+Notes: _ _ Number of times, 76=76 or more 
+Weighted 
+Don’t know/Not Sure 
+None 
+Refused 
+Missing 
+Notes: Section 08.02, AGE, coded 18-44; or 
+Section 12.01, FALL3MN2, is coded 77, 88, 99 or 
+Missing 
+. 
+. 
+Label: How often use seatbelts in car? 
+Section Name: Seatbelt Use and Drinking and Driving 
+Core Section Number: 13 
+Question Number: 1 
+Column: 221 
+Type of Variable: Num 
+SAS Variable Name: SEATBELT 
+Question Prologue: 
+Question:  How often do you use seat belts when you drive or ride in a car? Would you say— 
+Always 
+Nearly always 
+Sometimes 
+Seldom 
+Never 
+1 
+2 
+3 
+4 
+5 
+7 
+8 
+9 
+Don’t know/Not sure 
+Never drive or ride in a car—Go to Section 14.1 
+HADMAM 
+Refused 
+Weighted 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Did you drive after having too much to drink in the past 30 days? 
+Section Name: Seatbelt Use and Drinking and Driving 
+Core Section Number: 13 
+Question Number: 2 
+Column: 222-223 
+Type of Variable: Num 
+SAS Variable Name: DRNKDRI2 
+Question Prologue: 
+Question:  During the past 30 days, how many times have you driven when you’ve had perhaps too much to drink? 
+Weighted 
+Notes: _ _ Number of times 
+Don’t know/Not sure 
+None 
+Refused 
+Notes: Section 10.01, ALCDAY5, is coded 888 or: 
+Section 13.01, SEATBELT, is coded 8 
+. 
+. 
+Label: Have You Ever Had a Mammogram 
+Section Name: Breast and Cervical Cancer Screening 
+Core Section Number: 14 
+Question Number: 1 
+Column: 224 
+Type of Variable: Num 
+SAS Variable Name: HADMAM 
+Question Prologue: 
+Question:  Have you ever had a mammogram? 
+Yes 
+No—Go to Section 14.03 HADPAP2 
+Don’t know/Not sure—Go to Section 14.03 HADPAP2 
+Refused—Go to Section 14.03 HADPAP2 
+Notes: Section 08.01, SEX1, is coded 1 
+. 
+Weighted 
+. 
+  November 21, 2019 
+1 
+2 
+3 
+4 
+5 
+7 
+9 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: How Long since Last Mammogram 
+Section Name: Breast and Cervical Cancer Screening 
+Core Section Number: 14 
+Question Number: 2 
+Column: 225 
+Type of Variable: Num 
+SAS Variable Name: HOWLONG 
+Question Prologue: 
+Question:  How long has it been since you had your last mammogram? 
+Weighted 
+Within the past year (anytime less than 12 months 
+ago) 
+Within the past 2 years (1 year but less than 2 
+years ago) 
+Within the past 3 years (2 years but less than 
+Within the past 5 years (3 years but less than 
+Don’t know/Not sure 
+Refused 
+. 
+. 
+Notes: Section 08.01, SEX1, is coded 1; or Module 
+Label: Ever Had a Pap Test 
+Section Name: Breast and Cervical Cancer Screening 
+Core Section Number: 14 
+Question Number: 3 
+Column: 226 
+Type of Variable: Num 
+SAS Variable Name: HADPAP2 
+Question Prologue: 
+Question:  Have you ever had a Pap test? 
+Yes 
+No—Go to Section 14.05 HPVTEST 
+Don’t know/Not sure—Go to Section 14.05 HPVTEST 
+Refused—Go to Section 14.05 HPVTEST 
+Notes: Section 08.01, SEX1, is coded 1 
+Weighted 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: How Long Since Last Pap Test 
+Section Name: Breast and Cervical Cancer Screening 
+Core Section Number: 14 
+Question Number: 4 
+Column: 227 
+Type of Variable: Num 
+SAS Variable Name: LASTPAP2 
+Question Prologue: 
+Question:  How long has it been since you had your last Pap test? 
+1 
+2 
+3 
+4 
+5 
+7 
+9 
+Weighted 
+Within the past year (anytime less than 12 months 
+ago) 
+Within the past 2 years (1 year but less than 2 
+years ago) 
+Within the past 3 years (2 years but less than 
+Within the past 5 years (3 years but less than 
+Don’t know/Not sure 
+Refused 
+Notes: Section 08.01, SEX1, is coded 1; or 
+Section 14.03, HADPAP2, is coded 2, 7, 9, or 
+Missing 
+. 
+. 
+Label: Have you ever had an HPV test? 
+Section Name: Breast and Cervical Cancer Screening 
+Core Section Number: 14 
+Question Number: 5 
+Column: 228 
+Type of Variable: Num 
+SAS Variable Name: HPVTEST 
+Question Prologue: 
+Question:    An H.P.V. test is sometimes given with the Pap test for cervical cancer screening. Have you ever had an H.P.V. 
+test? 
+Yes 
+No—Go to Section 14.07 HADHYST2 
+Don’t know/Not Sure—Go to Section 14.07 HADHYST2 
+Refused—Go to Section 14.07 HADHYST2 
+Notes: Section 08.01, SEX1, is coded 1 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: How long since your last HPV test? 
+Section Name: Breast and Cervical Cancer Screening 
+Core Section Number: 14 
+Question Number: 6 
+Column: 229 
+Type of Variable: Num 
+SAS Variable Name: HPLSTTST 
+Question Prologue: 
+Question:  How long has it been since you had your last H.P.V. test? 
+1 
+2 
+3 
+4 
+5 
+7 
+9 
+Weighted 
+Within the past year (anytime less than 12 months 
+ago) 
+Within the past 2 years (1 year but less than 2 
+years ago) 
+Within the past 3 years (2 years but less than 
+Within the past 5 years (3 years but less than 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 08.01, SEX1, is coded 1; or Module 
+. 
+. 
+Label: Had Hysterectomy 
+Section Name: Breast and Cervical Cancer Screening 
+Core Section Number: 14 
+Question Number: 7 
+Column: 230 
+Type of Variable: Num 
+SAS Variable Name: HADHYST2 
+Question Prologue: 
+Question:  Have you had a hysterectomy?  (A hysterectomy is an operation to remove the uterus (womb).) 
+Yes 
+No 
+Don’t know/Not sure 
+Refused 
+Notes: Section 08.01, SEX1, is coded 1; or 
+Section 08.20, PREGNANT, is coded 1 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Has a health professional EVER talked with you about the advantages of the PSA test? 
+Section Name: Prostate Cancer Screening 
+Core Section Number: 15 
+Question Number: 1 
+Column: 231 
+Type of Variable: Num 
+SAS Variable Name: PCPSAAD3 
+Question Prologue: 
+Question:    Has a doctor, nurse, or other health professional ever talked with you about the advantages of the 
+Prostate-Specific Antigen or P.S.A. test? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 08.02, AGE, is less than 40; or 
+Section 08.01, SEX1, is coded 2; 
+. 
+Weighted 
+. 
+Label: Has a health professional EVER talked with you about the disadvantages of the PSA test? 
+Section Name: Prostate Cancer Screening 
+Core Section Number: 15 
+Question Number: 2 
+Column: 232 
+Type of Variable: Num 
+SAS Variable Name: PCPSADI1 
+Question Prologue: 
+Question:  Has a doctor, nurse, or other health professional ever talked with you about the disadvantages of the PSA test? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 08.02, AGE, is less than 40; or 
+Section 08.01, SEX1, is coded 2 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Has a doctor EVER recommended that you have a PSA test? 
+Section Name: Prostate Cancer Screening 
+Core Section Number: 15 
+Question Number: 3 
+Column: 233 
+Type of Variable: Num 
+SAS Variable Name: PCPSARE1 
+Question Prologue: 
+Question:  Has a doctor, nurse, or other health professional ever recommended that you have a P.S.A. test? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 08.02, AGE, is less than 40; or 
+Section 08.01, SEX1, is coded 2; 
+. 
+Weighted 
+. 
+Label: Ever Had PSA Test 
+Section Name: Prostate Cancer Screening 
+Core Section Number: 15 
+Question Number: 4 
+Column: 234 
+Type of Variable: Num 
+SAS Variable Name: PSATEST1 
+Question Prologue: 
+Question:  Have you ever had a P.S.A. test? 
+Yes 
+No—Go to Section 16.1 BLDSTOOL 
+Don’t know/Not Sure—Go to Section 16.1 BLDSTOOL 
+Refused—Go to Section 16.1 BLDSTOOL 
+Notes: Section 08.02, AGE, is less than 40; or 
+Section 08.01, SEX1, is coded 2; 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Time Since Last PSA Test 
+Section Name: Prostate Cancer Screening 
+Core Section Number: 15 
+Question Number: 5 
+Column: 235 
+Type of Variable: Num 
+SAS Variable Name: PSATIME 
+Question Prologue: 
+Question:  How long has it been since you had your last P.S.A. test? 
+1 
+2 
+3 
+4 
+5 
+7 
+9 
+Weighted 
+Within the past year (anytime less than 12 months 
+ago) 
+Within the past 2 years (1 year but less than 2 
+years ago) 
+Within the past 3 years (2 years but less than 
+Within the past 5 years (3 years but less than 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 08.02, AGE, is less than 40; or 
+Section 08.01, SEX1, is coded 2; or Section 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: What was the MAIN reason you had this PSA test? 
+Section Name: Prostate Cancer Screening 
+Core Section Number: 15 
+Question Number: 6 
+Column: 236 
+Type of Variable: Num 
+SAS Variable Name: PCPSARS1 
+Question Prologue: 
+Question:  What was the MAIN reason you had this P.S.A. test – was it …? 
+Weighted 
+Part of a routine exam 
+Because of a prostate problem 
+Because of a family history of prostate cancer 
+Because you were told you had prostate cancer 
+1 
+2 
+3 
+4 
+5 
+7 
+9 
+Some other reason 
+Don’t know/Not Sure 
+Refused 
+. 
+. 
+Notes: Section 08.02, AGE, is less than 40; or 
+Section 08.01, SEX1, is coded 2; or Section 
+Label: Ever Had Blood Stool Test Using Home Kit 
+Section Name: Colorectal Cancer Screening 
+Core Section Number: 16 
+Question Number: 1 
+Column: 237 
+Type of Variable: Num 
+SAS Variable Name: BLDSTOOL 
+Question Prologue: 
+Question:    A blood stool test is a test that may use a special kit at home to determine whether the stool contains blood.   
+Have you ever had this test using a home kit? 
+Yes 
+No—Go to Section 16.03 HADSIGM3 
+Don’t know/Not Sure—Go to Section 16.03 HADSIGM3 
+Refused—Go to Section 16.03 HADSIGM3 
+Notes: Section 08.02, AGE, is less than 50 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Time Since Last Blood Stool Test 
+Section Name: Colorectal Cancer Screening 
+Core Section Number: 16 
+Question Number: 2 
+Column: 238 
+Type of Variable: Num 
+SAS Variable Name: LSTBLDS3 
+Question Prologue: 
+Question:  How long has it been since you had your last blood stool test using a home kit? 
+1 
+2 
+3 
+4 
+5 
+7 
+9 
+Weighted 
+Within the past year (anytime less than 12 months 
+ago) 
+Within the past 2 years (1 year but less than 2 
+years ago) 
+Within the past 3 years (2 years but less than 
+Within the past 5 years (3 years but less than 
+Don’t know/Not sure 
+Refused 
+Notes: Section 08.02, AGE, is less than 50; or 
+Section 16.01, BLDSTOOL, is coded 2, 7, 9, or 
+Missing 
+. 
+. 
+Label: Ever Had Sigmoidoscopy/Colonoscopy 
+Section Name: Colorectal Cancer Screening 
+Core Section Number: 16 
+Question Number: 3 
+Column: 239 
+Type of Variable: Num 
+SAS Variable Name: HADSIGM3 
+Question Prologue: 
+Question:    Sigmoidoscopy and colonoscopy are exams in which a tube is inserted in the rectum to view the colon for signs 
+of cancer or other health problems. Have you ever had either of these exams? 
+Yes 
+No—Go to Section 17.01 HIVTST6 
+Don’t know/Not Sure—Go to Section 17.01 HIVTST6 
+Refused—Go to Section 17.01 HIVTST6 
+Notes: Section 08.02, AGE, is less than 50 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Was your last test a sigmoidoscopy or colonoscopy? 
+Section Name: Colorectal Cancer Screening 
+Core Section Number: 16 
+Question Number: 4 
+Column: 240 
+Type of Variable: Num 
+SAS Variable Name: HADSGCO1 
+Question Prologue: 
+Question:    For a sigmoidoscopy, a flexible tube is inserted into the rectum to look for problems. A colonoscopy is similar, 
+but uses a longer tube, and you are usually given medication through a needle in your arm to make you sleepy and told to 
+have someone else drive you home after the test. Was your most recent exam a sigmoidoscopy or a colonoscopy? 
+Sigmoidoscopy 
+Colonoscopy 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 08.02, AGE, is less than 50; or 
+Section 16.03, HADSIGM3, is coded 2, 7, 9, or 
+Missing 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Time Since Last Sigmoidoscopy/Colonoscopy 
+Section Name: Colorectal Cancer Screening 
+Core Section Number: 16 
+Question Number: 5 
+Column: 241 
+Type of Variable: Num 
+SAS Variable Name: LASTSIG3 
+Question Prologue: 
+Question:  How long has it been since you had your last sigmoidoscopy or colonoscopy? 
+Weighted 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+9 
+Within the past year (anytime less than 12 months 
+ago) 
+Within the past 2 years (1 year but less than 2 
+years ago) 
+Within the past 3 years (2 years but less than 
+Within the past 5 years (3 years but less than 
+Within the past 10 years (5 years but less than 
+Don’t know/Not sure 
+Refused 
+Notes: Section 08.02, AGE, is less than 50; or 
+Section 16.03, HADSIGM3, is coded 2, 7, 9, or 
+Missing 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Ever tested HIV 
+Section Name: HIV/AIDS 
+Core Section Number: 17 
+Question Number: 1 
+Column: 242 
+Type of Variable: Num 
+SAS Variable Name: HIVTST6 
+Question Prologue: 
+Question:    Have you ever been tested for HIV?    Do not count tests you may have had as part of a blood donation. Include 
+testing fluid from your mouth. 
+Yes 
+No—Go to Section 17.03 HIVRISK5 
+Don’t know/Not Sure—Go to Section 16.03 HIVRISK5 
+Refused—Go to Section 16.03 HIVRISK5 
+. 
+Weighted 
+. 
+Label: Month and Year of Last HIV Test 
+Section Name: HIV/AIDS 
+Core Section Number: 17 
+Question Number: 2 
+Column: 243-248 
+Type of Variable: Num 
+SAS Variable Name: HIVTSTD3 
+Question Prologue: 
+Question:    Not including blood donations, in what month and year was your last H.I.V. test?    (If response is before 
+January 1985, code ´777777´.) 
+Weighted 
+Code month and year 
+Notes: _ _/_ _ _ _  month and year 
+Notes: Section 17.01, HIVTST6, is coded 2, 7, 9, 
+or Missing 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Do Any High Risk Situations Apply 
+Section Name: HIV/AIDS 
+Core Section Number: 17 
+Question Number: 3 
+Column: 249 
+Type of Variable: Num 
+SAS Variable Name: HIVRISK5 
+Question Prologue: 
+Question:    I am going to read you a list. When I am done, please tell me if any of the situations apply to you. You do not 
+need to tell me which one. You have injected any drug other than those prescribed for you in the past year. You have been 
+treated for a sexually transmitted disease or STD in the past year.    You have given or received money or drugs in exchange 
+for sex in the past year. 
+Yes 
+No 
+Don’t know/Not sure 
+Refused 
+. 
+Weighted 
+. 
+Label: Had a test for high blood sugar or diabetes in the past three years? 
+Section Name: Pre-Diabetes 
+Module Section Number: 1 
+Question Number: 1 
+Column: 250 
+Type of Variable: Num 
+SAS Variable Name: PDIABTST 
+Question Prologue: 
+Question:  Have you had a test for high blood sugar or diabetes within the past three years? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 06.12, DIABETE3, is coded 1 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Ever been told by a doctor or other health professional that you have pre-diabetes or borderline diabetes? 
+Section Name: Pre-Diabetes 
+Module Section Number: 1 
+Question Number: 2 
+Column: 251 
+Type of Variable: Num 
+SAS Variable Name: PREDIAB1 
+Question Prologue: 
+Question:    Have you ever been told by a doctor or other health professional that you have pre-diabetes or borderline 
+diabetes?  (If “Yes” and respondent is female, ask: “Was this only when you were pregnant?”) 
+Yes 
+No 
+1 
+2 
+3 
+7 
+9 
+Yes, during pregnancy 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 06.12, DIABETE3, is coded 1; If 
+Section 06.12, DIABETE3, is coded 4 
+automatically code Module 01.02, PREDIAB1, 
+equal to 1 (yes); 
+. 
+Weighted 
+. 
+Label: Now Taking Insulin 
+Section Name: Diabetes 
+Module Section Number: 2 
+Question Number: 1 
+Column: 252 
+Type of Variable: Num 
+SAS Variable Name: INSULIN 
+Question Prologue: 
+Question:  Are you now taking insulin? 
+1 
+2 
+9 
+Yes 
+No 
+Refused 
+. 
+Weighted 
+. 
+Notes: Section 06.12, DIABETE3, is coded 2, 3, 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: How Often Check Blood for Glucose 
+Section Name: Diabetes 
+Module Section Number: 2 
+Question Number: 2 
+Column: 253-255 
+Type of Variable: Num 
+SAS Variable Name: BLDSUGAR 
+Question Prologue: 
+Question:    About how often do you check your blood for glucose or sugar?    [Include times when checked by a family 
+member or friend, but do NOT include times when checked by a health professional.] 
+Weighted 
+Notes: 1 _ _ Times per day 
+Notes: 2 _ _ Times per week 
+Notes: 3 _ _ Times per month 
+Notes: 4 _ _ Times per year 
+Don’t know/Not sure 
+Never 
+Refused 
+Notes: Section 06.12, DIABETE3, is coded 2, 3, 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Times Seen Health Professional for Diabetes 
+Section Name: Diabetes 
+Module Section Number: 2 
+Question Number: 4 
+Column: 259-260 
+Type of Variable: Num 
+SAS Variable Name: DOCTDIAB 
+Question Prologue: 
+Question:    About how many times in the past 12 months have you seen a doctor, nurse, or other health professional for 
+your diabetes? 
+Notes: _ _ Number of times, 76=76 or more 
+Weighted 
+Don’t know/Not sure 
+None 
+Refused 
+Notes: Section 06.12, DIABETE3, is coded 2, 3, 
+. 
+. 
+Label: Times Checked for Glycosylated Hemoglobin 
+Section Name: Diabetes 
+Module Section Number: 2 
+Question Number: 5 
+Column: 261-262 
+Type of Variable: Num 
+SAS Variable Name: CHKHEMO3 
+Question Prologue: 
+Question:    About how many times in the past 12 months has a doctor, nurse, or other health professional checked you for 
+A-one-C? 
+Notes: _ _ Number of times, 76 = 76 or more 
+Weighted 
+None 
+Never heard of “A one C” test 
+Don’t know/Not sure 
+Refused 
+Notes: Section 06.12, DIABETE3, is coded 2, 3, 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Times Feet Check for Sores/irritations 
+Section Name: Diabetes 
+Module Section Number: 2 
+Question Number: 6 
+Column: 263-264 
+Type of Variable: Num 
+SAS Variable Name: FEETCHK 
+Question Prologue: 
+Question:    About how many times in the past 12 months has a health professional checked your feet for any sores or 
+irritations? 
+Notes: _ _ Number of times, 76=76 or more 
+Weighted 
+Don’t know/Not sure 
+None 
+Refused 
+Notes: Section 06.12, DIABETE3, is coded 2, 3, 
+is coded 555 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Last Eye Exam Where Pupils Were Dilated 
+Section Name: Diabetes 
+Module Section Number: 2 
+Question Number: 7 
+Column: 265 
+Type of Variable: Num 
+SAS Variable Name: EYEEXAM1 
+Question Prologue: 
+Question:    When was the last time you had an eye exam in which the pupils were dilated, making you temporarily 
+sensitive to bright light? 
+Weighted 
+1 
+2 
+3 
+4 
+7 
+8 
+9 
+Within the past month (anytime less than 1 month 
+ago) 
+Within the past year (1 month but less than 12 
+months ago) 
+Within the past 2 years (1 year but less than 2 
+years ago) 
+Don’t know/Not sure 
+Never 
+Refused 
+. 
+. 
+Notes: Section 06.12, DIABETE3, is coded 2, 3, 
+Label: Ever Told Diabetes Has Affected Eyes 
+Section Name: Diabetes 
+Module Section Number: 2 
+Question Number: 8 
+Column: 266 
+Type of Variable: Num 
+SAS Variable Name: DIABEYE 
+Question Prologue: 
+Question:  Has a doctor ever told you that diabetes has affected your eyes or that you had retinopathy? 
+Yes 
+No 
+Don’t know/Not sure 
+Refused 
+Notes: Section 06.12, DIABETE3, is coded 2, 3, 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Ever Taken Class in Managing Diabetes 
+Section Name: Diabetes 
+Module Section Number: 2 
+Question Number: 9 
+Column: 267 
+Type of Variable: Num 
+SAS Variable Name: DIABEDU 
+Question Prologue: 
+Question:  Have you ever taken a course or class in how to manage your diabetes yourself? 
+Yes 
+No 
+Don’t know/Not sure 
+Refused 
+Notes: Section 06.12, DIABETE3, is coded 2, 3, 
+. 
+Weighted 
+. 
+Label: Do you have Medicare? 
+Section Name: Health Care Access 
+Module Section Number: 3 
+Question Number: 1 
+Column: 268 
+Type of Variable: Num 
+SAS Variable Name: MEDICARE 
+Question Prologue: 
+Question:  Do you have Medicare?  (Medicare is a coverage plan for people 65 or over and for certain disabled people.) 
+Yes 
+No 
+Don’t know/Not sure 
+Refused 
+Notes: Section 03.01, HLTHPLN1, is coded 2, 7, 
+or 9; 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Primary Health Insurance Coverage 
+Section Name: Health Care Access 
+Module Section Number: 3 
+Question Number: 2 
+Column: 269-270 
+Type of Variable: Num 
+SAS Variable Name: HLTHCVR1 
+Question Prologue: 
+Question:  What is the primary source of your health care coverage? Is it… 
+Medicare 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+A plan purchased through an employer or union 
+Notes: includes plans purchased through another 
+person's employer 
+A plan that you or another family member buys on 
+your own 
+Medicaid or other state program 
+TRICARE (formerly CHAMPUS), VA, or Military 
+Alaska Native, Indian Health Service, Tribal 
+Health Services 
+Some other source 
+None (no coverage) 
+Don’t know/Not Sure 
+Refused 
+Weighted 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Delayed Getting Medical Care 
+Section Name: Health Care Access 
+Module Section Number: 3 
+Question Number: 3 
+Column: 271 
+Type of Variable: Num 
+SAS Variable Name: DELAYME1 
+Question Prologue: Other than cost, there are many other reasons people delay getting needed medical care. 
+Question:    Other than cost, have you delayed getting medical care for one of the following reasons in the past 12 months? 
+Was it because….. 
+Weighted 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+You couldn’t get through on the telephone 
+You couldn’t get an appointment soon enough 
+Once you got there, you had to wait too long to 
+see the doctor 
+The (clinic/doctor´s) office wasn´t open when 
+you got there. 
+You didn’t have transportation 
+Other—Go to Module 03.03.1 DLYOTHER 
+Don’t know/Not Sure 
+No, I did not delay getting medical care/did not 
+need medical care 
+Refused 
+. 
+. 
+Label: Delayed Getting Medical Care Other Response 
+Section Name: Health Care Access 
+Module Section Number: 3 
+Question Number: 3.1 
+Column: 272-296 
+Type of Variable: Char 
+SAS Variable Name: DLYOTHER 
+Question Prologue: 
+Question:  Delayed Getting Medical Care Other Response 
+Weighted 
+Notes: Module 03.03, DELAYME1, is not coded 6 
+. 
+. 
+HIDDEN  Data not displayed 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Without Health Care Coverage Past 12 Months 
+Section Name: Health Care Access 
+Module Section Number: 3 
+Question Number: 4 
+Column: 297 
+Type of Variable: Num 
+SAS Variable Name: NOCOV121 
+Question Prologue: 
+Question:  In the PAST 12 MONTHS was there any time when you did NOT have ANY health insurance or coverage? 
+Yes—Go to Module 03.05 DRVISITS 
+No—Go to Module 03.05 DRVISITS 
+Don’t know/Not Sure—Go to Module 03.05 DRVISITS 
+Refused—Go to Module 03.05 DRVISITS 
+Notes: Section 03.01, HLTHPLN1, is coded 2, 7, 
+or 9 
+. 
+Weighted 
+. 
+Label: Time Since Last Had Health Care Coverage 
+Section Name: Health Care Access 
+Module Section Number: 3 
+Question Number: 4.5 
+Column: 298 
+Type of Variable: Num 
+SAS Variable Name: LSTCOVRG 
+Question Prologue: 
+Question:  About how long has it been since you last had health care coverage? 
+More than 6 months, but not more than 1 year ago 
+More than 1 year, but not more than 3 years ago 
+More than 3 years 
+Never 
+Refused 
+Don’t know/Not Sure 
+Notes: Section 03.01, HLTHPLN1, is coded 1; or 
+Module 03.04, NOCOV121, is not equal to missing 
+. 
+Weighted 
+. 
+1 
+2 
+3 
+4 
+5 
+7 
+9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Doctor Visits Past 12 Months 
+Section Name: Health Care Access 
+Module Section Number: 3 
+Question Number: 5 
+Column: 299-300 
+Type of Variable: Num 
+SAS Variable Name: DRVISITS 
+Question Prologue: 
+Question:  How many times have you been to a doctor, nurse, or other health professional in the past 12 months? 
+None 
+Don’t know/Not Sure 
+. 
+Weighted 
+. 
+Label: Could Not Get Medicine Due To Cost 
+Section Name: Health Care Access 
+Module Section Number: 3 
+Question Number: 6 
+Column: 301 
+Type of Variable: Num 
+SAS Variable Name: MEDSCOS1 
+Question Prologue: 
+Question:    Not including over-the-counter (OTC) medications, was there a time in the past 12 months when you did not 
+take your medication as prescribed because of cost? 
+Yes 
+No 
+1 
+2 
+3 
+7 
+9 
+Refused 
+No medication was prescribed 
+Don’t know/Not Sure 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Satisfied With Care Received 
+Section Name: Health Care Access 
+Module Section Number: 3 
+Question Number: 7 
+Column: 302 
+Type of Variable: Num 
+SAS Variable Name: CARERCVD 
+Question Prologue: 
+Question:  In general, how satisfied are you with the health care you received?  Would you say— 
+1 
+2 
+3 
+7 
+8 
+9 
+Very satisfied 
+Somewhat satisfied 
+Not at all satisfied 
+Don’t know/Not Sure 
+Not applicable 
+Refused 
+. 
+Weighted 
+. 
+Label: Currently Have Health Care Bills 
+Section Name: Health Care Access 
+Module Section Number: 3 
+Question Number: 8 
+Column: 303 
+Type of Variable: Num 
+SAS Variable Name: MEDBILL1 
+Question Prologue: 
+Question:    Do you currently have any health care bills that are being paid off over time?    (This could include medical bills 
+being paid off with a credit card, through personal loans, or bill paying arrangements with hospitals or other providers. The 
+bills can be from earlier years as well as this year.) 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Have you experienced confusion or memory loss that is happening more often or is getting worse? 
+Section Name: Cognitive Decline 
+Module Section Number: 4 
+Question Number: 1 
+Column: 304 
+Type of Variable: Num 
+SAS Variable Name: CIMEMLOS 
+Question Prologue: 
+Question:    During the past 12 months, have you experienced confusion or memory loss that is happening more often or is 
+getting worse? 
+Yes 
+No—Go to next module 
+Don’t know/Not sure 
+Refused—Go to next module 
+Notes: Section 08.02, AGE, is less than 45 
+. 
+Weighted 
+. 
+Label: Given up day-to-day chores due to confusion or memory loss 
+Section Name: Cognitive Decline 
+Module Section Number: 4 
+Question Number: 2 
+Column: 305 
+Type of Variable: Num 
+SAS Variable Name: CDHOUSE 
+Question Prologue: 
+Question:    During the past 12 months, as a result of confusion or memory loss, how often have you given up day-to-day 
+household activities or chores you used to do, such as cooking, cleaning, taking medications, driving, or paying bills? 
+Always 
+Usually 
+Sometimes 
+Rarely 
+Never 
+1 
+2 
+3 
+4 
+5 
+7 
+9 
+Don’t know/Not sure 
+Refused 
+Notes: Section 08.02, AGE, is less than 45; or 
+Module 04.01, CIMEMLOS, is coded 2 or 9 
+4 
+Weighted 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Need assistance with day-to_day activities due to confusion or memory loss 
+Section Name: Cognitive Decline 
+Module Section Number: 4 
+Question Number: 3 
+Column: 306 
+Type of Variable: Num 
+SAS Variable Name: CDASSIST 
+Question Prologue: 
+Question:  As a result of confusion or memory loss, how often do you need assistance with these day-to-day activities? 
+Rarely—Go to Module 04.05 CDDISCUS 
+Never—Go to Module 04.05 CDDISCUS 
+Don’t know/Not sure—Go to Module 04.05 CDDISCUS 
+Refused—Go to Module 04.05 CDDISCUS 
+Notes: Section 08.02, AGE, is less than 45; or 
+Module 04.01, CIMEMLOS, is coded 2 or 9 
+Label: When you need help with day-to-day activities are you able to get it 
+Section Name: Cognitive Decline 
+Module Section Number: 4 
+Question Number: 4 
+Column: 307 
+Type of Variable: Num 
+SAS Variable Name: CDHELP 
+Question Prologue: 
+Question:  When you need help with these day-to-day activities, how often are you able to get the help that you need? 
+9 
+3 
+2 
+Weighted 
+. 
+. 
+Weighted 
+. 
+. 
+Always 
+Usually 
+Sometimes 
+Always 
+Usually 
+Sometimes 
+Rarely 
+Never 
+1 
+2 
+3 
+4 
+5 
+7 
+9 
+1 
+2 
+3 
+4 
+5 
+7 
+Don’t know/Not sure 
+Notes: Section 08.02, AGE, is less than 45; or 
+Module 04.01, CIMEMLOS, is coded 2 or 9; or 
+Module 04.03, CDASSIST, is coded 4, 5, 7, 9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Does confusion or memory loss interfere with work or social activities 
+Section Name: Cognitive Decline 
+Module Section Number: 4 
+Question Number: 5 
+Column: 308 
+Type of Variable: Num 
+SAS Variable Name: CDSOCIAL 
+Question Prologue: 
+Question:    During the past 12 months, how often has confusion or memory loss interfered with your ability to work, 
+volunteer, or engage in social activities outside the home? 
+Always 
+Usually 
+Sometimes 
+Rarely 
+Never 
+1 
+2 
+3 
+4 
+5 
+7 
+9 
+Don’t know/Not sure 
+Refused 
+Weighted 
+. 
+. 
+Notes: Section 08.02, AGE, is less than 45; or 
+Module 04.01, CIMEMLOS, is coded 2 or 9 
+Label: Have you discussed your confusion or memory loss with a health care professional? 
+Section Name: Cognitive Decline 
+Module Section Number: 4 
+Question Number: 6 
+Column: 309 
+Type of Variable: Num 
+SAS Variable Name: CDDISCUS 
+Question Prologue: 
+Question:  Have you or anyone else discussed your confusion or memory loss with a health care professional? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 08.02, AGE, is less than 45; or 
+Module 04.01, CIMEMLOS, is coded 2 or 9 
+Weighted 
+. 
+. 
+5 
+1 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Provided regular care for family or friend 
+Section Name: Caregiver 
+Module Section Number: 5 
+Question Number: 1 
+Column: 310 
+Type of Variable: Num 
+SAS Variable Name: CAREGIV1 
+Question Prologue: 
+Question:    During the past 30 days, did you provide regular care or assistance to a friend or family member who has a 
+health problem or disability? 
+1 
+2 
+7 
+8 
+9 
+Yes 
+No—Go to Module 05.09 CRGVEXPT 
+Don’t know/Not Sure—Go to Module 05.09 CRGVEXPT 
+Caregiving recipient died in past 30 days—Go to 
+next module 
+Refused—Go to Module 05.09 CRGVEXPT 
+Weighted 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Relationship Of Person To Whom You Are Giving Care? 
+Section Name: Caregiver 
+Module Section Number: 5 
+Question Number: 2 
+Column: 311-312 
+Type of Variable: Num 
+SAS Variable Name: CRGVREL2 
+Question Prologue: 
+Question:  What is his/her relationship to you? 
+Weighted 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+Mother 
+Father 
+Mother-in-law 
+Father-in-law 
+Child 
+Husband 
+Wife 
+Same-sex partner 
+Brother or brother-in-law 
+Sister or sister-in-law 
+Grandmother 
+Grandfather 
+Grandchild 
+Other relative 
+Unmarried partner 
+Don’t know/Not Sure 
+Refused 
+1 
+. 
+. 
+Non-relative/Family friend 
+Notes: Module 05.01, CAREGIV1, is coded 2, 8, 7 
+or 9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: How Long Provided Care For Person. 
+Section Name: Caregiver 
+Module Section Number: 5 
+Question Number: 3 
+Column: 313 
+Type of Variable: Num 
+SAS Variable Name: CRGVLNG1 
+Question Prologue: 
+Question:  For how long have you provided care for that person? 
+1 
+2 
+3 
+4 
+5 
+7 
+9 
+Less than 30 days 
+More than 5 years 
+Don’t know/Not sure 
+Refused 
+Notes: Module 05.01, CAREGIV1, is coded 2, 8, 7 
+or 9 
+Label: How Many Hours Do You Provide Care For Person? 
+Section Name: Caregiver 
+Module Section Number: 5 
+Question Number: 4 
+Column: 314 
+Type of Variable: Num 
+SAS Variable Name: CRGVHRS1 
+Question Prologue: 
+Question:  In an average week, how many hours do you provide care or assistance? 
+Weighted 
+. 
+. 
+1 
+2 
+3 
+4 
+7 
+9 
+Up to 8 hours per week 
+Don’t know/Not sure 
+Refused 
+Notes: Module 05.01, CAREGIV1, is coded 2, 8, 7 
+or 9 
+Weighted 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: What Is The Major Health Problem, Illness, Disability For Care For Person? 
+Section Name: Caregiver 
+Module Section Number: 5 
+Question Number: 5 
+Column: 315-316 
+Type of Variable: Num 
+SAS Variable Name: CRGVPRB2 
+Question Prologue: 
+Question:  What is the main health problem, long-term illness, or disability that the person you care for has? 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+Arthritis/Rheumatism 
+Asthma 
+Cancer 
+Chronic respiratory conditions such as 
+Emphysema or COPD 
+Dementia or other Cognitive Impairment 
+Disorders 
+Developmental Disabilities such as Autism, 
+Down´s Syndrome, and Spina Bifida 
+Diabetes 
+Heart Disease, Hypertension, Stroke 
+Human Immunodeficiency Virus Infection (HIV) 
+Mental Illnesses, such as Anxiety, Depression, 
+or Schizophrenia 
+Other organ failure or diseases such as kidney 
+or liver problems 
+Substance Abuse or Addiction Disorders 
+Injuries, including broken bones 
+Old age/infirmity/frailty 
+Don’t know/Not Sure 
+Other 
+Refused 
+Notes: Module 05.01, CAREGIV1, is coded 2, 8, 7 
+or 9 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Managed personal care 
+Section Name: Caregiver 
+Module Section Number: 5 
+Question Number: 6 
+Column: 317 
+Type of Variable: Num 
+SAS Variable Name: CRGVPERS 
+Question Prologue: In the past 30 days, did you provide care for this person by… 
+Question:  …Managing personal care such as giving medications, feeding, dressing, or bathing? 
+Yes 
+No 
+Don’t know/Not sure 
+Refused 
+Notes: Module 05.01, CAREGIV1, is coded 2, 8, 7 
+or 9 
+. 
+Weighted 
+. 
+Label: Managed household tasks 
+Section Name: Caregiver 
+Module Section Number: 5 
+Question Number: 7 
+Column: 318 
+Type of Variable: Num 
+SAS Variable Name: CRGVHOUS 
+Question Prologue: In the past 30 days, did you provide care for this person by… 
+Question:  …Managing household tasks such as cleaning, managing money, or preparing meals? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+Notes: Module 05.01, CAREGIV1, is coded 2, 8, 7 
+or 9 
+7 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Which support do you MOST need that you are not getting? 
+Section Name: Caregiver 
+Module Section Number: 5 
+Question Number: 8 
+Column: 319 
+Type of Variable: Num 
+SAS Variable Name: CRGVMST3 
+Question Prologue: 
+Question:    Of the following support services, which one do you, as a caregiver, most need that you are not currently 
+getting? 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+9 
+Classes about giving care, such as giving 
+medications 
+Help in getting access to services 
+Support groups 
+Respite care 
+Individual counseling to help cope with giving 
+care 
+You don’t need any of these support services 
+Don’t know/Not Sure 
+Refused 
+Notes: Module 05.01, CAREGIV1, is coded 2, 8, 7 
+or 9 
+Weighted 
+. 
+. 
+Label: Do you expect to have a relative you will need to provide care for? 
+Section Name: Caregiver 
+Module Section Number: 5 
+Question Number: 9 
+Column: 320 
+Type of Variable: Num 
+SAS Variable Name: CRGVEXPT 
+Question Prologue: 
+Question:    In the next 2 years, do you expect to provide care or assistance to a friend or family member who has a health 
+problem or disability? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+Notes: Module 05.01, CAREGIV1, is coded 8 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Ever used an e-cigarette? 
+Section Name: E-Cigarettes 
+Module Section Number: 6 
+Question Number: 1 
+Column: 321 
+Type of Variable: Num 
+SAS Variable Name: ECIGARET 
+Question Prologue: 
+Question:  Have you ever used an e-cigarette or other electronic vaping product, even just one time, in your entire life? 
+No—Go to next module 
+Don’t know/Not Sure—Go to next module 
+Refused—Go to next module 
+Yes 
+1 
+9 
+Weighted 
+. 
+. 
+Label: Do you now use e-cigarettes, every day, some days, or not at all? 
+Section Name: E-Cigarettes 
+Module Section Number: 6 
+Question Number: 2 
+Column: 322 
+Type of Variable: Num 
+SAS Variable Name: ECIGNOW 
+Question Prologue: 
+Question:  Do you now use e-cigarettes or other electronic vaping products every day, some days, or not at all? 
+1 
+2 
+3 
+7 
+9 
+Every day 
+Some days 
+Not at all 
+Don’t know / Not sure 
+Refused 
+Notes: Module 06.01, ECIGARET, is coded 2, 7, 9, 
+or Missing 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: During the past 30 days, on how many days did you use marijuana or hashish? 
+Section Name: Marijuana Use 
+Module Section Number: 7 
+Question Number: 1 
+Column: 323-324 
+Type of Variable: Num 
+SAS Variable Name: MARIJAN1 
+Question Prologue: 
+Question:  During the past 30 days, on how many days did you use marijuana or cannabis? 
+None—Go to next module 
+Don’t know/Not Sure—Go to next module 
+Refused—Go to next module 
+. 
+Weighted 
+. 
+Label: During the past 30 days, how did you primarily use marijuana? 
+Section Name: Marijuana Use 
+Module Section Number: 7 
+Question Number: 2 
+Column: 325 
+Type of Variable: Num 
+SAS Variable Name: USEMRJN2 
+Question Prologue: 
+Question:    During the past 30 days, which one of the following ways did you use marijuana the most often? Did you 
+usually…   [Please select one. Did you…] 
+Weighted 
+Smoke it (for example, in a joint, bong, pipe, 
+or blunt) 
+Eat it (for example, in brownies, cakes, 
+cookies, or candy) 
+Drink it (for example, in tea, cola, alcohol) 
+Vaporize it (for example, in an e-cigarette-like 
+vaporizer or other vaporizing device) 
+Dab it (for example, using waxes or 
+concentrates) 
+Use it some other way 
+Don’t know/Not Sure 
+Refused 
+. 
+. 
+Notes: Module 07.01, MARIJANA, is coded 88, 77, 
+or 99; 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: What was the reason you used marijuana? 
+Section Name: Marijuana Use 
+Module Section Number: 7 
+Question Number: 3 
+Column: 326 
+Type of Variable: Num 
+SAS Variable Name: RSNMRJN1 
+Question Prologue: 
+Question:  When you used marijuana or cannabis during the past 30 days, was it usually: 
+Weighted 
+1 
+2 
+3 
+7 
+9 
+For medical reasons (like to treat or decrease 
+symptoms of a health condition) 
+For non-medical reasons (like to have fun or fit 
+in) 
+For both medical and non-medical reasons 
+Don’t know/Not Sure 
+Refused 
+Notes: Module 07.01, MARIJANA, is coded 88, 77, 
+or 99; 
+. 
+. 
+Label: Days had trouble with sleep 
+Section Name: Sleep Disorder 
+Module Section Number: 8 
+Question Number: 1 
+Column: 327-328 
+Type of Variable: Num 
+SAS Variable Name: ADSLEEP 
+Question Prologue: 
+Question:    Over the last 2 weeks, how many days have you had trouble falling asleep or staying asleep or sleeping too 
+much? 
+None 
+Refused 
+Don’t know/Not sure 
+2 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Over the last 2 weeks, how many days did you unintentionally fall asleep during the day? 
+Section Name: Sleep Disorder 
+Module Section Number: 8 
+Question Number: 2 
+Column: 329-330 
+Type of Variable: Num 
+SAS Variable Name: SLEPDAY1 
+Question Prologue: 
+Question:  Over the last 2 weeks, how many days did you unintentionally fall asleep during the day? 
+2 
+. 
+Weighted 
+. 
+None 
+Don’t know/Not Sure 
+Refused 
+Missing 
+Label: Have you ever been told that you snore loudly? 
+Section Name: Sleep Disorder 
+Module Section Number: 8 
+Question Number: 3 
+Column: 331 
+Type of Variable: Num 
+SAS Variable Name: SLEPSNO2 
+Question Prologue: 
+Question:  Have you ever been told that you snore loudly? 
+Yes 
+No 
+1 
+2 
+7 
+Don’t know/Not Sure 
+Weighted 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Has anyone ever observed that you stop breathing during your sleep? 
+Section Name: Sleep Disorder 
+Module Section Number: 8 
+Question Number: 4 
+Column: 332 
+Type of Variable: Num 
+SAS Variable Name: SLEPBRTH 
+Question Prologue: 
+Question:  Has anyone ever observed that you stop breathing during your sleep? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+1 
+. 
+Weighted 
+. 
+Label: Had little pleasure doing things 
+Section Name: Depression and Anxiety 
+Module Section Number: 9 
+Question Number: 1 
+Column: 333 
+Type of Variable: Num 
+SAS Variable Name: ADPLEAS1 
+Question Prologue: 
+Question:    Over the last 2 weeks, how often have you been bothered by having little interest or pleasure in doing things.   
+Would you say this happens… 
+1 
+2 
+3 
+4 
+7 
+9 
+Never 
+For several days 
+For more than half the days 
+Nearly every day 
+Don’t know/Not sure 
+Refused 
+Weighted 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Felt down, depressed or hopeless 
+Section Name: Depression and Anxiety 
+Module Section Number: 9 
+Question Number: 2 
+Column: 334 
+Type of Variable: Num 
+SAS Variable Name: ADDOWN1 
+Question Prologue: 
+Question:    Over the last 2 weeks, how often have you been bothered by feeling down, depressed or hopeless?    Would 
+you say this happens… 
+Never 
+For several days 
+For more than half the days 
+Nearly every day 
+Don’t know/Not sure 
+Refused 
+Weighted 
+. 
+. 
+Label: Felt nervous, anxious or on edge 
+Section Name: Depression and Anxiety 
+Module Section Number: 9 
+Question Number: 3 
+Column: 335 
+Type of Variable: Num 
+SAS Variable Name: FEELNERV 
+Question Prologue: 
+Question:    Over the last 2 weeks, how often have you been bothered by feeling nervous, anxious or on edge?    Would 
+you say this happens… 
+Never 
+For several days 
+For more than half the days 
+Nearly every day 
+Don’t know/Not sure 
+Refused 
+Weighted 
+. 
+. 
+1 
+2 
+3 
+4 
+7 
+9 
+1 
+2 
+3 
+4 
+7 
+9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Been bothered by not being able to stop or control worrying 
+Section Name: Depression and Anxiety 
+Module Section Number: 9 
+Question Number: 4 
+Column: 336 
+Type of Variable: Num 
+SAS Variable Name: STOPWORY 
+Question Prologue: 
+Question:    Over the last 2 weeks, how often have you been bothered by not being able to stop or control worrying?   
+Would you say this happens… 
+Never 
+For several days 
+For more than half the days 
+Nearly every day 
+Don’t know/Not sure 
+Refused 
+Weighted 
+. 
+. 
+Label: Did you have a cough? 
+Section Name: Respiratory Health (COPD Symptoms) 
+Module Section Number: 10 
+Question Number: 1 
+Column: 337 
+Type of Variable: Num 
+SAS Variable Name: COPDCOGH 
+Question Prologue: 
+Question:  During the past 3 months, did you have a cough on most days? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+1 
+2 
+3 
+4 
+7 
+9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Did you cough up phlegm? 
+Section Name: Respiratory Health (COPD Symptoms) 
+Module Section Number: 10 
+Question Number: 2 
+Column: 338 
+Type of Variable: Num 
+SAS Variable Name: COPDFLEM 
+Question Prologue: 
+Question:  During the past 3 months, did you cough up phlegm [FLEM] or mucus on most days? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+Label: Did you have shortness of breath? 
+Section Name: Respiratory Health (COPD Symptoms) 
+Module Section Number: 10 
+Question Number: 3 
+Column: 339 
+Type of Variable: Num 
+SAS Variable Name: COPDBRTH 
+Question Prologue: 
+Question:  Do you have shortness of breath either when hurrying on level ground or when walking up a slight hill or stairs? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Have you ever been given a breathing test? 
+Section Name: Respiratory Health (COPD Symptoms) 
+Module Section Number: 10 
+Question Number: 4 
+Column: 340 
+Type of Variable: Num 
+SAS Variable Name: COPDBTST 
+Question Prologue: 
+Question:  Have you ever been given a breathing test to diagnose breathing problems? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+Label: How many years have you smoked tobacco products? 
+Section Name: Respiratory Health (COPD Symptoms) 
+Module Section Number: 10 
+Question Number: 5 
+Column: 341-342 
+Type of Variable: Num 
+SAS Variable Name: COPDSMOK 
+Question Prologue: 
+Question:  Over your lifetime, how many years have you smoked tobacco products? 
+Never smoked or smoked less than one year 
+Don´t know/Not sure 
+Refused 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Times used an indoor tanning device 
+Section Name: Indoor Tanning 
+Module Section Number: 11 
+Question Number: 1 
+Column: 343-345 
+Type of Variable: Num 
+SAS Variable Name: INDORTAN 
+Question Prologue: 
+Question:    Not including spray-on tans, during the past 12 months, how many times have you used an indoor tanning 
+device such as a sunlamp, tanning bed, or booth? 
+Weighted 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+1 
+3 
+5 
+1 
+1 
+4 
+1 
+1 
+7 
+1 
+2 
+1 
+2 
+2 
+3 
+1 
+1 
+2 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Times used an indoor tanning device 
+Section Name: Indoor Tanning 
+Module Section Number: 11 
+Question Number: 1 
+Column: 343-345 
+Type of Variable: Num 
+SAS Variable Name: INDORTAN 
+Question Prologue: 
+Question:    Not including spray-on tans, during the past 12 months, how many times have you used an indoor tanning 
+device such as a sunlamp, tanning bed, or booth? 
+Don’t know/Not Sure 
+Refused 
+2 
+Weighted 
+. 
+. 
+Label: Number Of Sunburns In Past 12 Months 
+Section Name: Excess Sun Exposure 
+Module Section Number: 12 
+Question Number: 1 
+Column: 346-348 
+Type of Variable: Num 
+SAS Variable Name: NUMBURN3 
+Question Prologue: 
+Question:  During the past 12 months, how many times have you had a sunburn? 
+Weighted 
+Don’t know/Not Sure 
+Refused 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: How often protect yourself from the sun 
+Section Name: Excess Sun Exposure 
+Module Section Number: 12 
+Question Number: 2 
+Column: 349 
+Type of Variable: Num 
+SAS Variable Name: SUNPRTCT 
+Question Prologue: 
+Question:    When you go outside on a warm sunny day for more than one hour, how often do you protect yourself from 
+the sun? Is that…. 
+Weighted 
+Always 
+Most of the time 
+Sometimes 
+Rarely 
+Never 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+Don´t stay outside for more than one hour on warm 
+sunny days 
+Don’t know/Not Sure 
+Don´t go outside at all on warm sunny days 
+Refused 
+8 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: How often outside on weekdays 
+Section Name: Excess Sun Exposure 
+Module Section Number: 12 
+Question Number: 3 
+Column: 350-351 
+Type of Variable: Num 
+SAS Variable Name: WKDAYOUT 
+Question Prologue: 
+Question:  On weekdays, in the summer, how long are you outside per day between 10am and 4pm? 
+Weighted 
+Less than half an hour 
+(More than half an hour) up to 1 hour 
+(More than 1 hour) up to 2 hours 
+(More than 2 hours) up to 3 hours 
+(More than 3 hours) up to 4 hours 
+(More than 4 hours) up to 5 hours 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+Don’t know/Not Sure 
+Refused 
+. 
+. 
+(More than 5) up to 6 hours 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: How often outside on weekends 
+Section Name: Excess Sun Exposure 
+Module Section Number: 12 
+Question Number: 4 
+Column: 352-353 
+Type of Variable: Num 
+SAS Variable Name: WKENDOUT 
+Question Prologue: 
+Question:  On weekends in the summer, how long are you outside each day between 10am and 4pm? 
+Weighted 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+Less than half an hour 
+(More than half an hour) up to 1 hour 
+(More than 1 hour) up to 2 hours 
+(More than 2 hours) up to 3 hours 
+(More than 3 hours) up to 4 hours 
+(More than 4 hours) up to 5 hours 
+(More than 5) up to 6 hours 
+Don’t know/Not Sure 
+Refused 
+. 
+. 
+Label: How old when you first started smoking? 
+Section Name: Lung Cancer Screening 
+Module Section Number: 13 
+Question Number: 1 
+Column: 354-356 
+Type of Variable: Num 
+SAS Variable Name: LCSFIRST 
+Question Prologue: 
+Question:  How old were you when you first started to smoke cigarettes regularly 
+Weighted 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 09.01, SMOKE100, is coded 2, 7, 
+coded 7, 9, or Missing; 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: How old when you last smoked? 
+Section Name: Lung Cancer Screening 
+Module Section Number: 13 
+Question Number: 2 
+Column: 357-359 
+Type of Variable: Num 
+SAS Variable Name: LCSLAST 
+Question Prologue: 
+Question:  How old were you when you last smoked cigarettes regularly? 
+Weighted 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 09.01, SMOKE100, is coded 2, 7, 
+coded 7, 9, or Missing; or Module 13.01, 
+LCSFIRST, is coded 888 or missing 
+. 
+. 
+Label: On average, how many cigarettes do you smoke each day? 
+Section Name: Lung Cancer Screening 
+Module Section Number: 13 
+Question Number: 3 
+Column: 360-362 
+Type of Variable: Num 
+SAS Variable Name: LCSNUMCG 
+Question Prologue: 
+Question:    On average, when you smoke/smoked regularly, about how many cigarettes do/did you usually smoke each 
+day? 
+Weighted 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 09.01, SMOKE100, is coded 2, 7, 
+coded 7, 9, or Missing; or Module 13.01, 
+LCSFIRST, is coded 888 or missing 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Did you have a CT or CAT scan? 
+Section Name: Lung Cancer Screening 
+Module Section Number: 13 
+Question Number: 4 
+Column: 363 
+Type of Variable: Num 
+SAS Variable Name: LCSCTSCN 
+Question Prologue: 
+Question:  In the last 12 months, did you have a CT or CAT scan? 
+Yes, to check for lung cancer 
+No (did not have a CT scan) 
+Had a CT scan, but for some other reason 
+Don’t know/Not Sure 
+Refused 
+Label: How Many Types of Cancer? 
+Section Name: Cancer Survivorship 
+Module Section Number: 14 
+Question Number: 1 
+Column: 364 
+Type of Variable: Num 
+SAS Variable Name: CNCRDIFF 
+Question Prologue: 
+Question:  How many different types of cancer have you had? 
+. 
+Weighted 
+. 
+Only one 
+Two 
+Three or more 
+Don’t know/Not Sure—Go to next module 
+Refused—Go to next module 
+Notes: Section 06.06, CHCSCNCR, is coded 2, 7, 
+coded 2, 7, 9 or Missing; 
+. 
+Weighted 
+. 
+1 
+2 
+3 
+7 
+9 
+1 
+2 
+3 
+7 
+9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Age Told Had Cancer 
+Section Name: Cancer Survivorship 
+Module Section Number: 14 
+Question Number: 2 
+Column: 365-366 
+Type of Variable: Num 
+SAS Variable Name: CNCRAGE 
+Question Prologue: 
+Question:    At what age were you told that you had cancer?    (If Response = 2 (Two) or 3 (Three or more), ask: “At what 
+age was your first diagnosis of cancer?”) 
+Weighted 
+Notes: 97 = 97 and older 
+Don’t know/Not Sure 
+Refused 
+Missing 
+Notes: Section 06.06, CHCSCNCR, is coded 2, 7, 
+coded 2, 7, 9 or Missing  ; or Module 14.01, 
+CNCRDIFF, is coded 7, 9 or missing 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Type of Cancer 
+Section Name: Cancer Survivorship 
+Module Section Number: 14 
+Question Number: 3 
+Column: 367-368 
+Type of Variable: Num 
+SAS Variable Name: CNCRTYP1 
+Question Prologue: 
+Question:    What type of cancer was it?    (If Response = 2 (Two) or 3 (Three or more), ask: “With your most recent 
+diagnoses of cancer, what type of cancer was it?”) 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+Breast cancer 
+Cervical cancer (cancer of the cervix)—Should 
+not be answered if SEX1=1 
+Endometrial cancer (cancer of the 
+uterus)—Should not be answered if SEX1=1 
+Ovarian cancer (cancer of the ovary)—Should not 
+be answered if SEX1=1 
+Head and neck cancer 
+Oral cancer 
+Pharyngeal (throat) cancer 
+Thyroid 
+Larynx 
+Colon (intestine) cancer 
+Esophageal (esophagus) 
+Liver cancer 
+Pancreatic (pancreas) cancer 
+Rectal (rectum) cancer 
+Stomach 
+Hodgkin´s Lymphoma (Hodgkin’s disease) 
+Leukemia (blood) cancer 
+Non-Hodgkin´s Lymphoma 
+Prostate cancer—Should not be answered if SEX1=2 
+Testicular cancer—Should not be answered if 
+SEX1=2 
+5 
+3 
+Melanoma 
+Other skin cancer 
+Heart 
+Lung 
+Bladder cancer 
+Renal (kidney) cancer 
+Weighted 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Type of Cancer 
+Section Name: Cancer Survivorship 
+Module Section Number: 14 
+Question Number: 3 
+Column: 367-368 
+Type of Variable: Num 
+SAS Variable Name: CNCRTYP1 
+Question Prologue: 
+Question:    What type of cancer was it?    (If Response = 2 (Two) or 3 (Three or more), ask: “With your most recent 
+diagnoses of cancer, what type of cancer was it?”) 
+Bone 
+Brain 
+Other 
+Neuroblastoma 
+Don’t know/Not Sure 
+Refused 
+Missing 
+Notes: Section 06.06, CHCSCNCR, is coded 2, 7, 
+coded 2, 7, 9 or Missing  ; or Module 14.01, 
+CNCRDIFF, is coded 7, 9 or missing 
+3 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Currently Receiving Treatment for Cancer 
+Section Name: Cancer Survivorship 
+Module Section Number: 14 
+Question Number: 4 
+Column: 369 
+Type of Variable: Num 
+SAS Variable Name: CSRVTRT2 
+Question Prologue: 
+Question:    Are you currently receiving treatment for cancer? [By treatment, we mean surgery, radiation therapy, 
+chemotherapy, or chemotherapy pills.] 
+1 
+2 
+3 
+4 
+5 
+7 
+9 
+Yes—Go to next module 
+No, I’ve completed treatment 
+No, I’ve refused treatment—Go to next module 
+No, I haven’t started treatment—Go to next 
+module 
+Don’t know/Not Sure—Go to next module 
+Refused—Go to next module 
+Notes: Section 06.06, CHCSCNCR, is coded 2, 7, 
+coded 2, 7, 9 or Missing  ; or Module 14.01, 
+CNCRDIFF, is coded 7, 9 or missing 
+. 
+Weighted 
+. 
+Treatment was not needed—Go to next module 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: What Type of Doctor Provides Majority of Your Care 
+Section Name: Cancer Survivorship 
+Module Section Number: 14 
+Question Number: 5 
+Column: 370-371 
+Type of Variable: Num 
+SAS Variable Name: CSRVDOC1 
+Question Prologue: 
+Question:  What type of doctor provides the majority of your health care? 
+Weighted 
+Gynecologic Oncologist—Should not be answered 
+if SEX1=1 
+General Practitioner, Internist 
+Plastic Surgeon, Reconstructive Surgeon 
+Cancer Surgeon 
+Family Practitioner 
+General Surgeon 
+Medical Oncologist 
+Radiation Oncologist 
+Urologist 
+Other 
+Refused 
+Don’t know/Not Sure 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+Notes: Section 06.06, CHCSCNCR, is coded 2, 7, 
+coded 2, 7, 9 or Missing  ; or Module 14.01, 
+CNCRDIFF, is coded 7, 9 or Missing; or Module 
+Missing; 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Did You Receive a Summary of Cancer Treatments Received 
+Section Name: Cancer Survivorship 
+Module Section Number: 14 
+Question Number: 6 
+Column: 372 
+Type of Variable: Num 
+SAS Variable Name: CSRVSUM 
+Question Prologue: 
+Question:    Did any doctor, nurse, or other health professional ever give you a written summary of all the cancer 
+treatments that you received? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 06.06, CHCSCNCR, is coded 2, 7, 
+coded 2, 7, 9 or Missing  ; or Module 14.01, 
+CNCRDIFF, is coded 7, 9 or Missing; or Module 
+Missing; 
+7 
+. 
+Weighted 
+. 
+Label: Ever Receive Instructions From A Doctor For Follow-Up Check-Ups 
+Section Name: Cancer Survivorship 
+Module Section Number: 14 
+Question Number: 7 
+Column: 373 
+Type of Variable: Num 
+SAS Variable Name: CSRVRTRN 
+Question Prologue: 
+Question:    Have you ever received instructions from a doctor, nurse, or other health professional about where you should 
+return or who you should see for routine cancer check-ups after completing treatment for cancer? 
+Yes 
+No—Go to Module 14.09 CSRVINSR 
+Don’t know/Not Sure—Go to Module 14.09 CSRVINSR 
+Refused—Go to Module 14.09 CSRVINSR 
+Notes: Section 06.06, CHCSCNCR, is coded 2, 7, 
+coded 2, 7, 9 or Missing  ; or Module 14.01, 
+CNCRDIFF, is coded 7, 9 or Missing; or Module 
+Missing; 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Instructions Written or Printed 
+Section Name: Cancer Survivorship 
+Module Section Number: 14 
+Question Number: 8 
+Column: 374 
+Type of Variable: Num 
+SAS Variable Name: CSRVINST 
+Question Prologue: 
+Question:  Were these instructions written down or printed on paper for you? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 06.06, CHCSCNCR, is coded 2, 7, 
+coded 2, 7, 9 or Missing  ; or Module 14.01, 
+CNCRDIFF, is coded 7, 9 or Missing; or Module 
+Missing; or 
+4 
+. 
+Weighted 
+. 
+Label: Did Health Insurance Pay For All Of Your Cancer Treatment 
+Section Name: Cancer Survivorship 
+Module Section Number: 14 
+Question Number: 9 
+Column: 375 
+Type of Variable: Num 
+SAS Variable Name: CSRVINSR 
+Question Prologue: 
+Question:    With your most recent diagnosis of cancer, did you have health insurance that paid for all or part of your 
+cancer treatment?  (“Health insurance” also includes Medicare, Medicaid, or other types of state health programs.) 
+Weighted 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 06.06, CHCSCNCR, is coded 2, 7, 
+coded 2, 7, 9 or Missing  ; or Module 14.01, 
+CNCRDIFF, is coded 7, 9 or Missing; or Module 
+Missing; 
+7 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Ever Denied Insurance Coverage Because Of Your Cancer? 
+Section Name: Cancer Survivorship 
+Module Section Number: 14 
+Question Number: 10 
+Column: 376 
+Type of Variable: Num 
+SAS Variable Name: CSRVDEIN 
+Question Prologue: 
+Question:  Were you ever denied health insurance or life insurance coverage because of your cancer? 
+3 
+. 
+Weighted 
+. 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 06.06, CHCSCNCR, is coded 2, 7, 
+coded 2, 7, 9 or Missing  ; or Module 14.01, 
+CNCRDIFF, is coded 7, 9 or Missing; or Module 
+Missing; 
+Label: Participate In Clinical Trial As Part Of Cancer Treatment? 
+Section Name: Cancer Survivorship 
+Module Section Number: 14 
+Question Number: 11 
+Column: 377 
+Type of Variable: Num 
+SAS Variable Name: CSRVCLIN 
+Question Prologue: 
+Question:  Did you participate in a clinical trial as part of your cancer treatment? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 06.06, CHCSCNCR, is coded 2, 7, 
+coded 2, 7, 9 or Missing  ; or Module 14.01, 
+CNCRDIFF, is coded 7, 9 or Missing; or Module 
+Missing; 
+5 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Currently Have Physical Pain From Cancer Or Treatment? 
+Section Name: Cancer Survivorship 
+Module Section Number: 14 
+Question Number: 12 
+Column: 378 
+Type of Variable: Num 
+SAS Variable Name: CSRVPAIN 
+Question Prologue: 
+Question:  Do you currently have physical pain caused by your cancer or cancer treatment? 
+Yes 
+No—Go to next module 
+Don’t know/Not Sure—Go to next module 
+Refused—Go to next module 
+Notes: Section 06.06, CHCSCNCR, is coded 2, 7, 
+coded 2, 7, 9 or Missing  ; or Module 14.01, 
+CNCRDIFF, is coded 7, 9 or Missing; or Module 
+Missing; 
+3 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Is Pain Under Control? 
+Section Name: Cancer Survivorship 
+Module Section Number: 14 
+Question Number: 13 
+Column: 379 
+Type of Variable: Num 
+SAS Variable Name: CSRVCTL1 
+Question Prologue: 
+Question:  Is your pain currently under control? 
+Yes, with medication (or treatment) 
+Yes, without medication (or treatment) 
+No, with medication (or treatment) 
+No, without medication (or treatment) 
+Don’t know/Not Sure 
+Refused 
+1 
+2 
+3 
+4 
+7 
+9 
+Notes: Section 06.06, CHCSCNCR, is coded 2, 7, 
+coded 2, 7, 9 or Missing  ; or Module 14.01, 
+CNCRDIFF, is coded 7, 9 or Missing; or Module 
+Missing; 
+9 
+2 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Why was PSA test done? 
+Section Name: Prostate Cancer Screening Decision Making 
+Module Section Number: 15 
+Question Number: 1 
+Column: 380 
+Type of Variable: Num 
+SAS Variable Name: PCPSADE1 
+Question Prologue: 
+Question:  Which of the following best describes the decision to have the P.S.A. test done? 
+Weighted 
+You made the decision alone—Go to next module 
+Your doctor, nurse, or health care provider made 
+the decision alone—Go to next module 
+You and one or more other persons made the 
+decision together 
+You don’t remember how the decision was made—Go 
+to next module 
+Refused—Go to next module 
+. 
+. 
+Notes: Section 08.01, SEX1, is coded 2; or 
+Section 15.04, PSATEST1, is coded, 2, 7, 9, or 
+Missing; or Section 08.01, SEX1, is coded 1 and 
+SECTION 08.02, AGE, is less than 40; 
+Label: Ever Had Breast Physical Exam by Doctor 
+Section Name: Clinic Breast Exam 
+Module Section Number: 16 
+Question Number: 1 
+Column: 382 
+Type of Variable: Num 
+SAS Variable Name: PROFEXAM 
+Question Prologue: 
+Question:    A clinical breast exam is when a doctor, nurse, or other health professional feels the breast for lumps. Have you 
+ever had a clinical breast exam? 
+Yes 
+No—Go to next module 
+Don’t know/Not sure—Go to next module 
+Refused—Go to next module 
+. 
+Weighted 
+. 
+1 
+2 
+3 
+4 
+9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: How Long since Last Breast Physical Exam 
+Section Name: Clinic Breast Exam 
+Module Section Number: 16 
+Question Number: 2 
+Column: 383 
+Type of Variable: Num 
+SAS Variable Name: LENGEXAM 
+Question Prologue: 
+Question:  How long has it been since your last breast exam? 
+1 
+2 
+3 
+4 
+5 
+7 
+9 
+Within the past year (anytime less than 12 months 
+ago) 
+Within the past 2 years (1 year but less than 2 
+years ago) 
+Within the past 3 years (2 years but less than 
+Within the past 5 years (3 years but less than 
+Don’t know/Not sure 
+Refused 
+Notes: Section 08.01, SEX1, is coded 1; or Module 
+Weighted 
+6 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Have you ever had the HPV vaccination? 
+Section Name: Adult Human Papillomavirus (HPV) - Vaccination 
+Module Section Number: 17 
+Question Number: 1 
+Column: 384 
+Type of Variable: Num 
+SAS Variable Name: HPVADVC2 
+Question Prologue: A vaccine to prevent the human papilloma virus or H.P.V. infection is available and is called the cervical 
+cancer or genital warts vaccine, H.P.V. shot, [Fill: if female “GARDASIL or CERVARIX”, if male “GARDASIL”]. 
+Question:    Have you ever had the H.P.V. vaccination?    (Human Papilloma Virus (Human Pap•uh•loh•muh Virus), Gardasil 
+(Gar•duh• seel), Cervarix (Serv a rix)) 
+Yes 
+No—Go to Next Module 
+1 
+2 
+3 
+7 
+9 
+Doctor refused when asked—Go to Next Module 
+Don’t know/Not Sure—Go to Next Module 
+Refused—Go to Next Module 
+Notes: Section 08.02, AGE, is greater than 49 
+. 
+Weighted 
+. 
+Label: How many HPV shots did you receive? 
+Section Name: Adult Human Papillomavirus (HPV) - Vaccination 
+Module Section Number: 17 
+Question Number: 2 
+Column: 385-386 
+Type of Variable: Num 
+SAS Variable Name: HPVADSHT 
+Question Prologue: 
+Question:  How many HPV shots did you receive? 
+Number of shots 
+3 
+4 
+6 
+All shots 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 08.02, AGE, is greater than 49; 
+or Module 17.01, HPVADVC2, is coded 2, 3, 7, 9 
+or Missing 
+5 
+1 
+6 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Received Tetanus Shot Since 2005? 
+Section Name: Tetanus Diphtheria (Tdap) (Adults) 
+Module Section Number: 18 
+Question Number: 1 
+Column: 387 
+Type of Variable: Num 
+SAS Variable Name: TETANUS1 
+Question Prologue: 
+Question:    Have you received a tetanus shot in the past 10 years?    (If yes, ask: “Was this Tdap, the tetanus shot that also 
+has pertussis or whooping cough vaccine?”) 
+Yes, received Tdap 
+Yes, received tetanus shot, but not Tdap 
+Yes, received tetanus shot but not sure what type 
+No, did not receive any tetanus shot in the past 
+Don’t know/Not Sure 
+Refused 
+. 
+Weighted 
+. 
+Label: Have you ever had the shingles or zoster vaccine? 
+Section Name: Shingles (ZOSTAVAX or ZOS) 
+Module Section Number: 19 
+Question Number: 1 
+Column: 388 
+Type of Variable: Num 
+SAS Variable Name: SHINGLE2 
+Question Prologue: 
+Question:  Have you ever had the shingles or zoster vaccine? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 08.02, AGE, is less than 50 
+. 
+Weighted 
+. 
+1 
+2 
+3 
+4 
+7 
+9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Sexual orientation 
+Section Name: Sexual Orientation and Gender Identity 
+Module Section Number: 21 
+Question Number: 1.a 
+Column: 589 
+Type of Variable: Num 
+SAS Variable Name: SOMALE 
+Question Prologue: 
+Question:  Which of the following best represents how you think of yourself? 
+Gay 
+Straight, that is, not gay 
+Bisexual 
+Something else 
+I don´t know the answer 
+Refused 
+Notes: Section 08.01, SEX1, is coded 2; 
+Label: Sexual orientation 
+Section Name: Sexual Orientation and Gender Identity 
+Module Section Number: 21 
+Question Number: 1.b 
+Column: 590 
+Type of Variable: Num 
+SAS Variable Name: SOFEMALE 
+Question Prologue: 
+Question:  Which of the following best represents how you think of yourself? 
+. 
+Weighted 
+. 
+Lesbian or Gay 
+Straight, that is, not gay 
+Bisexual 
+Something else 
+I don´t know the answer 
+Refused 
+Notes: Section 08.01, SEX1, is coded 1; 
+. 
+Weighted 
+. 
+1 
+2 
+3 
+4 
+7 
+9 
+1 
+2 
+3 
+4 
+7 
+9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Do you consider yourself to be transgender? 
+Section Name: Sexual Orientation and Gender Identity 
+Module Section Number: 21 
+Question Number: 2 
+Column: 591 
+Type of Variable: Num 
+SAS Variable Name: TRNSGNDR 
+Question Prologue: 
+Question:    Do you consider yourself to be transgender?    (If yes, ask “Do you consider yourself to be male-to-female, 
+female-to-male, or gender non-conforming?) 
+Yes, Transgender, male-to-female 
+Yes, Transgender, female to male 
+Yes, Transgender, gender nonconforming 
+. 
+Weighted 
+. 
+1 
+2 
+3 
+4 
+7 
+9 
+No 
+Refused 
+Don’t know/Not Sure 
+Label: Gender of child 
+Section Name: Random Child Selection 
+Module Section Number: 22 
+Question Number: 2 
+Column: 598 
+Type of Variable: Num 
+SAS Variable Name: RCSGENDR 
+Question Prologue: 
+Question:  Is the child a boy or a girl? 
+1 
+2 
+9 
+Boy 
+Girl 
+Refused 
+. 
+Weighted 
+. 
+Notes: Section 08.16, CHILDREN, is coded 0, 88, 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Relationship to child 
+Section Name: Random Child Selection 
+Module Section Number: 22 
+Question Number: 6 
+Column: 633 
+Type of Variable: Num 
+SAS Variable Name: RCSRLTN2 
+Question Prologue: 
+Question:  How are you related to the child? 
+Weighted 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+9 
+Parent (include biologic, step, or adoptive 
+parent) 
+Notes: Due to the nature of the data or the size 
+of the table for display, this data is not 
+printed for this report 
+Grandparent 
+Foster parent or guardian 
+Sibling (include biologic, step, and adoptive 
+sibling) 
+Other relative 
+Not related in any way 
+Don’t know/Not sure 
+Refused 
+Notes: Section 08.16, CHILDREN, is coded 0, 88, 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Hlth pro ever said child has asthma 
+Section Name: Childhood Asthma Prevalence 
+Module Section Number: 23 
+Question Number: 1 
+Column: 634 
+Type of Variable: Num 
+SAS Variable Name: CASTHDX2 
+Question Prologue: 
+Question:  Has a doctor, nurse or other health professional EVER said that the child has asthma? 
+Yes 
+No—Go to next module 
+Don’t know/Not Sure—Go to next module 
+Refused—Go to next module 
+Notes: Section 08.16, CHILDREN, is coded 0, 88, 
+. 
+Weighted 
+. 
+Label: Child still have asthma? 
+Section Name: Childhood Asthma Prevalence 
+Module Section Number: 23 
+Question Number: 2 
+Column: 635 
+Type of Variable: Num 
+SAS Variable Name: CASTHNO2 
+Question Prologue: 
+Question:  Does the child still have asthma? 
+Yes 
+No 
+Don’t know/Not Sure 
+Refused 
+Notes: Section 08.16, CHILDREN, is coded 0, 88, 
+coded 2, 7, 9, or Missing 
+3 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Questionnaire Version Identifier 
+Section Name: Questionnaire Version 
+Module Section Number: 1 
+Question Number: 1 
+Column: 641-642 
+Type of Variable: Num 
+SAS Variable Name: QSTVER 
+Question Prologue: 
+Question:  Questionnaire Version Identifier 
+Weighted 
+Landline single questionnaire 
+Landline multiple questionnaire version 1 
+Landline multiple questionnaire version 2 
+Landline multiple questionnaire version 3 
+Cell Phone single questionnaire 
+Cell Phone multiple questionnaire version 1 
+Cell Phone multiple questionnaire version 2 
+Cell Phone multiple questionnaire version 3 
+Label: Language identifier 
+Section Name: Questionnaire Language 
+Module Section Number: 1 
+Question Number: 1 
+Column: 643-644 
+Type of Variable: Num 
+SAS Variable Name: QSTLANG 
+Question Prologue: 
+Question:  Language identifier 
+1 
+2 
+English 
+Spanish 
+Missing 
+Weighted 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Metropolitan Status 
+Section Name: Urban Rural 
+Module Section Number: 1 
+Question Number: 2 
+Column: 1402 
+Type of Variable: Num 
+SAS Variable Name: _METSTAT 
+Question Prologue: 
+Question:  Metropolitan Status 
+Label: Urban/Rural Status 
+Section Name: Urban Rural 
+Module Section Number: 1 
+Question Number: 3 
+Column: 1403 
+Type of Variable: Num 
+SAS Variable Name: _URBSTAT 
+Question Prologue: 
+Question:  Urban/Rural Status 
+1 
+2 
+1 
+2 
+Metropolitan counties (_URBNRRL = 1,2,3,4) 
+Nonmetropolitan counties (_URBNRRL = 5,6) 
+Not defined or Missing 
+. 
+Weighted 
+. 
+Weighted 
+Urban counties (_URBNRRL = 1,2,3,4,5) 
+Rural counties (_URBNRRL = 6) 
+Not defined or Missing 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Metropolitan Status Code 
+Section Name: Weighting Variables 
+Module Section Number: 1 
+Question Number: 2 
+Column: 1409 
+Type of Variable: Num 
+SAS Variable Name: MSCODE 
+Question Prologue: 
+Question:  Metropolitan Status Code 
+1 
+2 
+3 
+5 
+In the center city of an MSA 
+Outside the center city of an MSA but inside the 
+county containing the center city 
+Inside a suburban county of the MSA 
+Not in an MSA 
+GU, PR, VI, or cell phone 
+. 
+Weighted 
+. 
+Label: Sample Design Stratification Variable 
+Section Name: Weighting Variables 
+Module Section Number: 1 
+Question Number: 3 
+Column: 1410-1415 
+Type of Variable: Num 
+SAS Variable Name: _STSTR 
+Question Prologue: 
+Question:    Sample Design Stratification Variable    (Prior to 2011:    _STSTR is a five digit number that combines the values 
+for _STATE (first two characters), _GEOSTR (third and fourth character), and _DENSTR2 (final character).) 
+HIDDEN  Data not displayed 
+Weighted 
+Notes: Floating Decimal Point. Due to the nature 
+of the data or the size of the table for display, 
+this data is not printed for this report 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Stratum weight 
+Section Name: Weighting Variables 
+Module Section Number: 1 
+Question Number: 4 
+Column: 1416-1425 
+Type of Variable: Num 
+SAS Variable Name: _STRWT 
+Question Prologue: 
+Question:    Stratum weight    (Number of records in a stratum (NRECSTR) divided by the number of records selected 
+(NRECSEL).) 
+HIDDEN  Data not displayed 
+Weighted 
+Notes: Floating Decimal Point. Due to the nature 
+of the data or the size of the table for display, 
+this data is not printed for this report 
+Label: Raw weighting factor used in raking 
+Section Name: Weighting Variables 
+Module Section Number: 1 
+Question Number: 7 
+Column: 1446-1455 
+Type of Variable: Num 
+SAS Variable Name: _RAWRAKE 
+Question Prologue: 
+Question:    Raw weighting factor used in raking    (Number of adults in the household (NUMADULT, maximum of 5) divided 
+by the imputed number of phones (_IMPNPH, maximum of 3).) 
+HIDDEN  Data not displayed 
+Weighted 
+Notes: Floating Decimal Point. Due to the nature 
+of the data or the size of the table for display, 
+this data is not printed for this report 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Design weight use in raking 
+Section Name: Weighting Variables 
+Module Section Number: 1 
+Question Number: 8 
+Column: 1456-1465 
+Type of Variable: Num 
+SAS Variable Name: _WT2RAKE 
+Question Prologue: 
+Question:  Design weight used in raking  (Stratum weight (_STRWT) multiplied by the raw weighting factor (_RAWRAKE).) 
+HIDDEN  Data not displayed 
+Weighted 
+Notes: Floating Decimal Point. Due to the nature 
+of the data or the size of the table for display, 
+this data is not printed for this report 
+Label: Imputed race/ethnicity value 
+Section Name: Weighting Variables 
+Module Section Number: 1 
+Question Number: 12 
+Column: 1471-1472 
+Type of Variable: Num 
+SAS Variable Name: _IMPRACE 
+Question Prologue: 
+Question:    Imputed race/ethnicity value    (This value is the reported race/ethnicity or an imputed race/ethnicity, if the 
+respondent refused to give a race/ethnicity. The value of the imputed race/ethnicity will be the most common 
+race/ethnicity response for that region of the state) 
+1 
+2 
+3 
+4 
+5 
+6 
+White, Non-Hispanic 
+Black, Non-Hispanic 
+Asian, Non-Hispanic 
+Hispanic 
+Other race, Non-Hispanic 
+American Indian/Alaskan Native, Non-Hispanic 
+Weighted 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Child Hispanic, Latino/a, or Spanish origin calculated variable 
+Section Name: Child Demographic Variables 
+Module Section Number: 1 
+Question Number: 01 
+Column: 1482 
+Type of Variable: Num 
+SAS Variable Name: _CHISPNC 
+Question Prologue: 
+Question:  Child Hispanic, Latino/a, or Spanish origin calculated variable 
+Child of Hispanic, Latino/a, or Spanish origin 
+Child not of Hispanic, Latino/a, or Spanish 
+origin 
+Weighted 
+Don’t know/Not Sure/Refused/Missing 
+. 
+. 
+Label: Child Non-Hispanic Race including Multiracial 
+Section Name: Child Demographic Variables 
+Module Section Number: 1 
+Question Number: 04 
+Column: 1539-1540 
+Type of Variable: Num 
+SAS Variable Name: _CRACE1 
+Question Prologue: 
+Question:  Child multiracial race categorization 
+White only 
+Black or African American only 
+American Indian or Alaskan Native only 
+Asian Only 
+Native Hawaiian or other Pacific Islander only 
+Weighted 
+. 
+. 
+Other race only 
+Multiracial 
+Don’t know/Not sure 
+Refused 
+Missing 
+1 
+2 
+9 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Preferred Child Race Categories 
+Section Name: Child Demographic Variables 
+Module Section Number: 1 
+Question Number: 05 
+Column: 1541-1542 
+Type of Variable: Num 
+SAS Variable Name: _CPRACE 
+Question Prologue: 
+Question:  Preferred Child Race Categories 
+Weighted 
+Black or African American 
+American Indian or Alaskan Native 
+White 
+Asian 
+Native Hawaiian or other Pacific Islander 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+Other race 
+No preferred race 
+Don’t know/Not sure 
+Refused 
+Missing 
+. 
+. 
+Label: Final child weight: Land-line and Cell-Phone data 
+Section Name: Child Weighting Variables 
+Module Section Number: 1 
+Question Number: 5 
+Column: 1584-1593 
+Type of Variable: Num 
+SAS Variable Name: _CLLCPWT 
+Question Prologue: 
+Question:  Final child weight: Land-line and Cell-Phone data  (Raking derived weight) 
+HIDDEN  Data not displayed 
+Weighted 
+Notes: Floating Decimal Point. Due to the nature 
+of the data or the size of the table for display, 
+this data is not printed for this report 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Dual Phone Use Categories 
+Section Name: Weighting Variables 
+Module Section Number: 1 
+Question Number: 2 
+Column: 1681 
+Type of Variable: Num 
+SAS Variable Name: _DUALUSE 
+Question Prologue: 
+Question:  Dual Phone Use Categories 
+Label: Dual Phone Use Correction Factor 
+Section Name: Weighting Variables 
+Module Section Number: 1 
+Question Number: 3 
+Column: 1682-1691 
+Type of Variable: Num 
+SAS Variable Name: _DUALCOR 
+Question Prologue: 
+Question:  Dual phone use correction factor 
+Weighted 
+1 
+2 
+9 
+Landline frame with a cell phone 
+Cell phone frame with a landline 
+No Dual Phone Use 
+HIDDEN  Data not displayed 
+Weighted 
+Notes: Due to the nature of the data or the size 
+of the table for display, this data is not 
+printed for this report 
+Label: Truncated design weight used in adult combined land line and cell phone raking 
+Section Name: Weighting Variables 
+Module Section Number: 1 
+Question Number: 4 
+Column: 1692-1701 
+Type of Variable: Num 
+SAS Variable Name: _LLCPWT2 
+Question Prologue: 
+Question:  Truncated design weight used in adult combined land line and cell phone raking 
+HIDDEN  Data not displayed 
+Weighted 
+Notes: Floating Decimal Point. Due to the nature 
+of the data or the size of the table for display, 
+this data is not printed for this report 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Final weight: Land-line and cell-phone data 
+Section Name: Weighting Variables 
+Module Section Number: 1 
+Question Number: 21 
+Column: 1750-1759 
+Type of Variable: Num 
+SAS Variable Name: _LLCPWT 
+Question Prologue: 
+Question:  Final weight assigned to each  respondent: Land-line and cell-phone data  (Raking derived weight) 
+HIDDEN  Data not displayed 
+Weighted 
+Label: Adults with good or better health 
+Section Name: Calculated Variables 
+Module Section Number: 1 
+Question Number: 1 
+Column: 1898 
+Type of Variable: Num 
+SAS Variable Name: _RFHLTH 
+Question Prologue: 
+Question:  Adults with good or better health 
+Good or Better Health 
+Notes: GENHLTH = 1 or 2 or 3 
+Fair or Poor Health 
+Notes: GENHLTH = 4 or 5 
+1 
+2 
+9 
+Weighted 
+Don’t know/Not Sure Or Refused/Missing 
+Notes: GENHLTH = 7 or 9 or Missing 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Computed Physical Health Status 
+Section Name: Calculated Variables 
+Module Section Number: 2 
+Question Number: 1 
+Column: 1899 
+Type of Variable: Num 
+SAS Variable Name: _PHYS14D 
+Question Prologue: 
+Question:  3 level not good physical health status: 0 days, 1-13 days, 14-30 days 
+Zero days when physical health not good 
+Don’t know/Refused/Missing 
+Weighted 
+Label: Computed Mental Health Status 
+Section Name: Calculated Variables 
+Module Section Number: 2 
+Question Number: 2 
+Column: 1900 
+Type of Variable: Num 
+SAS Variable Name: _MENT14D 
+Question Prologue: 
+Question:  3 level not good mental health status: 0 days, 1-13 days, 14-30 days 
+Zero days when mental health not good 
+Don’t know/Refused/Missing 
+Weighted 
+1 
+2 
+3 
+9 
+1 
+2 
+3 
+9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Respondents aged 18-64 with health care coverage 
+Section Name: Calculated Variables 
+Module Section Number: 3 
+Question Number: 1 
+Column: 1901 
+Type of Variable: Num 
+SAS Variable Name: _HCVU651 
+Question Prologue: 
+Question:  Respondents aged 18-64 who have any form of health care coverage 
+Weighted 
+Have health care coverage 
+Notes: 18 <= AGE <=64 and HLTHPLN1 = 1 
+Do not have health care coverage 
+Notes: 18 <= AGE <=64 and HLTHPLN1 = 2 
+Don’t know/Not Sure, Refused or Missing 
+Notes: AGE > 64 or AGE = Missing or HLTHPLN1 = 
+Label: Leisure Time Physical Activity Calculated Variable 
+Section Name: Calculated Variables 
+Module Section Number: 4 
+Question Number: 1 
+Column: 1902 
+Type of Variable: Num 
+SAS Variable Name: _TOTINDA 
+Question Prologue: 
+Question:  Adults who reported doing physical activity or exercise during the past 30 days other than their regular job 
+Weighted 
+Had physical activity or exercise 
+Notes: EXERANY2 = 1 
+No physical activity or exercise in last 30 days 
+Notes: EXERANY2 = 2 
+Don’t know/Refused/Missing 
+Notes: EXERANY2 = 7 or 9 or Missing 
+1 
+2 
+9 
+1 
+2 
+9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Ever had CHD or MI 
+Section Name: Calculated Variables 
+Module Section Number: 6 
+Question Number: 1 
+Column: 1903 
+Type of Variable: Num 
+SAS Variable Name: _MICHD 
+Question Prologue: 
+Question:  Respondents that have ever reported having coronary heart disease (CHD) or myocardial infarction (MI) 
+Weighted 
+1 
+2 
+Reported having MI or CHD 
+Notes: CVDINFR4=1 OR CVDCRHD4=1 
+Did not report having MI or CHD 
+Notes: CVDINFR4=2 AND CVDCRHD4=2 
+Notes: CVDINFR4=7, 9 OR MISSING OR CVDCRHD4=7, 
+. 
+. 
+Label: Lifetime Asthma Calculated Variable 
+Section Name: Calculated Variables 
+Module Section Number: 6 
+Question Number: 2 
+Column: 1904 
+Type of Variable: Num 
+SAS Variable Name: _LTASTH1 
+Question Prologue: 
+Question:  Adults who have ever been told they have asthma 
+Weighted 
+No 
+Notes: ASTHMA3 = 2 
+Yes 
+Notes: ASTHMA3 = 1 
+1 
+2 
+9 
+Don’t know/Not Sure Or Refused/Missing 
+Notes: ASTHMA3 = 7 or 9 or Missing 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Current Asthma Calculated Variable 
+Section Name: Calculated Variables 
+Module Section Number: 6 
+Question Number: 3 
+Column: 1905 
+Type of Variable: Num 
+SAS Variable Name: _CASTHM1 
+Question Prologue: 
+Question:  Adults who have been told they currently have asthma 
+No 
+Notes: ASTHMA3 = 2 or ASTHMA3 = 1 and ASTHNOW = 
+2 
+Yes 
+Notes: ASTHMA3 = 1 and ASTHNOW = 1 
+Don’t know/Not Sure Or Refused/Missing 
+Notes: ASTHMA3 = 7 or 9 or Missing or ASTHNOW = 
+Weighted 
+Label: Computed Asthma Status 
+Section Name: Calculated Variables 
+Module Section Number: 6 
+Question Number: 4 
+Column: 1906 
+Type of Variable: Num 
+SAS Variable Name: _ASTHMS1 
+Question Prologue: 
+Question:  Computed asthma status 
+Weighted 
+Current 
+Notes: ASTHMA3 = 1 and ASTHNOW = 1 
+Former 
+Notes: ASTHMA3 = 1 and ASTHNOW = 2 
+Never 
+Notes: ASTHMA3 = 2 
+Don’t know/Not Sure Or Refused/Missing 
+Notes: ASTHMA3 = 7 or 9 or Missing or ASTHNOW = 
+1 
+2 
+9 
+1 
+2 
+3 
+9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Respondents diagnosed with arthritis 
+Section Name: Calculated Variables 
+Module Section Number: 6 
+Question Number: 5 
+Column: 1907 
+Type of Variable: Num 
+SAS Variable Name: _DRDXAR1 
+Question Prologue: 
+Question:  Respondents who have had a doctor diagnose them as having some form of arthritis 
+1 
+2 
+Diagnosed with arthritis 
+Notes: HAVARTH3 = 1 
+Not diagnosed with arthritis 
+Notes: HAVARTH3 = 2 
+Weighted 
+Don´t know/Not Sure/Refused/Missing 
+Notes: HAVARTH3 = 7 or 9 or Missing 
+. 
+. 
+Label: Adults aged 18+ that have had permanent teeth extracted 
+Section Name: Calculated Variables 
+Module Section Number: 7 
+Question Number: 1 
+Column: 1908 
+Type of Variable: Num 
+SAS Variable Name: _EXTETH3 
+Question Prologue: 
+Question:  Adults aged 18+ who have had permanent teeth extracted 
+Not at risk 
+Notes: RMVTETH4=8 
+At risk 
+Notes: RMVTETH4=1 or 2 or 3 
+1 
+2 
+9 
+Don’t know/Not Sure Or Refused/Missing 
+Notes: RMVTETH4=7 or 9 or Missing 
+Weighted 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Adults aged 65+ who have had all their natural teeth extracted 
+Section Name: Calculated Variables 
+Module Section Number: 7 
+Question Number: 2 
+Column: 1909 
+Type of Variable: Num 
+SAS Variable Name: _ALTETH3 
+Question Prologue: 
+Question:  Adults aged 65+ who have had all their natural teeth extracted 
+Weighted 
+No 
+Yes 
+Notes: AGE>= 65 and RMVTETH4=3 
+Don’t know/Not Sure Or Refused/Missing 
+Notes: AGE>= 65 or =7 or 9 or Missing and 
+RMVTETH4=7 or 9 or Missing 
+Missing or Age Less Than 65 
+Notes: 18 <= AGE <= 64 
+. 
+. 
+Label: Adults that have visited a dentist, dental hygenist or dental clinic within the past year 
+Section Name: Calculated Variables 
+Module Section Number: 7 
+Question Number: 3 
+Column: 1910 
+Type of Variable: Num 
+SAS Variable Name: _DENVST3 
+Question Prologue: 
+Question:  Adults who have visited a dentist, dental hygenist or dental clinic within the past year 
+Yes 
+Notes: LASTDEN4=1 
+No 
+Notes: LASTDEN4=2 or 3 or 4 
+Weighted 
+Don’t know/Not Sure Or Refused/Missing 
+Notes: LASTDEN4=7 or 9 or Missing 
+1 
+2 
+9 
+1 
+2 
+9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Computed Preferred Race 
+Section Name: Calculated Race Variables 
+Module Section Number: 8 
+Question Number: 3 
+Column: 1967-1968 
+Type of Variable: Num 
+SAS Variable Name: _PRACE1 
+Question Prologue: 
+Question:  Preferred race category 
+Weighted 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+White 
+Notes: MRACASC1 = 10 
+Black or African American 
+Notes: MRACASC1 = 20 
+American Indian or Alaskan Native 
+Notes: MRACASC1 = 30 
+Asian 
+Notes: MRACASC1 = 40,41,42,43,44,45,46,47 
+Native Hawaiian or other Pacific Islander 
+Notes: MRACASC1 = 50,51,52,53,54 
+Other race 
+Notes: MRACASC1 = 60 
+No preferred race 
+Notes: MRACASC1 >= 100 and ORACE3 = 7 or 9 
+Don’t know/Not sure 
+Notes: MRACASC1 = 77 
+Refused 
+Notes: MRACASC1 = 99 
+Missing 
+Notes: MRACASC1 = Missing 
+. 
+. 
+  November 21, 2019 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+1 
+2 
+9 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Calculated non-Hispanic Race including multiracial 
+Section Name: Calculated Race Variables 
+Module Section Number: 8 
+Question Number: 4 
+Column: 1969-1970 
+Type of Variable: Num 
+SAS Variable Name: _MRACE1 
+Question Prologue: 
+Question:  Calculated multiracial race categorization 
+Weighted 
+White only 
+Notes: MRACASC1 = 10 
+Black or African American only 
+Notes: MRACASC1 = 20 
+American Indian or Alaskan Native only 
+Notes: MRACASC1 = 30 
+Asian Only 
+Notes: MRACASC1 = 40,41,42,43,44,45,46,47 
+Native Hawaiian or other Pacific Islander only 
+Notes: MRACASC1 = 50,51,52,53,54 
+Other race only 
+Notes: MRACASC1 = 60 
+Multiracial 
+Notes: MRACASC1 >= 100 
+Don’t know/Not sure 
+Notes: MRACASC1 = 77 
+Refused 
+Notes: MRACASC1 = 99 
+Missing 
+Notes: MRACASC1 = Missing 
+. 
+. 
+Label: Hispanic, Latino/a, or Spanish origin calculated variable 
+Section Name: Calculated Race Variables 
+Module Section Number: 8 
+Question Number: 6 
+Column: 1973 
+Type of Variable: Num 
+SAS Variable Name: _HISPANC 
+Question Prologue: 
+Question:  Hispanic, Latino/a, or Spanish origin calculated variable 
+Hispanic, Latino/a, or Spanish origin 
+Not of Hispanic, Latino/a, or Spanish origin 
+Don´t Know, Refused or Missing 
+Weighted 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Computed Race-Ethnicity grouping 
+Section Name: Calculated Race Variables 
+Module Section Number: 8 
+Question Number: 7 
+Column: 1974 
+Type of Variable: Num 
+SAS Variable Name: _RACE 
+Question Prologue: 
+Question:  Race/ethnicity categories 
+Weighted 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+White only, non-Hispanic 
+Notes: _HISPANC = 2 and _MRACE1 = 10 
+Black only, non-Hispanic 
+Notes: _HISPANC = 2 and _MRACE1 = 20 
+American Indian or Alaskan Native only, 
+Non-Hispanic 
+Notes: _HISPANC = 2 and _MRACE1 = 33 
+Asian only, non-Hispanic 
+Notes: _HISPANC = 2 and _MRACE1 = 
+Native Hawaiian or other Pacific Islander only, 
+Non-Hispanic 
+Notes: _HISPANC = 2 and _MRACE1 = 50,51,52,53,54 
+Other race only, non-Hispanic 
+Notes: _HISPANC = 2 and _MRACE1 = 60 
+Multiracial, non-Hispanic 
+Notes: _HISPANC = 2 and _MRACE1 = 77 
+Hispanic 
+Notes: _HISPANC = 1 
+Don’t know/Not sure/Refused 
+Notes: _HISPANC = 7 or 9 or _MRACE1 = 77 or 99 
+and _HISPANC = 2 
+Missing 
+Notes: _HISPANC = Missing or _MRACE1 = Missing 
+1 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Create Computed Non-Hispanic Whites/All Others Race Categories Race/Ethnic Group Codes Used In 
+Post-Stratification Variable 
+Section Name: Calculated Race Variables 
+Module Section Number: 8 
+Question Number: 8 
+Column: 1975 
+Type of Variable: Num 
+SAS Variable Name: _RACEG21 
+Question Prologue: 
+Question:  White non-Hispanic race group 
+Non-Hispanic White 
+Notes: _RACE = 1 
+1 
+2 
+9 
+Non-White or Hispanic 
+Notes: _RACE = 2 or 3 or 4 or 5 or 6 or 7 or 8 
+Don’t know/Not sure/Refused 
+Notes: _RACE = 9 
+Missing 
+1 
+. 
+. 
+Weighted 
+Label: Computed Five level race/ethnicity category. 
+Section Name: Calculated Race Variables 
+Module Section Number: 8 
+Question Number: 9 
+Column: 1976 
+Type of Variable: Num 
+SAS Variable Name: _RACEGR3 
+Question Prologue: 
+Question:  Five-level race/ethnicity category 
+1 
+2 
+3 
+4 
+5 
+9 
+White only, Non-Hispanic 
+Black only, Non-Hispanic 
+Other race only, Non-Hispanic 
+Multiracial, Non-Hispanic 
+Hispanic 
+Don’t know/Not sure/Refused 
+Missing 
+1 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Computed race groups used for internet prevalence tables 
+Section Name: Calculated Race Variables 
+Module Section Number: 8 
+Question Number: 10 
+Column: 1977 
+Type of Variable: Num 
+SAS Variable Name: _RACE_G1 
+Question Prologue: 
+Question:  Race groups used for internet prevalence tables 
+1 
+2 
+3 
+4 
+5 
+White - Non-Hispanic 
+Black - Non-Hispanic 
+Hispanic 
+Other race only, Non-Hispanic 
+Multiracial, Non-Hispanic 
+Don’t know/Not sure/Refused component question 
+. 
+Weighted 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Reported age in five-year age categories calculated variable 
+Section Name: Calculated Variables 
+Module Section Number: 8 
+Question Number: 11 
+Column: 1978-1979 
+Type of Variable: Num 
+SAS Variable Name: _AGEG5YR 
+Question Prologue: 
+Question:  Fourteen-level age category 
+Weighted 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+Age 18 to 24 
+Notes: 18 <= AGE <= 24 
+Age 25 to 29 
+Notes: 25 <= AGE <= 29 
+Age 30 to 34 
+Notes: 30 <= AGE <= 34 
+Age 35 to 39 
+Notes: 35 <= AGE <= 39 
+Age 40 to 44 
+Notes: 40 <= AGE <= 44 
+Age 45 to 49 
+Notes: 45 <= AGE <= 49 
+Age 50 to 54 
+Notes: 50 <= AGE <= 54 
+Age 55 to 59 
+Notes: 55 <= AGE <= 59 
+Age 60 to 64 
+Notes: 60 <= AGE <= 64 
+Age 65 to 69 
+Notes: 65 <= AGE <= 69 
+Age 70 to 74 
+Notes: 70 <= AGE <= 74 
+Age 75 to 79 
+Notes: 75 <= AGE <= 79 
+Age 80 or older 
+Notes: 80 <= AGE <= 99 
+Don’t know/Refused/Missing 
+Notes: 7 <= AGE <= 9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Reported age in two age groups calculated variable 
+Section Name: Calculated Variables 
+Module Section Number: 8 
+Question Number: 12 
+Column: 1980 
+Type of Variable: Num 
+SAS Variable Name: _AGE65YR 
+Question Prologue: 
+Question:  Two-level age category 
+Weighted 
+1 
+2 
+3 
+Age 18 to 64 
+Notes: 18 <= AGE <= 64 
+Age 65 or older 
+Notes: 65 <= AGE <= 99 
+Don’t know/Refused/Missing 
+Notes: 7 <= AGE <= 9 
+Label: Imputed Age value collapsed above 80 
+Section Name: Calculated Variables 
+Module Section Number: 8 
+Question Number: 13 
+Column: 1981-1982 
+Type of Variable: Num 
+SAS Variable Name: _AGE80 
+Question Prologue: 
+Question:  Imputed Age value collapsed above 80 
+Weighted 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Weighted 
+Label: Imputed age in six groups 
+Section Name: Calculated Variables 
+Module Section Number: 8 
+Question Number: 14 
+Column: 1983 
+Type of Variable: Num 
+SAS Variable Name: _AGE_G 
+Question Prologue: 
+Question:  Six-level imputed age category 
+1 
+2 
+3 
+4 
+5 
+6 
+Age 18 to 24 
+Notes: 18 <= _IMPAGE <= 24 
+Age 25 to 34 
+Notes: 25 <= _IMPAGE <= 34 
+Age 35 to 44 
+Notes: 35 <= _IMPAGE <= 44 
+Age 45 to 54 
+Notes: 45 <= _IMPAGE <= 54 
+Age 55 to 64 
+Notes: 55 <= _IMPAGE <= 64 
+Age 65 or older 
+Notes: _IMPAGE => 65 
+Label: Computed Height in Inches 
+Section Name: Calculated Variables 
+Module Section Number: 8 
+Question Number: 15 
+Column: 1984-1986 
+Type of Variable: Num 
+SAS Variable Name: HTIN4 
+Question Prologue: 
+Question:  Reported height in inches 
+Weighted 
+Notes: 0300 <= HEIGHT3 <= 0711 (metric HEIGHT3 
+value multiplied by 100 and divided by 2.54) 
+Notes: HEIGHT3=777, 999, 7777, 9999 or HEIGHT3 
+< 36 inches or HEIGHT3 > 95 inches or 
+HEIGHT3=missing 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Weighted 
+Notes: 0300 <= HEIGHT3 <= 0711 or 9091 <= HEIGHT3 
+<= 9244 (non-metric HEIGHT3 value multiplied by 
+.0254) 
+Notes: HEIGHT3 = 7777 or 9999 or outside accepted 
+values or HEIGHT3=missing 
+. 
+. 
+Label: Computed Height in Meters 
+Section Name: Calculated Variables 
+Module Section Number: 8 
+Question Number: 16 
+Column: 1987-1989 
+Type of Variable: Num 
+SAS Variable Name: HTM4 
+Question Prologue: 
+Question:  Reported height in meters 
+Label: Computed Weight in Kilograms 
+Section Name: Calculated Variables 
+Module Section Number: 8 
+Question Number: 17 
+Column: 1990-1994 
+Type of Variable: Num 
+SAS Variable Name: WTKG3 
+Question Prologue: 
+Question:  Reported weight in kilograms 
+Weight in kilograms [2 implied decimal places] 
+Notes: 0001 <= WEIGHT2 <= 650 or 9023 <= WEIGHT2 
+<= 9295 (non-metric WEIGHT2 value divided by 
+Weighted 
+Notes: WEIGHT2 = 7777 or 9999 or not in accepted 
+values or WEIGHT2 = Missing 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Computed body mass index 
+Section Name: Calculated Variables 
+Module Section Number: 8 
+Question Number: 18 
+Column: 1995-1998 
+Type of Variable: Num 
+SAS Variable Name: _BMI5 
+Question Prologue: 
+Question:  Body Mass Index (BMI) 
+Weighted 
+Notes: WTKG3/(HTM4*HTM4) (Has 2 implied decimal 
+places) 
+Don’t know/Refused/Missing 
+Notes: WTKG3 = 777 or 999 or HTM4 = 777 or 999 
+. 
+. 
+Label: Computed body mass index categories 
+Section Name: Calculated Variables 
+Module Section Number: 8 
+Question Number: 19 
+Column: 1999 
+Type of Variable: Num 
+SAS Variable Name: _BMI5CAT 
+Question Prologue: 
+Question:  Four-categories of Body Mass Index (BMI) 
+1 
+2 
+3 
+4 
+Normal Weight 
+Notes: 1850 <= _BMI5 < 2500 
+Overweight 
+Notes: 2500 <= _BMI5 < 3000 
+Obese 
+Notes: 3000 <= _BMI5 < 9999 
+Don’t know/Refused/Missing 
+Notes: _BMI5 = 9999 
+Weighted 
+Underweight 
+Notes: _BMI5 < 1850 (_BMI5 has 2 implied decimal 
+places) 
+. 
+. 
+  November 21, 2019 
+1 
+2 
+9 
+1 
+2 
+3 
+4 
+5 
+6 
+9 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Overweight or obese calculated variable 
+Section Name: Calculated Variables 
+Module Section Number: 8 
+Question Number: 20 
+Column: 2000 
+Type of Variable: Num 
+SAS Variable Name: _RFBMI5 
+Question Prologue: 
+Question:  Adults who have a body mass index greater than 25.00 (Overweight or Obese) 
+Weighted 
+No 
+Notes: 1200 <= _BMI5 < 2500 (_BMI5 has 2 implied 
+decimal places) 
+Yes 
+Notes: 2500 <= _BMI5 < 9999 
+Don’t know/Refused/Missing 
+Notes: _BMI5 = 9999 
+Label: Computed number of children in household 
+Section Name: Calculated Variables 
+Module Section Number: 8 
+Question Number: 21 
+Column: 2001 
+Type of Variable: Num 
+SAS Variable Name: _CHLDCNT 
+Question Prologue: 
+Question:  Number of children in household 
+Weighted 
+No children in household 
+Notes: CHILDREN = 88 
+One child in household 
+Notes: CHILDREN = 01 
+Two children in household 
+Notes: CHILDREN = 02 
+Three children in household 
+Notes: CHILDREN = 03 
+Four children in household 
+Notes: CHILDREN = 04 
+Five or more children in household 
+Notes: 05 <= CHILDREN < 88 
+Don’t know/Not sure/Missing 
+Notes: CHILDREN = 99 
+  November 21, 2019 
+1 
+2 
+3 
+4 
+9 
+1 
+2 
+3 
+4 
+5 
+9 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Computed level of education completed categories 
+Section Name: Calculated Variables 
+Module Section Number: 8 
+Question Number: 22 
+Column: 2002 
+Type of Variable: Num 
+SAS Variable Name: _EDUCAG 
+Question Prologue: 
+Question:  Level of education completed 
+Did not graduate High School 
+Notes: EDUCA = 1 or 2 or 3 
+Graduated High School 
+Notes: EDUCA = 4 
+Weighted 
+Attended College or Technical School 
+Notes: EDUCA = 5 
+Graduated from College or Technical School 
+Notes: EDUCA = 6 
+Don’t know/Not sure/Missing 
+Notes: EDUCA = 9 or Missing 
+Label: Computed income categories 
+Section Name: Calculated Variables 
+Module Section Number: 8 
+Question Number: 23 
+Column: 2003 
+Type of Variable: Num 
+SAS Variable Name: _INCOMG 
+Question Prologue: 
+Question:  Income categories 
+Weighted 
+Less than $15,000 
+Notes: INCOME2 = 1 or 2 
+$15,000 to less than $25,000 
+Notes: INCOME2 = 3 or 4 
+$25,000 to less than $35,000 
+Notes: INCOME2 = 5 
+$35,000 to less than $50,000 
+Notes: INCOME2 = 6 
+$50,000 or more 
+Notes: INCOME2 = 7 or 8 
+Don’t know/Not sure/Missing 
+Notes: INCOME2 = 77 or 99 or Missing 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Computed Smoking Status 
+Section Name: Calculated Variables 
+Module Section Number: 9 
+Question Number: 1 
+Column: 2004 
+Type of Variable: Num 
+SAS Variable Name: _SMOKER3 
+Question Prologue: 
+Question:  Four-level smoker status:  Everyday smoker, Someday smoker, Former smoker, Non-smoker 
+Weighted 
+Current smoker - now smokes every day 
+Notes: SMOKE100 = 1 and SMOKEDAY = 1 
+Current smoker - now smokes some days 
+Notes: SMOKE100 = 1 and SMOKEDAY = 2 
+Former smoker 
+Notes: SMOKE100 = 1 and SMOKEDAY = 3 
+Never smoked 
+Notes: SMOKE100 = 2 
+1 
+2 
+3 
+4 
+9 
+Don’t know/Refused/Missing 
+Notes: SMOKE100 = 1 and SMOKEDAY = 9 or SMOKE100 
+= 7 or 9 or Missing 
+Label: Current Smoking Calculated Variable 
+Section Name: Calculated Variables 
+Module Section Number: 9 
+Question Number: 2 
+Column: 2005 
+Type of Variable: Num 
+SAS Variable Name: _RFSMOK3 
+Question Prologue: 
+Question:  Adults who are current smokers 
+Weighted 
+1 
+2 
+9 
+No 
+Notes: _SMOKER3 = 3 or 4 
+Yes 
+Notes: _SMOKER3 = 1 or 2 
+Don’t know/Refused/Missing 
+Notes: _SMOKER3 = 9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Drink any alcoholic beverages in past 30 days 
+Section Name: Calculated Variables 
+Module Section Number: 10 
+Question Number: 1 
+Column: 2006 
+Type of Variable: Num 
+SAS Variable Name: DRNKANY5 
+Question Prologue: 
+Question:  Adults who reported having had at least one drink of alcohol in the past 30 days. 
+Weighted 
+Yes 
+Notes: 1 <= ALCDAY5 <= 231 
+No 
+Notes: ALCDAY5=888 
+Don’t know/Not Sure 
+Notes: ALCDAY5=777 
+Refused/Missing 
+Notes: ALCDAY5=999, Missing 
+Label: Computed drink-occasions-per-day 
+Section Name: Calculated Variables 
+Module Section Number: 10 
+Question Number: 2 
+Column: 2007-2009 
+Type of Variable: Num 
+SAS Variable Name: DROCDY3_ 
+Question Prologue: 
+Question:  Drink-occasions-per-day 
+0 
+No Drink-Occasions per day 
+Notes: ALCDAY5 = 888 
+Notes: ALCDAY5 <= 231 
+Weighted 
+Don’t know/Not Sure Or Refused/Missing 
+Notes: ALCDAY5 = 777 or 999 or Missing 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Binge Drinking Calculated Variable 
+Section Name: Calculated Variables 
+Module Section Number: 10 
+Question Number: 3 
+Column: 2010 
+Type of Variable: Num 
+SAS Variable Name: _RFBING5 
+Question Prologue: 
+Question:    Binge drinkers (males having five or more drinks on one occasion, females having four or more drinks on one 
+occasion) 
+1 
+2 
+9 
+No 
+Notes: ALCDAY5 < 300 and DRNK3GE5 = 0 or ALCDAY5 
+= 888 
+Yes 
+Notes: ALCDAY5 < 300 and DRNK3GE5 = 1 
+Don’t know/Refused/Missing 
+Notes: DRNK3GE5 = 7 or 9 or Missing or ALCDAY5 
+= 777 or 999 or Missing 
+Weighted 
+Label: Computed number of drinks of alcohol beverages per week 
+Section Name: Calculated Variables 
+Module Section Number: 10 
+Question Number: 4 
+Column: 2011-2015 
+Type of Variable: Num 
+SAS Variable Name: _DRNKWEK 
+Question Prologue: 
+Question:  Calculated total number of alcoholic beverages consumed per week 
+0 
+Did not drink 
+Notes: ALCDAY5  =  888 
+Notes: AVEDRNK2*DROCDY3_*7 
+Weighted 
+Don’t know/Not sure/Refused/Missing 
+Notes: ALCDAY5 = 777 or 999 or Missing 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Heavy Alcohol Consumption  Calculated Variable 
+Section Name: Calculated Variables 
+Module Section Number: 10 
+Question Number: 5 
+Column: 2016 
+Type of Variable: Num 
+SAS Variable Name: _RFDRHV6 
+Question Prologue: 
+Question:    Heavy drinkers (adult men having more than 14 drinks per week and adult women having more than 7 drinks 
+per week) 
+No 
+Notes: SEX1 = 1 and _DRNKWEK <= 14 or SEX1 = 2 
+and _DRNKWEK <= 7 or ALCDAY5 = 888 
+Yes 
+Notes: SEX1 = 1 and _DRNKWEK > 14 or SEX1 = 2 and 
+_DRNKWEK > 7 
+Don’t know/Refused/Missing 
+Notes: _DRNKWEK = 99900 
+Weighted 
+Label: Flu Shot Calculated Variable 
+Section Name: Calculated Variables 
+Module Section Number: 11 
+Question Number: 1 
+Column: 2017 
+Type of Variable: Num 
+SAS Variable Name: _FLSHOT6 
+Question Prologue: 
+Question:  Adults aged 65+ who have had a flu shot within the past year 
+Yes 
+Notes: AGE >=65 and FLUSHOT6 = 1 
+No 
+Notes: AGE >=65 and FLUSHOT6 = 2 
+Weighted 
+Don’t know/Not Sure Or Refused/Missing 
+Age Less Than 65 
+. 
+. 
+1 
+2 
+9 
+1 
+2 
+9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Pneumonia Vaccination Calculated Variable 
+Section Name: Calculated Variables 
+Module Section Number: 11 
+Question Number: 2 
+Column: 2018 
+Type of Variable: Num 
+SAS Variable Name: _PNEUMO3 
+Question Prologue: 
+Question:  Adults aged 65+ who have ever had a pneumonia vaccination 
+Weighted 
+Yes 
+Notes: AGE >= 65 and PNEUVAC4 = 1 
+No 
+Notes: AGE >= 65 and PNEUVAC4 = 2 
+Don’t know/Not Sure Or Refused/Missing 
+Notes: AGE = 7 or 9 or Missing or PNEUVAC4 = 7 
+or 9 or Missing 
+Age Less Than 65 
+Notes: AGE < 65 
+. 
+. 
+Label: Always or Nearly Always Wear Seat Belts 
+Section Name: Calculated Variables 
+Module Section Number: 13 
+Question Number: 1 
+Column: 2019 
+Type of Variable: Num 
+SAS Variable Name: _RFSEAT2 
+Question Prologue: 
+Question:  Always or Nearly Always Wear Seat Belts Calculated Variable 
+Weighted 
+Always or Almost Always Wear Seat Belt 
+Sometimes, Seldom, or Never Wear Seat Belt 
+Don’t know/Not Sure Or Refused/Missing 
+1 
+2 
+9 
+1 
+2 
+9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Always Wear Seat Belts 
+Section Name: Calculated Variables 
+Module Section Number: 13 
+Question Number: 2 
+Column: 2020 
+Type of Variable: Num 
+SAS Variable Name: _RFSEAT3 
+Question Prologue: 
+Question:  Always Wear Seat Belts Calculated Variable 
+Weighted 
+Always Wear Seat Belt 
+Don’t Always Wear Seat Belt 
+Don’t know/Not Sure Or Refused/Missing 
+Label: Drinking and Driving 
+Section Name: Calculated Variables 
+Module Section Number: 13 
+Question Number: 3 
+Column: 2021 
+Type of Variable: Num 
+SAS Variable Name: _DRNKDRV 
+Question Prologue: 
+Question:  Drinking and Driving  (Reported having driven at least once when perhaps had too much to drink) 
+Weighted 
+Have driven after having too much to drink 
+Have not driven after having too much to drink 
+Don’t know/Not Sure/Refused/Missing 
+1 
+2 
+9 
+1 
+2 
+9 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Women respondents aged 40+ who have had a mammogram in the past two years 
+Section Name: Calculated Variables 
+Module Section Number: 14 
+Question Number: 1 
+Column: 2022 
+Type of Variable: Num 
+SAS Variable Name: _RFMAM21 
+Question Prologue: 
+Question:  Women respondents aged 40+ who have had a mammogram in the past two years 
+1 
+2 
+9 
+Yes 
+Notes: SEX1 = 2 and AGE => 40and HADMAM = 1 and 
+HOWLONG = 1 or 2 
+No 
+Notes: SEX1 = 2 and AGE => 40 and HADMAM = 1 and 
+HOWLONG = 3 or 4 or 5 
+Don’t know/Not Sure/Refused 
+Notes: SEX1 = 2 and AGE => 40 and HADMAM = 1 and 
+HOWLONG = 7 or 9 or SEX1 = 2 and HADMAM = 7 or 
+Missing or Age less than 40 or Male 
+Notes: SEX1 = 1 or SEX1 = 2 and AGE < 40 or SEX1 
+= 2 and AGE => 40 and HADMAM = missing 
+Weighted 
+. 
+. 
+Label: Women respondents aged 50-74 that have had a mammogram in the past two years 
+Section Name: Calculated Variables 
+Module Section Number: 14 
+Question Number: 2 
+Column: 2023 
+Type of Variable: Num 
+SAS Variable Name: _MAM5022 
+Question Prologue: 
+Question:  Women respondents aged 50-74 who have had a mammogram in the past two years 
+1 
+2 
+Received a mammogram within the past 2 years. 
+Notes: SEX1 = 2 and 50 <= AGE <= 74 and HADMAM 
+= 1 and HOWLONG = 1 or 2 
+Did not receive a mammogram within the past 2 
+years. 
+Notes: SEX1 = 2 and 50 <= AGE <= 74 and HADMAM 
+= 1 and HOWLONG = 3 or 4 or 5 or HADMAM = 2 
+Missing, Age less than 50 or greater than 74 or 
+Male 
+Notes: SEX1 = 1 or SEX1 = 2 and AGE < 50  or SEX1 
+= 2 and AGE > 74 or SEX1 = 2 and 50 <= AGE <= 74 
+and HADMAM = missing or HOWLONG = missing 
+Weighted 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Women respondents aged 21-65 who have had a pap test in the past three years 
+Section Name: Calculated Variables 
+Module Section Number: 14 
+Question Number: 3 
+Column: 2024 
+Type of Variable: Num 
+SAS Variable Name: _RFPAP34 
+Question Prologue: 
+Question:  Women respondents aged 21-65 who have had a pap test in the past three years 
+Weighted 
+1 
+2 
+Received a Pap test within the past 3 years. 
+Notes: SEX1 = 2 and 21 <= AGE <= 65 and HADPAP2 
+= 1 and LASTPAP2 = 1 or 2 or 3 
+Did not receive a Pap test within the past 3 
+years. 
+Notes: SEX1 = 2 and 21 <= AGE <= 65 and HADPAP2 
+= 1 and LASTPAP2 = 4 or 5 or 6 or SEX1 = 2 and 
+AGE => 18 and HADPAP2 = 2 
+Missing or Male 
+Notes: SEX1 = 2 and HADHYST2 = 1 and SEX1 = 2 AGE 
+< 21 or SEX1 = 2 and AGE > 65 or SEX1 = 2 and 21 
+<= AGE <= 65 and HADPAP2 = 1 and LASTPAP2 = 
+missing or SEX1 = 2 and AGE => 18 and HADPAP2 = 
+missing or SEX1 = 1 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Male respondents aged 40+ who have had a PSA test in the past 2 years 
+Section Name: Calculated Variables 
+Module Section Number: 15 
+Question Number: 1 
+Column: 2025 
+Type of Variable: Num 
+SAS Variable Name: _RFPSA22 
+Question Prologue: 
+Question:  Male respondents aged 40+ who have had a PSA test in the past 2 years 
+1 
+2 
+9 
+Yes 
+Notes: SEX1 = 1 and AGE => 40 and PSATEST1 = 1 
+and PSATIME = 1 or 2 
+No 
+Notes: SEX1 = 1 and AGE => 40 and PSATEST1 = 1 
+and PSATIME = 3 or 4 or 5 or SEX1 = 1 and AGE => 
+Don’t know/Not Sure/Refused 
+Notes: SEX1 = 1 and AGE => 40 and PSATEST1 = 1 
+and PSATIME = 7 or 9 or SEX1 = 1 and AGE => 40 
+and PSATEST1 = 7 or 9 or SEX1 = 1 and AGE = 7 or 
+Missing or Age less than 40 or Female 
+Notes: SEX1 = 1 and AGE => 40 and PSATEST1 = 1 
+and PSATIME = missing or SEX1 = 1 and AGE => 40 
+and PSATEST1 = missing or SEX1 = 1 and AGE = < 
+Weighted 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Respondents aged 50-75 who have had a blood stool test within the past year 
+Section Name: Calculated Variables 
+Module Section Number: 16 
+Question Number: 1 
+Column: 2026 
+Type of Variable: Num 
+SAS Variable Name: _RFBLDS3 
+Question Prologue: 
+Question:  Respondents aged 50-75 who have had a blood stool test within the past year 
+1 
+2 
+Had a blood stool test in the past year 
+Notes: 50 <= AGE <= 75 and BLDSTOOL = 1 and 
+LSTBLDS3 = 1 or 2 
+Hve not had a blood stool test in the past year 
+Notes: 50 <= AGE <= 75 and BLDSTOOL = 1 and 
+LSTBLDS3 = 3 or 4 or AGE => 50 and BLDSTOOL = 2 
+Missing, Age less than 50, Age greater than 75 
+Notes: 50 <= AGE <= 75 and BLDSTOOL = 1 and 
+LSTBLDS3 = missing, don´t know or refused or 50 
+<= AGE <= 75 and BLDSTOOL = missing, don´t know 
+or refused or AGE < 50 or AGE > 75 
+Weighted 
+. 
+. 
+Label: Respondents aged 50-75 that who have had a colonoscopy in the past 10 years 
+Section Name: Calculated Variables 
+Module Section Number: 16 
+Question Number: 2 
+Column: 2027 
+Type of Variable: Num 
+SAS Variable Name: _COL10YR 
+Question Prologue: 
+Question:  Respondents aged 50-75 that who have had a colonoscopy in the past 10 years 
+1 
+2 
+Received a colonoscopy within the past 10 years 
+Notes: 50<= AGE <=75 and HADSIGM3=1 and 
+HADSGCO1=2 and LASTSIG3=1,2,3,4,5 
+Did not receive a colonoscopy within the past 10 
+years 
+Notes: 50<= AGE <=75 and HADSIGM3=2, or 
+HADSIGM3=2 and LASTSIG3=6 
+Missing or Age less than 50 or Age greater than 
+Notes: 50<= AGE <=75 and HADSIGM3=missing, don´t 
+know or refused or LASTSIG3=missing, don´t know 
+or refused or AGE < 50 or AGE > 75 
+Weighted 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Respondents aged 50-75 who have had a blood stool test within the past  3 years 
+Section Name: Calculated Variables 
+Module Section Number: 16 
+Question Number: 3 
+Column: 2028 
+Type of Variable: Num 
+SAS Variable Name: _HFOB3YR 
+Question Prologue: 
+Question:  Respondents aged 50-75 who have had a blood stool test within the past 3 years 
+1 
+2 
+Received a home FOBT within the past 3 years 
+Notes: 50<= AGE <=75 and BLDSTOOL=1 and 
+LSTBLDS3=1,2,3 
+Did not receive a home FOBT within the past 3 
+years 
+Notes: 50<= AGE <=75 and BLDSTOOL=2 or 
+BLDSTOOL=1 and LSTBLDS3=4 
+Missing or Age less than 50 or Age greater than 
+Notes: 50<= AGE <=75 and BLDSTOOL=missing, don´t 
+know or refused or LSTBLDS3=missing, don´t know 
+or refused or AGE<50 or AGE>75 
+Weighted 
+. 
+. 
+Label: Respondents aged 50-75 who have had a sigmoidoscopy within the past  5 years 
+Section Name: Calculated Variables 
+Module Section Number: 16 
+Question Number: 4 
+Column: 2029 
+Type of Variable: Num 
+SAS Variable Name: _FS5YR 
+Question Prologue: 
+Question:  Respondents aged 50-75 who have had a sigmoidoscopy within the past  5 years 
+1 
+2 
+Received a sigmoidoscopy within the past 5 years 
+Notes: 50<= AGE <=75 and HADSIGM3=1 and 
+HADSGCO1=1 and LASTSIG3=1,2,3,4 
+Did not receive a sigmoidoscopy within the past 
+Notes: 50<= AGE <=75 and HADSIGM3=2, or 
+HADSIGM3=1 and LASTSIG3=5,6 
+Missing or Age less than 50 or Age greater than 
+Notes: 50<= AGE <=75 and HADSIGM3=missing, don´t 
+know or refused or LASTSIG3=missing, don´t know 
+or refused or HADSGCO1=missing, don´t know or 
+refused or AGE<50 or AGE>75 
+Weighted 
+. 
+. 
+  November 21, 2019 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Respondents aged 50-75 who have had a blood stool test within the past    3 years and a sigmoidoscopy within the 
+past  5 years 
+Section Name: Calculated Variables 
+Module Section Number: 16 
+Question Number: 5 
+Column: 2030 
+Type of Variable: Num 
+SAS Variable Name: _FOBTFS 
+Question Prologue: 
+Question:    Respondents aged 50-75 who have had a blood stool test within the past    3 years and a sigmoidoscopy within 
+the past  5 years 
+Weighted 
+1 
+2 
+Did have had a sigmoidoscopy within the past 5 
+years and a blood stool test within the past 3 
+years. 
+Notes: 50<= AGE <=75 and _HFOB3YR=1 and _FS5YR=1 
+Did not receive a sigmoidoscopy within the past 
+within the past 3 years 
+Notes: 50<= AGE <=75 and _HFOB3YR=2 or _FS5YR=2 
+Missing or Age less than 50 or Age greater than 
+Notes: 50<= AGE <=75 and _HFOB3YR=missing or 
+_FS5YR=missing or both are missing 
+. 
+. 
+  November 21, 2019 
+1 
+Weighted 
+LLCP 2018 Codebook Report 
+Overall version data weighted with _LLCPWT 
+Behavioral Risk Factor Surveillance System 
+Label: Respondents aged 50-75 who have fully met the USPSTF recommendation 
+Section Name: Calculated Variables 
+Module Section Number: 16 
+Question Number: 6 
+Column: 2031 
+Type of Variable: Num 
+SAS Variable Name: _CRCREC 
+Question Prologue: 
+Question:  Respondents aged 50-75 who have fully met the USPSTF recommendation 
+Received one or more of the recommended CRC tests 
+within the recommended time interval 
+Notes: 50 <= AGE <= 75 and _RFBLDS3=1 or 
+_FOBTFS=1 or _COL10YR=1 or _HFOB3YR=1 AND 
+HADSIGM3=1 AND LASTSIG3 IN (1,2,3,4) 
+2 
+Did not receive one or more of the recommended 
+CRC tests within the recommended time interval 
+Notes: 50 <= AGE <= 75 and _RFBLDS3=2 AND 
+_FOBTFS=2 AND _COL10YR=2 
+Missing or Age less than 50 or Age greater than 
+Notes: 50 <= AGE <= 75 and _RFBLDS3=missing or 
+don´t know or refused or FOBTFS=missing don´t 
+know or refused or _COL10YR=missing don´t know 
+or refused or AGE < 50 or AGE > 75 
+. 
+. 
+Label: Ever been tested for HIV calculated variable 
+Section Name: Calculated Variables 
+Module Section Number: 17 
+Question Number: 1 
+Column: 2032 
+Type of Variable: Num 
+SAS Variable Name: _AIDTST3 
+Question Prologue: 
+Question:  Adults who have ever been tested for HIV 
+Yes 
+Notes: HIVTST6 = 1 
+No 
+Notes: HIVTST6 = 2 
+1 
+2 
+9 
+Don’t know/Not Sure/Refused 
+Notes: HIVTST6 = 7 or 9 
+Not asked or missing 
+Notes: HIVTST6 = Missing 
+Weighted 
+. 
+. 
+  November 21, 2019 

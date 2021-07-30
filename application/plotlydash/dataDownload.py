@@ -9,12 +9,15 @@ import io
 import dash_table
 import os
 import ast
+
+from seaborn.matrix import heatmap
 from .layouts.layout import html_layout
 from dash.exceptions import PreventUpdate
 import requests
 import plotly.graph_objects as go
 import plotly.express as px
 import matplotlib.pyplot as plt
+import base64
 
 from flask_sqlalchemy import SQLAlchemy
 import psycopg2
@@ -23,7 +26,7 @@ from .layouts.page2_layout import server_layout
 from .layouts.page3_layout import layout3
 from .modelHelperFunctions import *
 
-
+# from pandas_profiling import ProfileReport
 # from .layouts.EDA_layout import EDA_layout
 # from .EDA_callbacks import EDA_callback
 
@@ -62,7 +65,7 @@ REG_CRITERION = ['Index', 'Label', 'Model', 'Penalty', 'MAE', 'MSE']
 CLASSIFICATION_LIST = ["Logistic", "LDA"]
 #CLF_CRITERION = ["Index", "Label", "Model", "Penalty", "Accuracy", "ROC_AUC score", "Precision", "Recall", "F1-Score"]
 CLF_CRITERION = ["Index", "Label", "Model", "Penalty",
-                 "Accuracy", "Precision", "Recall", "F1-Score"]
+                 "Accuracy"]
 
 var_info = load_info_dict(VAR_PATH)
 section_info = load_info_dict(SECTION_PATH)
@@ -207,30 +210,41 @@ def dataDownload(server):
         
     def parse_contents(filename):
         global df
-
+        '''
+        profile = ProfileReport(df, title = "Pandas Profiling Report")
+        profile.to_file("report.html") #change it so that it automatically saves it in the folder where this file is
+        These lines create the report using pandas profiling, however it takes quite long as the report is 11 MB. For now,
+        only one dataset is used so these lines don't neeed to run each time
+        '''
+        new_df = df.iloc[:5, :5]
         return html.Div([
             # html.H5("Upload File: {}".format(filename)),
+            html.Hr(),
+            html.A(html.Button('Next', id='btn'), href='/dashapp/EDA/'),
+            html.Hr(),
             dcc.Loading(children=[
                 dash_table.DataTable(
                 id='database-table',
-                columns=[{'name': i, 'id': i} for i in df.columns],
-                data=df.to_dict('records'),
+                columns=[{'name': i, 'id': i} for i in new_df.columns],
+                data=new_df.to_dict('records'),
                 sort_action="native",
                 sort_mode='native',
                 page_size=300,
                 fixed_rows = 100,
                 style_table={
                     'maxHeight': '80ex',
-                    'overflowY': 'scroll',
-                    'overflowX': 'scroll',
+                    #'overflowY': 'scroll',
+                    #'overflowX': 'scroll',
                     'width': '100%',
-                    # 'minWidth': '100%',
-                    # 'margin': '5% 15%'
+                    'border' : '1px solid blue'
+                },
+                style_cell={
+                    'color': 'blue'
                 },
             ),
 
             html.Hr(),  # horizontal line
-            html.A(html.Button('Next', id='btn'), href='/dashapp/EDA/')
+            #html.A(html.Button('Next', id='btn'), href='/dashapp/EDA/')
             ], type='cube')
         ])
 
@@ -238,6 +252,11 @@ def dataDownload(server):
     @app.callback(dash.dependencies.Output('dropdown_content', 'children'),
                        [dash.dependencies.Input('dropdown_section_name', 'value')])
     def render_tab_preparation_multiple_dropdown(value):
+        #print (dictionary_name)
+        all_vals = []
+        for i in dictionary_name.values():
+            for j in i:
+                all_vals.append(j)
         if value:
             for key in dictionary_name:
                 if key == value:
@@ -248,14 +267,45 @@ def dataDownload(server):
                             options=[
                                 {'label': i, 'value': i} for i in dictionary_name[key]
                             ],
-                            placeholder="Select Feature",
+                            placeholder="Select First Feature",
                             # value='features'
                         ),
+                        #dcc.Dropdown(
+                        #    id = 'dropdown2',
+                        #    options = [
+                        #        {'label': i, 'value' : i} for i in all_vals
+                        #    ],
+                        #    placeholder="Select Second Feature",
+                        #),
                         html.Div(id='single_commands'),
                     ])
                     return return_div
         else:
             raise PreventUpdate
+
+
+    '''
+    @app.callback(dash.dependencies.Output('dropdown_content', 'children'),
+                       [dash.dependencies.Input('dropdown_section_name', 'value2')])
+    def render_tab_preparation_multiple_dropdown2(value2):
+        all_vals = []
+        for i in dictionary_name.values():
+            for j in i:
+                all_vals.append(j)
+        return_div = html.Div([
+            html.Br(),
+            dcc.Dropdown(
+                id = 'dropdown2',
+                options = [
+                    {'label': i, 'value' : i} for i in all_vals
+                ],
+                placeholder="Select Second Feature",
+            ),
+            html.Div(id='single_commands2'),
+        ])
+        return return_div
+    '''
+
 
     @app.callback(
         dash.dependencies.Output('dd-notice', 'children'),
@@ -267,7 +317,7 @@ def dataDownload(server):
                 result.append('{}:{}'.format(key, values))
             div = html.Div([
                 html.Div([
-                    html.H3('Feature Informatation')
+                    html.H3('First Feature Informatation')
                 ]),
                 html.Div([
                     html.Ul([html.Li(x) for x in result])
@@ -294,7 +344,7 @@ def dataDownload(server):
 
             div = html.Div([
                 html.Div([
-                    html.H3('Feature Statistics')
+                    html.H3('First Feature Statistics')
                 ]),
                 html.Div([
                     html.Ul([html.Li(x) for x in result])
@@ -425,24 +475,58 @@ def dataDownload(server):
                 model_res = classification_models(
                     X, y, model_type, True, C=penalty)
                 model = model_res[0]
-                res = clf_risk_factor_analysis(model, col_names, num_of_factor)
+                #cfn_matrix = model_res[5]
+                heatmap_filename = model_res[-1]
+                encoded_image = base64.b64encode(open(heatmap_filename, 'rb').read())
+                res = clf_risk_factor_analysis(model, col_names, num_of_factor, label)[0]
+                table_columns = []
+                categories = clf_risk_factor_analysis(model, col_names, num_of_factor, label)[1]
+                table_columns.append(categories) #categories (yes, no, etc.)
+                table_columns.append(model_res[2]) #precision
+                table_columns.append(model_res[3]) #recall
+                table_columns.append(model_res[4]) #f1
+                accuracy_column = [model_res[1]] * len(table_columns[1])
+                table_columns.append(accuracy_column)
+                #print (accuracy_column)
+                CLF_CRITERION2 = ["Category", "Precision", "Recall", "F1", "Accuracy"]
+                #print (table_columns)
+                if len(table_columns[0]) == len(table_columns[1]) + 1:
+                    table_columns[0] = table_columns[0][:-1]
+                elif len(table_columns[0]) == len(table_columns[1]) + 2:
+                    table_columns[0] = table_columns[0][:-2]
+                table_dict = {"Category" : table_columns[0], "Precision" : table_columns[1], "Recall" : table_columns[2], "F1": table_columns[3], "Accuracy" : table_columns[4]}
+                table_df = pd.DataFrame(table_dict)
+                #print (table_df)
                 performance_layout = html.Div(
+                    #html.Div(
+                    #    dash_table.DataTable(
+                    #        id="clf_table",
+                    #        columns=[{'name': val, 'id': val}
+                    #                 for val in CLF_CRITERION[1:]],
+                    #        #data=[{"Label": label, 'Model': model_type, "Penalty": penalty, "Accuracy": round(model_res[1], 5),
+                    #        #       "Precision":round(model_res[2], 5), "Recall":round(model_res[3], 5), "F1-Score":round(model_res[4], 5)}],
+                    #        data=[{"Label": label, 'Model': model_type, "Penalty": penalty, "Accuracy": model_res[1]}],
+                    #        style_cell={
+                    #            'height': 'auto',
+                    #            'textAlign': 'right'
+                    #            # all three widths are needed
+                    #            # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                    #            # 'whiteSpace': 'normal'
+                    #        }
+                    #    )
+                    #),
                     html.Div(
                         dash_table.DataTable(
                             id="clf_table",
-                            columns=[{'name': val, 'id': val}
-                                     for val in CLF_CRITERION[1:]],
-                            data=[{"Label": label, 'Model': model_type, "Penalty": penalty, "Accuracy": round(model_res[1], 5),
-                                   "Precision":round(model_res[2], 5), "Recall":round(model_res[3], 5), "F1-Score":round(model_res[4], 5)}],
-                            style_cell={
-                                'height': 'auto',
-                                'textAlign': 'right'
-                                # all three widths are needed
-                                # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
-                                # 'whiteSpace': 'normal'
+                            columns = [{'name' : val, 'id' : val}
+                                    for val in CLF_CRITERION2],
+                            data = table_df.to_dict('records'),
+                            style_cell = {
+                                'height' : 'auto',
+                                'textAllign' : 'right',
                             }
                         )
-                    ),
+                    )
                 )
                 info = "Perform Risk Factor Analysis with normalized data based on {} model".format(
                     model_type)
@@ -452,64 +536,147 @@ def dataDownload(server):
             res_tab_col = ["Rank", "Factor", "Absolute Weight", "Sign"]
             #res = reg_risk_factor_analysis(model, col_names, num_of_factor)
 
-            layout = html.Div(children=[
-                html.P(
-                    html.Label(info)
-                ),
-                html.Div(
-                    dash_table.DataTable(
-                        id="RFA_table",
-                        columns=[
-                            {'name': i, 'id': i} for i in res_tab_col
-                        ],
-                        data=res,
-                        style_cell={
-                            'height': 'auto',
-                            'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
-                            'whiteSpace': 'normal',
-                            'textAlign': 'right'
-                        },
-                        style_header={
-                            'backgroundColor': 'white',
-                            'fontWeight': 'bold'
-                        },
-                        style_data_conditional=[
-                            {
-                                'if': {
-                                    'column_id': 'Sign',
-                                    'filter_query': '{Sign} = "-"'
-                                },
-                                'backgroundColor': 'dodgerblue',
-                                'color': 'white'
-                            },
-                            {
-                                'if': {
-                                    'column_id': 'Sign',
-                                    'filter_query': '{Sign} = "+"'
-                                },
-                                'backgroundColor': '#85144b',
-                                'color': 'white'
-                            },
-                        ],
-                    )
-                ),
+            if task_type == "Classification":
 
-                html.P(
-                    html.Label("{} model performance: ".format(model_type))
-                ),
-                performance_layout,
-            ])
+                layout = html.Div(children=[
+                    html.P(
+                        html.Label(info)
+                    ),
+                    html.Div(
+                        dash_table.DataTable(
+                            id="RFA_table",
+                            columns=[
+                                {'name': i, 'id': i} for i in res_tab_col
+                            ],
+                            data=res,
+                            style_cell={
+                                'height': 'auto',
+                                'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                                'whiteSpace': 'normal',
+                                'textAlign': 'right'
+                            },
+                            style_header={
+                                'backgroundColor': 'white',
+                                'fontWeight': 'bold'
+                            },
+                            style_data_conditional=[
+                                {
+                                    'if': {
+                                        'column_id': 'Sign',
+                                        'filter_query': '{Sign} = "-"'
+                                    },
+                                    'backgroundColor': 'dodgerblue',
+                                    'color': 'white'
+                                },
+                                {
+                                    'if': {
+                                        'column_id': 'Sign',
+                                        'filter_query': '{Sign} = "+"'
+                                    },
+                                    'backgroundColor': '#85144b',
+                                    'color': 'white'
+                                },
+                            ],
+                        )
+                    ),
+
+                    html.P(
+                        html.Label("{} model performance: ".format(model_type))
+                    ),
+                    performance_layout,
+                    html.Div([
+                        html.Label("Heatmap for the Confusion Matrix:"),
+                        html.Img(src='data:image/png;base64,{}'.format(encoded_image.decode()))   #encoded_image does not exist for continous variables
+                    ]),
+                    html.Div([
+                        html.Details([
+                            html.Summary("Performance of History Models"),
+                            html.Details([ 
+                                html.Summary("Performance Records for Classification Model"),
+                                html.Div(
+                                    dash_table.DataTable(
+                                        id="clf_rec",
+                                        columns=[{'name': val, 'id': val}
+                                                 for val in CLF_CRITERION],
+                                        data=[],
+                                        style_cell={
+                                            'height': 'auto',
+                                            'textAlign': 'right'
+                                            # all three widths are needed
+                                            # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                                            # 'minWidth': '100px', 'width': '120px', 'maxWidth': '240px',
+                                            # 'whiteSpace': 'normal'
+                                        }
+                                    )
+                                ),
+                                html.Details([
+                                    html.Summary("Performance Table"),
+                                    performance_layout])
+                            ])
+                        ])
+                    ])
+
+
+
+                ])
+            elif task_type == "Regression":
+                layout = html.Div(children=[
+                    html.P(
+                        html.Label(info)
+                    ),
+                    html.Div(
+                        dash_table.DataTable(
+                            id="RFA_table",
+                            columns=[
+                                {'name': i, 'id': i} for i in res_tab_col
+                            ],
+                            data=res,
+                            style_cell={
+                                'height': 'auto',
+                                'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                                'whiteSpace': 'normal',
+                                'textAlign': 'right'
+                            },
+                            style_header={
+                                'backgroundColor': 'white',
+                                'fontWeight': 'bold'
+                            },
+                            style_data_conditional=[
+                                {
+                                    'if': {
+                                        'column_id': 'Sign',
+                                        'filter_query': '{Sign} = "-"'
+                                    },
+                                    'backgroundColor': 'dodgerblue',
+                                    'color': 'white'
+                                },
+                                {
+                                    'if': {
+                                        'column_id': 'Sign',
+                                        'filter_query': '{Sign} = "+"'
+                                    },
+                                    'backgroundColor': '#85144b',
+                                    'color': 'white'
+                                },
+                            ],
+                        )
+                    ),
+
+                    html.P(
+                        html.Label("{} model performance: ".format(model_type))
+                    ),
+                    performance_layout,
+                ])
+
 
             if task_type == "Regression":
                 return layout, reg_data + [{"Index": len(reg_data)+1, "Label": label, 'Model': model_type, 'Penalty': penalty, 'MAE': round(model_res[1], 5), 'MSE':round(model_res[2], 5),
                                             }], clf_data
             elif task_type == "Classification":
-                return layout, reg_data, clf_data + [{"Index": len(clf_data)+1, "Label": label, 'Model': model_type, "Penalty": penalty, "Accuracy": round(model_res[1], 5),
-                                                      "Precision":round(model_res[2], 5), "Recall":round(model_res[3], 5), "F1-Score":round(model_res[4], 5)}]
+                return layout, reg_data, clf_data + [{"Index": len(clf_data)+1, "Label": label, 'Model': model_type, "Penalty": penalty, "Accuracy": model_res[1]}]
             else:
                 return [], reg_data, clf_data
         else:
             # return [], reg_data, clf_data, False
             return dash.no_update, dash.no_update, dash.no_update
-
 

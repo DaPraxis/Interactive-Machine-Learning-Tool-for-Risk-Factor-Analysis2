@@ -19,9 +19,9 @@ REGRESSON_LIST = ["Linear", "Lasso", "Ridge",
 REG_CRITERION = ['Index', 'Label', 'Model', 'Penalty', 'MAE', 'MSE']
 CLASSIFICATION_LIST = ["Logistic", "LDA"]
 #CLF_CRITERION = ["Index", "Label", "Model", "Penalty", "Accuracy", "ROC_AUC score", "Precision", "Recall", "F1-Score"]
-CLF_CRITERION = ["Index", "Label", "Model", "Penalty",
-                 "Accuracy", "Precision", "Recall", "F1-Score"]
-
+#CLF_CRITERION = ["Index", "Label", "Model", "Penalty",
+#                 "Accuracy", "Precision", "Recall", "F1-Score"]
+CLF_CRITERION = ["Index", "Label", "Model", "Penalty", "Accuracy"]
 
 def load_info_dict(file):
     f = open(file, 'r')
@@ -99,7 +99,7 @@ layout3 = html.Div(
 
                 html.Div(
                     html.P(html.Label(
-                        "Please verify the type of selected feature: ")),
+                        "Please verify the type of selected feature based on the variable meaning you selected in the last step (e.g., diagnostic related variables such as ever told / diagnosed wtih a specefic disease are categorical variables, while number of days and real values of lab tests are continuous variables): ")),
                 ),
                 html.Div([
                     dcc.Dropdown(
@@ -138,7 +138,7 @@ layout3 = html.Div(
                 html.Div([
                     html.P(
                         html.Label(
-                            "Please select the penalty multiplier: ")
+                            "Please select the tuning parameter value of the penalty multiplier (the precision is 0.1): ")
                     ),
 
                     dcc.Slider(
@@ -249,6 +249,9 @@ layout3 = html.Div(
                                                     }
                                                 )
                                             ),
+                                            #html.Details([
+                                            #        html.Summary("Performance Table")])
+                                            ########### ADD THE performance_layout TABLE HERE SOMEHOW########
                                         ]
                                     )
                                 ]),
@@ -258,4 +261,3 @@ layout3 = html.Div(
 
             ])
         ], id='dash-container', style={'marginBottom': 40})
-
