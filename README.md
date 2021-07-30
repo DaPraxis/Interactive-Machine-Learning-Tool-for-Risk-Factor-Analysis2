@@ -59,3 +59,11 @@ $ flask run
 
 -----
 
+## Deployment
+```shell
+$ git status # view the changes
+$ git add .  # add all the changes
+$ git commit -m 'a description of the changes'
+$ git push heroku main
+```
+
