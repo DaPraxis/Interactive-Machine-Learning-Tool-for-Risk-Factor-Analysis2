@@ -140,6 +140,8 @@ def dataDownload(server):
     df = pd.DataFrame([])
     # df.to_csv(os.stat(r`str(os.getcwd())+'\\uploads\\'+str('download.csv')`))
     
+    all_performance_layouts = []
+
     org_layout = html.Div([
         html.Div([], id='hidden-div', style={'display': 'none'}),
         dcc.Dropdown(
@@ -528,6 +530,7 @@ def dataDownload(server):
                         )
                     )
                 )
+                all_performance_layouts.append(performance_layout)
                 info = "Perform Risk Factor Analysis with normalized data based on {} model".format(
                     model_type)
             else:
@@ -537,7 +540,23 @@ def dataDownload(server):
             #res = reg_risk_factor_analysis(model, col_names, num_of_factor)
 
             if task_type == "Classification":
-
+                history_html = html.Div(children=[])
+                for i in range(len(all_performance_layouts)):
+                    text = "Performance table for Index " + str(i+1)
+                    temp_html = html.Details([
+                        html.Summary(text),
+                        all_performance_layouts[i]])
+                    history_html.children.append(temp_html)
+                ######## so history_html is a list with all the temp_htmls, and they need to be combined via comments like
+                ''' 
+                html.Details([
+                    html.Summray(text),
+                    all_performance_layouts[0])],
+                html.Details([
+                    html.Summary(text), 
+                    all_performance_layouts[1])],
+                and so on
+                '''
                 layout = html.Div(children=[
                     html.P(
                         html.Label(info)
@@ -609,9 +628,10 @@ def dataDownload(server):
                                         }
                                     )
                                 ),
-                                html.Details([
-                                    html.Summary("Performance Table"),
-                                    performance_layout])
+                                #html.Details([
+                                    #html.Summary("Performance Table"),
+                                    #performance_layout])
+                                history_html
                             ])
                         ])
                     ])
