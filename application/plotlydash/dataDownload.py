@@ -140,6 +140,8 @@ def dataDownload(server):
     df = pd.DataFrame([])
     # df.to_csv(os.stat(r`str(os.getcwd())+'\\uploads\\'+str('download.csv')`))
     
+    all_performance_layouts = []
+
     org_layout = html.Div([
         html.Div([], id='hidden-div', style={'display': 'none'}),
         dcc.Dropdown(
@@ -494,6 +496,11 @@ def dataDownload(server):
                     table_columns[0] = table_columns[0][:-1]
                 elif len(table_columns[0]) == len(table_columns[1]) + 2:
                     table_columns[0] = table_columns[0][:-2]
+                elif len(table_columns[0]) == len(table_columns[1]) - 1:
+                    i = 1
+                    while (i <= 4):
+                        table_columns[i] = table_columns[i][:-1]
+                        i += 1
                 table_dict = {"Category" : table_columns[0], "Precision" : table_columns[1], "Recall" : table_columns[2], "F1": table_columns[3], "Accuracy" : table_columns[4]}
                 table_df = pd.DataFrame(table_dict)
                 #print (table_df)
@@ -528,6 +535,7 @@ def dataDownload(server):
                         )
                     )
                 )
+                all_performance_layouts.append(performance_layout)
                 info = "Perform Risk Factor Analysis with normalized data based on {} model".format(
                     model_type)
             else:
@@ -537,7 +545,23 @@ def dataDownload(server):
             #res = reg_risk_factor_analysis(model, col_names, num_of_factor)
 
             if task_type == "Classification":
-
+                history_html = html.Div(children=[])
+                for i in range(len(all_performance_layouts)):
+                    text = "Performance table for Index " + str(i+1)
+                    temp_html = html.Details([
+                        html.Summary(text),
+                        all_performance_layouts[i]])
+                    history_html.children.append(temp_html)
+                ######## so history_html is a list with all the temp_htmls, and they need to be combined via comments like
+                ''' 
+                html.Details([
+                    html.Summray(text),
+                    all_performance_layouts[0])],
+                html.Details([
+                    html.Summary(text), 
+                    all_performance_layouts[1])],
+                and so on
+                '''
                 layout = html.Div(children=[
                     html.P(
                         html.Label(info)
@@ -609,9 +633,10 @@ def dataDownload(server):
                                         }
                                     )
                                 ),
-                                html.Details([
-                                    html.Summary("Performance Table"),
-                                    performance_layout])
+                                #html.Details([
+                                    #html.Summary("Performance Table"),
+                                    #performance_layout])
+                                history_html
                             ])
                         ])
                     ])

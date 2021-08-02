@@ -315,6 +315,20 @@ def encoding(number, variable):
     if variable == "INCOME2":
         dict = {1: "Less than $10,000", 2: "Less than $15,000 ($10,000 to less than $15,000)", 3: "Less than $20,000 ($15,000 to less than $20,000)", 4: "Less than $25,000 ($20,000 to less than $25,000)", 5: "Less than $35,000 ($25,000 to less than $35,000)", 6: "Less than $50,000 ($35,000 to less than $50,000)", 7: "Less than $75,000 ($50,000 to less than $75,000)", 8: " $75,000 or more", 77: "Don't know/ not sure", 99: "Refused"}
         return dict[number]
+    if variable == "ALCDAY5":
+        number = int(number)
+        str_num = str(number)
+        #print (str_num)
+        if str_num[0] == '1':
+            return str_num[2] + " Days per week"
+        elif str_num[0] == '2':
+            return str_num[1:] + " Days in past 30"
+        elif number == 777:
+            return "Don't know/Not sure"
+        elif number == 888:
+            return "No drinks in past 30 days"
+        elif number == 999:
+            return "Refused"
     
     
     f = open("final_codebook.txt", "r", encoding="utf-8")
