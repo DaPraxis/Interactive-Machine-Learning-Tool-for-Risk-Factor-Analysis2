@@ -496,6 +496,11 @@ def dataDownload(server):
                     table_columns[0] = table_columns[0][:-1]
                 elif len(table_columns[0]) == len(table_columns[1]) + 2:
                     table_columns[0] = table_columns[0][:-2]
+                elif len(table_columns[0]) == len(table_columns[1]) - 1:
+                    i = 1
+                    while (i <= 4):
+                        table_columns[i] = table_columns[i][:-1]
+                        i += 1
                 table_dict = {"Category" : table_columns[0], "Precision" : table_columns[1], "Recall" : table_columns[2], "F1": table_columns[3], "Accuracy" : table_columns[4]}
                 table_df = pd.DataFrame(table_dict)
                 #print (table_df)
