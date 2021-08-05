@@ -134,9 +134,10 @@ def classification_models(X, y, model_type, norm=False, C=1.0):
         y_test, y_pred)
 
     cfn_matrix = confusion_matrix(y_test, y_pred)
-    heatmap_filename = confusion_matrix_heatmap(y_test, y_pred)
+    #heatmap_filename = confusion_matrix_heatmap(y_test, y_pred)
     # return clf, accuracy, roc_auc, precision, recall, f1
-    return clf, accuracy, precision, recall, f1, cfn_matrix, heatmap_filename
+    #return clf, accuracy, precision, recall, f1, cfn_matrix, heatmap_filename
+    return clf, accuracy, precision, recall, f1, cfn_matrix
 
 '''
 def confusion_matrix_heatmap(y_true, y_pred):

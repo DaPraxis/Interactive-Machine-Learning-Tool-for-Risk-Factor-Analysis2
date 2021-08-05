@@ -477,9 +477,9 @@ def dataDownload(server):
                 model_res = classification_models(
                     X, y, model_type, True, C=penalty)
                 model = model_res[0]
-                #cfn_matrix = model_res[5]
-                heatmap_filename = model_res[-1]
-                encoded_image = base64.b64encode(open(heatmap_filename, 'rb').read())
+                cfn_matrix = model_res[5]
+                #heatmap_filename = model_res[-1]
+                #encoded_image = base64.b64encode(open(heatmap_filename, 'rb').read())
                 res = clf_risk_factor_analysis(model, col_names, num_of_factor, label)[0]
                 table_columns = []
                 categories = clf_risk_factor_analysis(model, col_names, num_of_factor, label)[1]
@@ -608,10 +608,10 @@ def dataDownload(server):
                         html.Label("{} model performance: ".format(model_type))
                     ),
                     performance_layout,
-                    html.Div([
-                        html.Label("Heatmap for the Confusion Matrix:"),
-                        html.Img(src='data:image/png;base64,{}'.format(encoded_image.decode()))   #encoded_image does not exist for continous variables
-                    ]),
+                    #html.Div([
+                    #    html.Label("Heatmap for the Confusion Matrix:"),
+                    #    html.Img(src='data:image/png;base64,{}'.format(encoded_image.decode()))   #encoded_image does not exist for continous variables
+                    #]),
                     html.Div([
                         html.Details([
                             html.Summary("Performance of History Models"),
