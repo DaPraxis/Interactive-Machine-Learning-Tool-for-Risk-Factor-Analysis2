@@ -16,6 +16,7 @@ from dash.exceptions import PreventUpdate
 import requests
 import plotly.graph_objects as go
 import plotly.express as px
+import plotly.figure_factory as ff
 import matplotlib.pyplot as plt
 import base64
 
@@ -562,6 +563,8 @@ def dataDownload(server):
                     all_performance_layouts[1])],
                 and so on
                 '''
+                #print (cfn_matrix)
+                heatmap_fig = ff.create_annotated_heatmap(cfn_matrix)
                 layout = html.Div(children=[
                     html.P(
                         html.Label(info)
@@ -612,6 +615,9 @@ def dataDownload(server):
                     #    html.Label("Heatmap for the Confusion Matrix:"),
                     #    html.Img(src='data:image/png;base64,{}'.format(encoded_image.decode()))   #encoded_image does not exist for continous variables
                     #]),
+                    html.Div([
+                        dcc.Graph(figure=heatmap_fig)
+                    ]),
                     html.Div([
                         html.Details([
                             html.Summary("Performance of History Models"),
