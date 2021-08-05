@@ -564,7 +564,7 @@ def dataDownload(server):
                 and so on
                 '''
                 #print (cfn_matrix)
-                heatmap_fig = ff.create_annotated_heatmap(cfn_matrix)
+                heatmap_fig = ff.create_annotated_heatmap(cfn_matrix, x = categories, y = categories)
                 layout = html.Div(children=[
                     html.P(
                         html.Label(info)
