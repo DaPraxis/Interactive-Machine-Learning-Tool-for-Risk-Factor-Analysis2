@@ -564,6 +564,12 @@ def dataDownload(server):
                 and so on
                 '''
                 #print (cfn_matrix)
+                #print (categories)
+                if len(categories) == len(cfn_matrix) - 1:
+                    categories.append('Refused ')
+                elif len(categories) == len(cfn_matrix) + 1:
+                    categories = categories[:-1]
+                #print (categories)
                 heatmap_fig = ff.create_annotated_heatmap(cfn_matrix, x = categories, y = categories)
                 layout = html.Div(children=[
                     html.P(
