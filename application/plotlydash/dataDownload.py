@@ -288,8 +288,8 @@ def dataDownload(server):
 
 
     '''
-    @app.callback(dash.dependencies.Output('dropdown_content', 'children'),
-                       [dash.dependencies.Input('dropdown_section_name', 'value2')])
+    @app.callback(dash.dependencies.Output('dropdown_content2', 'children'),
+                       [dash.dependencies.Input('dropdown_section_name2', 'value')])
     def render_tab_preparation_multiple_dropdown2(value2):
         all_vals = []
         for i in dictionary_name.values():
@@ -703,6 +703,30 @@ def dataDownload(server):
                         html.Label("{} model performance: ".format(model_type))
                     ),
                     performance_layout,
+                    html.Div([
+                        html.Details([
+                            html.Summary("Performance of History Models"),
+                            html.Details([ 
+                                html.Summary("Performance Records for Regression Model"),
+                                html.Div(
+                                    dash_table.DataTable(
+                                        id="reg_rec",
+                                        columns=[{'name': val, 'id': val}
+                                                 for val in CLF_CRITERION],
+                                        data=[],
+                                        style_cell={
+                                            'height': 'auto',
+                                            'textAlign': 'right'
+                                            # all three widths are needed
+                                            # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                                            # 'minWidth': '100px', 'width': '120px', 'maxWidth': '240px',
+                                            # 'whiteSpace': 'normal'
+                                        }
+                                    )
+                                ),
+                            ])
+                        ])
+                    ])
                 ])
 
 
