@@ -649,6 +649,25 @@ def dataDownload(server):
                                     #html.Summary("Performance Table"),
                                     #performance_layout])
                                 history_html
+                            ]),
+                            html.Details([ 
+                               html.Summary("Performance Records for Regression Model"),
+                               html.Div(
+                                    dash_table.DataTable(
+                                        id="reg_rec",
+                                        columns=[{'name': val, 'id': val}
+                                                 for val in CLF_CRITERION],
+                                        data=[],
+                                        style_cell={
+                                            'height': 'auto',
+                                            'textAlign': 'right'
+                                            # all three widths are needed
+                                            # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                                            # 'minWidth': '100px', 'width': '120px', 'maxWidth': '240px',
+                                            # 'whiteSpace': 'normal'
+                                        }
+                                    )
+                                ),
                             ])
                         ])
                     ])
@@ -711,6 +730,25 @@ def dataDownload(server):
                                 html.Div(
                                     dash_table.DataTable(
                                         id="reg_rec",
+                                        columns=[{'name': val, 'id': val}
+                                                 for val in CLF_CRITERION],
+                                        data=[],
+                                        style_cell={
+                                            'height': 'auto',
+                                            'textAlign': 'right'
+                                            # all three widths are needed
+                                            # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                                            # 'minWidth': '100px', 'width': '120px', 'maxWidth': '240px',
+                                            # 'whiteSpace': 'normal'
+                                        }
+                                    )
+                                ),
+                            ]),
+                            html.Details([ 
+                                html.Summary("Performance Records for Classification Model"),
+                                html.Div(
+                                    dash_table.DataTable(
+                                        id="clf_rec",
                                         columns=[{'name': val, 'id': val}
                                                  for val in CLF_CRITERION],
                                         data=[],
