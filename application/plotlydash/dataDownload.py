@@ -656,7 +656,7 @@ def dataDownload(server):
                                     dash_table.DataTable(
                                         id="reg_rec",
                                         columns=[{'name': val, 'id': val}
-                                                 for val in CLF_CRITERION],
+                                                 for val in REG_CRITERION],
                                         data=[],
                                         style_cell={
                                             'height': 'auto',
@@ -731,7 +731,7 @@ def dataDownload(server):
                                     dash_table.DataTable(
                                         id="reg_rec",
                                         columns=[{'name': val, 'id': val}
-                                                 for val in CLF_CRITERION],
+                                                 for val in REG_CRITERION],
                                         data=[],
                                         style_cell={
                                             'height': 'auto',
