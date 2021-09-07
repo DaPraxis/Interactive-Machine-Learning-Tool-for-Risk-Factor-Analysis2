@@ -547,6 +547,56 @@ def dataDownload(server):
 
             res_tab_col = ["Rank", "Factor", "Absolute Weight", "Sign"]
             #res = reg_risk_factor_analysis(model, col_names, num_of_factor)
+            
+            def return_history(history_html):
+                history_all = html.Div([
+                            html.Details([
+                                html.Summary("Performance of History Models"),
+                                html.Details([ 
+                                    html.Summary("Performance Records for Classification Model"),
+                                    html.Div(
+                                        dash_table.DataTable(
+                                            id="clf_rec",
+                                            columns=[{'name': val, 'id': val}
+                                                    for val in CLF_CRITERION],
+                                            data=[],
+                                            style_cell={
+                                                'height': 'auto',
+                                                'textAlign': 'right'
+                                                # all three widths are needed
+                                                # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                                                # 'minWidth': '100px', 'width': '120px', 'maxWidth': '240px',
+                                                # 'whiteSpace': 'normal'
+                                            }
+                                        )
+                                    ),
+                                    #html.Details([
+                                        #html.Summary("Performance Table"),
+                                        #performance_layout])
+                                    history_html
+                                ], style={'paddingLeft':'25px'}),
+                                html.Details([ 
+                                html.Summary("Performance Records for Regression Model"),
+                                html.Div(
+                                        dash_table.DataTable(
+                                            id="reg_rec",
+                                            columns=[{'name': val, 'id': val}
+                                                    for val in REG_CRITERION],
+                                            data=[],
+                                            style_cell={
+                                                'height': 'auto',
+                                                'textAlign': 'right'
+                                                # all three widths are needed
+                                                # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                                                # 'minWidth': '100px', 'width': '120px', 'maxWidth': '240px',
+                                                # 'whiteSpace': 'normal'
+                                            }
+                                        )
+                                    ),
+                                ], style={'paddingLeft':'25px'})
+                            ])
+                        ])
+                return history_all
 
             if task_type == "Classification":
                 history_html = html.Div(children=[], style={'paddingLeft':'25px'})
@@ -573,7 +623,7 @@ def dataDownload(server):
                 elif len(categories) == len(cfn_matrix) + 1:
                     categories = categories[:-1]
                 #print (categories)
-                heatmap_fig = ff.create_annotated_heatmap(cfn_matrix, x = categories, y = categories)
+                heatmap_fig = ff.create_annotated_heatmap(cfn_matrix, x = categories, y = categories[::-1])
                 layout = html.Div(children=[
                     html.P(
                         html.Label(info)
@@ -627,56 +677,7 @@ def dataDownload(server):
                     html.Div([
                         dcc.Graph(figure=heatmap_fig)
                     ]),
-                    html.Div([
-                        html.Details([
-                            html.Summary("Performance of History Models"),
-                            html.Details([ 
-                                html.Summary("Performance Records for Classification Model"),
-                                html.Div(
-                                    dash_table.DataTable(
-                                        id="clf_rec",
-                                        columns=[{'name': val, 'id': val}
-                                                 for val in CLF_CRITERION],
-                                        data=[],
-                                        style_cell={
-                                            'height': 'auto',
-                                            'textAlign': 'right'
-                                            # all three widths are needed
-                                            # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
-                                            # 'minWidth': '100px', 'width': '120px', 'maxWidth': '240px',
-                                            # 'whiteSpace': 'normal'
-                                        }
-                                    )
-                                ),
-                                #html.Details([
-                                    #html.Summary("Performance Table"),
-                                    #performance_layout])
-                                history_html
-                            ], style={'paddingLeft':'25px'}),
-                            html.Details([ 
-                               html.Summary("Performance Records for Regression Model"),
-                               html.Div(
-                                    dash_table.DataTable(
-                                        id="reg_rec",
-                                        columns=[{'name': val, 'id': val}
-                                                 for val in REG_CRITERION],
-                                        data=[],
-                                        style_cell={
-                                            'height': 'auto',
-                                            'textAlign': 'right'
-                                            # all three widths are needed
-                                            # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
-                                            # 'minWidth': '100px', 'width': '120px', 'maxWidth': '240px',
-                                            # 'whiteSpace': 'normal'
-                                        }
-                                    )
-                                ),
-                            ], style={'paddingLeft':'25px'})
-                        ])
-                    ])
-
-
-
+                    return_history(history_html)
                 ])
             elif task_type == "Regression":
                 layout = html.Div(children=[
@@ -725,49 +726,50 @@ def dataDownload(server):
                         html.Label("{} model performance: ".format(model_type))
                     ),
                     performance_layout,
-                    html.Div([
-                        html.Details([
-                            html.Summary("Performance of History Models"),
-                            html.Details([ 
-                                html.Summary("Performance Records for Regression Model"),
-                                html.Div(
-                                    dash_table.DataTable(
-                                        id="reg_rec",
-                                        columns=[{'name': val, 'id': val}
-                                                 for val in REG_CRITERION],
-                                        data=[],
-                                        style_cell={
-                                            'height': 'auto',
-                                            'textAlign': 'right'
-                                            # all three widths are needed
-                                            # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
-                                            # 'minWidth': '100px', 'width': '120px', 'maxWidth': '240px',
-                                            # 'whiteSpace': 'normal'
-                                        }
-                                    )
-                                ),
-                            ]),
-                            html.Details([ 
-                                html.Summary("Performance Records for Classification Model"),
-                                html.Div([
-                                    dash_table.DataTable(
-                                        id="clf_rec",
-                                        columns=[{'name': val, 'id': val}
-                                                 for val in CLF_CRITERION],
-                                        data=[],
-                                        style_cell={
-                                            'height': 'auto',
-                                            'textAlign': 'right'
-                                            # all three widths are needed
-                                            # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
-                                            # 'minWidth': '100px', 'width': '120px', 'maxWidth': '240px',
-                                            # 'whiteSpace': 'normal'
-                                        }
-                                    ),history_html]
-                                ),
-                            ])
-                        ])
-                    ])
+                    return_history(history_html)
+                    # html.Div([
+                    #     html.Details([
+                    #         html.Summary("Performance of History Models"),
+                    #         html.Details([ 
+                    #             html.Summary("Performance Records for Regression Model"),
+                    #             html.Div(
+                    #                 dash_table.DataTable(
+                    #                     id="reg_rec",
+                    #                     columns=[{'name': val, 'id': val}
+                    #                              for val in REG_CRITERION],
+                    #                     data=[],
+                    #                     style_cell={
+                    #                         'height': 'auto',
+                    #                         'textAlign': 'right'
+                    #                         # all three widths are needed
+                    #                         # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                    #                         # 'minWidth': '100px', 'width': '120px', 'maxWidth': '240px',
+                    #                         # 'whiteSpace': 'normal'
+                    #                     }
+                    #                 )
+                    #             ),
+                    #         ]),
+                    #         html.Details([ 
+                    #             html.Summary("Performance Records for Classification Model"),
+                    #             html.Div([
+                    #                 dash_table.DataTable(
+                    #                     id="clf_rec",
+                    #                     columns=[{'name': val, 'id': val}
+                    #                              for val in CLF_CRITERION],
+                    #                     data=[],
+                    #                     style_cell={
+                    #                         'height': 'auto',
+                    #                         'textAlign': 'right'
+                    #                         # all three widths are needed
+                    #                         # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                    #                         # 'minWidth': '100px', 'width': '120px', 'maxWidth': '240px',
+                    #                         # 'whiteSpace': 'normal'
+                    #                     }
+                    #                 ),history_html]
+                    #             ),
+                    #         ])
+                    #     ])
+                    # ])
                 ])
                 
             if task_type == "Regression":
