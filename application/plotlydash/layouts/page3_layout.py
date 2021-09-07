@@ -197,18 +197,9 @@ layout3 = html.Div(
                     ),
 
                 ]),
+                
                 html.Br(),
-                html.Details(
-                    [
-                        html.Summary("Performance of History Models"),
-                        html.Div(
-                            [
-                                html.Div([
-                                    html.Details(
-                                        [
-                                            html.Summary(
-                                                "Performance Records for Regression Model"),
-                                            html.Div(
+                html.Div(
                                                 dash_table.DataTable(
                                                     id="reg_rec",
                                                     columns=[{'name': val, 'id': val}
@@ -220,20 +211,12 @@ layout3 = html.Div(
                                                         'minWidth': '100px', 'width': '160px', 'maxWidth': '240px',
                                                         'marginLeft': '30px',
                                                         'whiteSpace': 'normal',
-                                                        'textAlign': 'right'
+                                                        'textAlign': 'right',
+                                                        'display': 'none'
                                                     }
                                                 )
                                             ),
-                                        ]
-                                    )
-                                ]),
-
-                                html.Div([
-                                    html.Details(
-                                        [
-                                            html.Summary(
-                                                "Performance Records for Classification Model"),
-                                            html.Div(
+                html.Div(
                                                 dash_table.DataTable(
                                                     id="clf_rec",
                                                     columns=[{'name': val, 'id': val}
@@ -241,7 +224,8 @@ layout3 = html.Div(
                                                     data=[],
                                                     style_cell={
                                                         'height': 'auto',
-                                                        'textAlign': 'right'
+                                                        'textAlign': 'right',
+                                                        'display' : 'none'
                                                         # all three widths are needed
                                                         # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
                                                         # 'minWidth': '100px', 'width': '120px', 'maxWidth': '240px',
@@ -249,15 +233,69 @@ layout3 = html.Div(
                                                     }
                                                 )
                                             ),
-                                            #html.Details([
-                                            #        html.Summary("Performance Table")])
-                                            ########### ADD THE performance_layout TABLE HERE SOMEHOW########
-                                        ]
-                                    )
-                                ]),
-                            ], style={'marginLeft': 40})
-                    ]
-                )
+                
+                # html.Details(
+                #     [
+                #         html.Summary("old"),
+                #         html.Div(
+                #             [
+                #                 html.Div([
+                #                     html.Details(
+                #                         [
+                #                             html.Summary(
+                #                                 "Performance Records for Regression Model"),
+                #                             html.Div(
+                #                                 dash_table.DataTable(
+                #                                     id="reg_rec",
+                #                                     columns=[{'name': val, 'id': val}
+                #                                              for val in REG_CRITERION],
+                #                                     data=[],
+                #                                     style_cell={
+                #                                         'height': 'auto',
+                #                                         # all three widths are needed
+                #                                         'minWidth': '100px', 'width': '160px', 'maxWidth': '240px',
+                #                                         'marginLeft': '30px',
+                #                                         'whiteSpace': 'normal',
+                #                                         'textAlign': 'right',
+                #                                         'display': 'none'
+                #                                     }
+                #                                 )
+                #                             ),
+                #                         ]
+                #                     )
+                #                 ]),
+
+                #                 html.Div([
+                #                     html.Details(
+                #                         [
+                #                             html.Summary(
+                #                                 "Performance Records for Classification Model"),
+                #                             html.Div(
+                #                                 dash_table.DataTable(
+                #                                     id="clf_rec",
+                #                                     columns=[{'name': val, 'id': val}
+                #                                              for val in CLF_CRITERION],
+                #                                     data=[],
+                #                                     style_cell={
+                #                                         'height': 'auto',
+                #                                         'textAlign': 'right',
+                #                                         'display' : 'none'
+                #                                         # all three widths are needed
+                #                                         # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                #                                         # 'minWidth': '100px', 'width': '120px', 'maxWidth': '240px',
+                #                                         # 'whiteSpace': 'normal'
+                #                                     }
+                #                                 )
+                #                             ),
+                #                             #html.Details([
+                #                             #        html.Summary("Performance Table")])
+                #                             ########### ADD THE performance_layout TABLE HERE SOMEHOW########
+                #                         ]
+                #                     )
+                #                 ]),
+                #             ], style={'marginLeft': 40})
+                #     ]
+                # )
 
             ])
         ], id='dash-container', style={'marginBottom': 40})

@@ -16,6 +16,7 @@ from dash.exceptions import PreventUpdate
 import requests
 import plotly.graph_objects as go
 import plotly.express as px
+import plotly.figure_factory as ff
 import matplotlib.pyplot as plt
 import base64
 
@@ -26,7 +27,6 @@ from .layouts.page2_layout import server_layout
 from .layouts.page3_layout import layout3
 from .modelHelperFunctions import *
 
-# from pandas_profiling import ProfileReport
 # from .layouts.EDA_layout import EDA_layout
 # from .EDA_callbacks import EDA_callback
 
@@ -61,7 +61,7 @@ STATE_PATH = 'data/state_info.txt'
 SECTION_PATH = 'data/section_name.txt'
 REGRESSON_LIST = ["Linear", "Lasso", "Ridge",
                   "LassoLars", "Bayesian Ridge", "Elastic Net"]
-REG_CRITERION = ['Index', 'Label', 'Model', 'Penalty', 'MAE', 'MSE']
+REG_CRITERION = ['Index', 'Label', 'Model', 'Penalty', 'MAE', 'MSE', '']
 CLASSIFICATION_LIST = ["Logistic", "LDA"]
 #CLF_CRITERION = ["Index", "Label", "Model", "Penalty", "Accuracy", "ROC_AUC score", "Precision", "Recall", "F1-Score"]
 CLF_CRITERION = ["Index", "Label", "Model", "Penalty",
@@ -117,6 +117,10 @@ def download_file_from_google_drive(id, destination):
         response = session.get(URL, params = params, stream = True)
 
     save_response_content(response, destination)    
+    
+    
+all_performance_layouts = []
+history_html = None
 
 def dataDownload(server):
     global df
@@ -139,8 +143,6 @@ def dataDownload(server):
     
     df = pd.DataFrame([])
     # df.to_csv(os.stat(r`str(os.getcwd())+'\\uploads\\'+str('download.csv')`))
-    
-    all_performance_layouts = []
 
     org_layout = html.Div([
         html.Div([], id='hidden-div', style={'display': 'none'}),
@@ -269,7 +271,7 @@ def dataDownload(server):
                             options=[
                                 {'label': i, 'value': i} for i in dictionary_name[key]
                             ],
-                            placeholder="Select First Feature",
+                            placeholder="Select Feature",
                             # value='features'
                         ),
                         #dcc.Dropdown(
@@ -287,8 +289,8 @@ def dataDownload(server):
 
 
     '''
-    @app.callback(dash.dependencies.Output('dropdown_content', 'children'),
-                       [dash.dependencies.Input('dropdown_section_name', 'value2')])
+    @app.callback(dash.dependencies.Output('dropdown_content2', 'children'),
+                       [dash.dependencies.Input('dropdown_section_name2', 'value')])
     def render_tab_preparation_multiple_dropdown2(value2):
         all_vals = []
         for i in dictionary_name.values():
@@ -319,7 +321,7 @@ def dataDownload(server):
                 result.append('{}:{}'.format(key, values))
             div = html.Div([
                 html.Div([
-                    html.H3('First Feature Informatation')
+                    html.H3('Feature Informatation')
                 ]),
                 html.Div([
                     html.Ul([html.Li(x) for x in result])
@@ -346,10 +348,11 @@ def dataDownload(server):
 
             div = html.Div([
                 html.Div([
-                    html.H3('First Feature Statistics')
+                    html.H3('Feature Statistics')
                 ]),
                 html.Div([
                     html.Ul([html.Li(x) for x in result])
+                    # dcc.Graph(figure= px.box(df[str_value.lower()], points="all"))
                 ]),
             ])
             
@@ -434,6 +437,7 @@ def dataDownload(server):
                         State('clf_rec', 'data')])
     def perform_risk_factor_analysis(n_clicks, state, label, task_type, model_type, penalty, num_of_factor, reg_data, clf_data):
         global df
+        global history_html 
 
         if n_clicks > 0:
 
@@ -477,9 +481,9 @@ def dataDownload(server):
                 model_res = classification_models(
                     X, y, model_type, True, C=penalty)
                 model = model_res[0]
-                #cfn_matrix = model_res[5]
-                heatmap_filename = model_res[-1]
-                encoded_image = base64.b64encode(open(heatmap_filename, 'rb').read())
+                cfn_matrix = model_res[5]
+                #heatmap_filename = model_res[-1]
+                #encoded_image = base64.b64encode(open(heatmap_filename, 'rb').read())
                 res = clf_risk_factor_analysis(model, col_names, num_of_factor, label)[0]
                 table_columns = []
                 categories = clf_risk_factor_analysis(model, col_names, num_of_factor, label)[1]
@@ -529,8 +533,8 @@ def dataDownload(server):
                                     for val in CLF_CRITERION2],
                             data = table_df.to_dict('records'),
                             style_cell = {
-                                'height' : 'auto',
-                                'textAllign' : 'right',
+                                # 'height' : 'auto',
+                                # 'textAllign' : 'right',
                             }
                         )
                     )
@@ -545,7 +549,7 @@ def dataDownload(server):
             #res = reg_risk_factor_analysis(model, col_names, num_of_factor)
 
             if task_type == "Classification":
-                history_html = html.Div(children=[])
+                history_html = html.Div(children=[], style={'paddingLeft':'25px'})
                 for i in range(len(all_performance_layouts)):
                     text = "Performance table for Index " + str(i+1)
                     temp_html = html.Details([
@@ -562,6 +566,14 @@ def dataDownload(server):
                     all_performance_layouts[1])],
                 and so on
                 '''
+                #print (cfn_matrix)
+                #print (categories)
+                if len(categories) == len(cfn_matrix) - 1:
+                    categories.append('Refused ')
+                elif len(categories) == len(cfn_matrix) + 1:
+                    categories = categories[:-1]
+                #print (categories)
+                heatmap_fig = ff.create_annotated_heatmap(cfn_matrix, x = categories, y = categories)
                 layout = html.Div(children=[
                     html.P(
                         html.Label(info)
@@ -608,9 +620,12 @@ def dataDownload(server):
                         html.Label("{} model performance: ".format(model_type))
                     ),
                     performance_layout,
+                    #html.Div([
+                    #    html.Label("Heatmap for the Confusion Matrix:"),
+                    #    html.Img(src='data:image/png;base64,{}'.format(encoded_image.decode()))   #encoded_image does not exist for continous variables
+                    #]),
                     html.Div([
-                        html.Label("Heatmap for the Confusion Matrix:"),
-                        html.Img(src='data:image/png;base64,{}'.format(encoded_image.decode()))   #encoded_image does not exist for continous variables
+                        dcc.Graph(figure=heatmap_fig)
                     ]),
                     html.Div([
                         html.Details([
@@ -637,7 +652,26 @@ def dataDownload(server):
                                     #html.Summary("Performance Table"),
                                     #performance_layout])
                                 history_html
-                            ])
+                            ], style={'paddingLeft':'25px'}),
+                            html.Details([ 
+                               html.Summary("Performance Records for Regression Model"),
+                               html.Div(
+                                    dash_table.DataTable(
+                                        id="reg_rec",
+                                        columns=[{'name': val, 'id': val}
+                                                 for val in REG_CRITERION],
+                                        data=[],
+                                        style_cell={
+                                            'height': 'auto',
+                                            'textAlign': 'right'
+                                            # all three widths are needed
+                                            # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                                            # 'minWidth': '100px', 'width': '120px', 'maxWidth': '240px',
+                                            # 'whiteSpace': 'normal'
+                                        }
+                                    )
+                                ),
+                            ], style={'paddingLeft':'25px'})
                         ])
                     ])
 
@@ -691,9 +725,51 @@ def dataDownload(server):
                         html.Label("{} model performance: ".format(model_type))
                     ),
                     performance_layout,
+                    html.Div([
+                        html.Details([
+                            html.Summary("Performance of History Models"),
+                            html.Details([ 
+                                html.Summary("Performance Records for Regression Model"),
+                                html.Div(
+                                    dash_table.DataTable(
+                                        id="reg_rec",
+                                        columns=[{'name': val, 'id': val}
+                                                 for val in REG_CRITERION],
+                                        data=[],
+                                        style_cell={
+                                            'height': 'auto',
+                                            'textAlign': 'right'
+                                            # all three widths are needed
+                                            # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                                            # 'minWidth': '100px', 'width': '120px', 'maxWidth': '240px',
+                                            # 'whiteSpace': 'normal'
+                                        }
+                                    )
+                                ),
+                            ]),
+                            html.Details([ 
+                                html.Summary("Performance Records for Classification Model"),
+                                html.Div([
+                                    dash_table.DataTable(
+                                        id="clf_rec",
+                                        columns=[{'name': val, 'id': val}
+                                                 for val in CLF_CRITERION],
+                                        data=[],
+                                        style_cell={
+                                            'height': 'auto',
+                                            'textAlign': 'right'
+                                            # all three widths are needed
+                                            # 'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                                            # 'minWidth': '100px', 'width': '120px', 'maxWidth': '240px',
+                                            # 'whiteSpace': 'normal'
+                                        }
+                                    ),history_html]
+                                ),
+                            ])
+                        ])
+                    ])
                 ])
-
-
+                
             if task_type == "Regression":
                 return layout, reg_data + [{"Index": len(reg_data)+1, "Label": label, 'Model': model_type, 'Penalty': penalty, 'MAE': round(model_res[1], 5), 'MSE':round(model_res[2], 5),
                                             }], clf_data
