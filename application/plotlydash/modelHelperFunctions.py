@@ -124,7 +124,7 @@ def classification_models(X, y, model_type, norm=False, C=1.0):
         X_train = StandardScaler().fit_transform(X_train)
         X_test = StandardScaler().fit_transform(X_test)
     if model_type == "Logistic":
-        clf = LogisticRegression(C=1/C).fit(X_train, y_train)
+        clf = LogisticRegression(C=1/C,solver='liblinear').fit(X_train, y_train)
     elif model_type == "LDA":
         clf = LinearDiscriminantAnalysis().fit(X_train, y_train)
     else:
