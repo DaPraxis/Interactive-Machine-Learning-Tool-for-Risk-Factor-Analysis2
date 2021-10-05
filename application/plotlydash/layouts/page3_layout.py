@@ -13,7 +13,9 @@ import dash_bootstrap_components as dbc
 
 VAR_PATH = 'data/var_info.txt'
 STATE_PATH = 'data/state_info.txt'
+STATE_CODE = 'data/state_code.txt'
 SECTION_PATH = 'data/section_name.txt'
+
 REGRESSON_LIST = ["Linear", "Lasso", "Ridge",
                   "LassoLars", "Bayesian Ridge", "Elastic Net"]
 REG_CRITERION = ['Index', 'Label', 'Model', 'Penalty', 'MAE', 'MSE']
@@ -33,6 +35,7 @@ def load_info_dict(file):
 var_info = load_info_dict(VAR_PATH)
 section_info = load_info_dict(SECTION_PATH)
 state_info = load_info_dict(STATE_PATH)
+state_code = load_info_dict(STATE_CODE)
 
 SECTION = list(section_info.keys())
 STATE = list(state_info.keys())
